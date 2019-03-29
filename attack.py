@@ -51,7 +51,7 @@ def gradient_wrt_data(model,device,data,lbl):
 def PGD_attack(model, device, dat, lbl, eps, alpha, iters):
     x_nat = dat.clone().detach()
     # Randomly perturb within small eps-norm ball
-    x_adv = dat + torch.FloatTensor(dat.shape,device=device).uniform_(-eps, eps).to(device)
+    x_adv = dat + torch.FloatTensor(dat.shape).uniform_(-eps, eps).to(device)
     x_adv = torch.clamp(x_adv,0.,1.) # respect image bounds
     # Iteratively Perturb data  
     for i in range(iters):
@@ -61,6 +61,24 @@ def PGD_attack(model, device, dat, lbl, eps, alpha, iters):
         sign_data_grad = grad.sign()
         # Perturb by the small amount a
         x_adv = x_adv + alpha*sign_data_grad
+        # Clip the perturbations w.r.t. the original data so we still satisfy l_infinity
+        #x_adv = torch.clamp(x_adv, x_nat-eps, x_nat+eps) # Tensor min/max not supported yet
+        x_adv = torch.max(torch.min(x_adv, x_nat+eps), x_nat-eps)
+        # Make sure we are still in bounds
+        x_adv = torch.clamp(x_adv, 0., 1.) 
+    return x_adv
+
+##############################################################################
+# Projected Gradient Descent Attack (PGD) with random start
+##############################################################################
+def PGD_attack_test(model, device, dat, lbl, eps, alpha, iters):
+    x_nat = dat.clone().detach()
+    # Randomly perturb within small eps-norm ball
+    x_adv = dat + torch.FloatTensor(dat.shape).uniform_(-eps, eps)
+    x_adv = torch.clamp(x_adv,0.,1.) # respect image bounds
+    # Iteratively Perturb data  
+    for i in range(iters):
+
         # Clip the perturbations w.r.t. the original data so we still satisfy l_infinity
         #x_adv = torch.clamp(x_adv, x_nat-eps, x_nat+eps) # Tensor min/max not supported yet
         x_adv = torch.max(torch.min(x_adv, x_nat+eps), x_nat-eps)
