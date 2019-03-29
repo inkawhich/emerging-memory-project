@@ -21,11 +21,11 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 ##################################################################
 # Inputs
 ##################################################################
-batch_size = 32
-test_batch_size = 32
+batch_size = 128
+test_batch_size = 128
 num_epochs = 10
-num_workers = 4
-save_model = True
+num_workers = 8
+save_model = False
 checkpoint = "checkpoints/sample_model_checkpoint.pth.tar"
 
 # Adversarial Training Inputs
@@ -63,7 +63,7 @@ for nbits in range(1,9):
     #quantilization flag
     #do_quan = False
     
-    net = models_quantilization.conv_and_fc_quan().to(device)
+    net = models_quantilization.conv_and_fc_quan(nbits).to(device)
     do_quan = True
     net.train()
     
@@ -100,7 +100,7 @@ for nbits in range(1,9):
             optimizer.zero_grad()
             net.zero_grad()
             # Forward pass data through model
-            output = net(data,nbits)
+            output = net(data)
             # Calculate Loss
             loss = criterion(output,labels)
             # Calculate gradients w.r.t parameters

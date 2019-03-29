@@ -10,8 +10,9 @@ import quantilization
 ##########################################################
 # From official pytorch/mnist example
 class conv_and_fc_quan(nn.Module):
-    def __init__(self):
+    def __init__(self, nbits):
         super(conv_and_fc_quan, self).__init__()
+        self.nbits = nbits
         self.features = nn.Sequential(
             nn.Conv2d(1, 20, 5, 1),
             nn.ReLU(inplace=True),
@@ -25,13 +26,13 @@ class conv_and_fc_quan(nn.Module):
             nn.ReLU(inplace=True),
             nn.Linear(500, 10),
             )
-    def forward(self, x, nbits):
+    def forward(self, x):
         s = {}
         #print(x.size())
         for ind,(name,param) in enumerate(self.named_parameters()):
             s[ind] = param.data
-            param.data = quantilization.Quantizer.apply(param.data)
-            #param.data = quantilization.Quantizer_nonlinear(nbits).apply(param.data)
+            param.data = quantilization.Quantizer(self.nbits).apply(param.data)
+            #param.data = quantilization.Quantizer_nonlinear(self.nbits).apply(param.data)
         x = self.features(x)
         x = x.view(-1, 4*4*50)
         x = self.classifier(x)

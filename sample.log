@@ -1,0 +1,26 @@
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/10][0/938] train_loss: 0.035978 train_acc: 0.093750
+[0/10][100/938] train_loss: 0.035978 train_acc: 0.097772
+[0/10][200/938] train_loss: 0.035978 train_acc: 0.098025
+[0/10][300/938] train_loss: 0.035978 train_acc: 0.097539
+[0/10][400/938] train_loss: 0.035978 train_acc: 0.097296
+[0/10][500/938] train_loss: 0.035978 train_acc: 0.097118
+[0/10][600/938] train_loss: 0.035978 train_acc: 0.097754
+[0/10][700/938] train_loss: 0.035978 train_acc: 0.098587
+[0/10][800/938] train_loss: 0.035979 train_acc: 0.099212
+[0/10][900/938] train_loss: 0.035980 train_acc: 0.098970
+Clean dataset testing:[0/10] val_loss: 0.072071 val_acc: 0.098000

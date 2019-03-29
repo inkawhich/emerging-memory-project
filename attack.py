@@ -74,7 +74,7 @@ def PGD_attack(model, device, dat, lbl, eps, alpha, iters):
 def PGD_attack_test(model, device, dat, lbl, eps, alpha, iters):
     x_nat = dat.clone().detach()
     # Randomly perturb within small eps-norm ball
-    x_adv = dat + torch.FloatTensor(dat.shape).uniform_(-eps, eps)
+    x_adv = dat + torch.FloatTensor(dat.shape).uniform_(-eps, eps).to(device)
     x_adv = torch.clamp(x_adv,0.,1.) # respect image bounds
     # Iteratively Perturb data  
     for i in range(iters):
