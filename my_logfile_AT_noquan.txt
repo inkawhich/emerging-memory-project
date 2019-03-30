@@ -1,0 +1,29 @@
+nbits:1
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/10][0/469] train_loss: 0.018658 train_acc: 0.000000
+[0/10][100/469] train_loss: 0.017479 train_acc: 0.178527
+[0/10][200/469] train_loss: 0.016031 train_acc: 0.262788
+[0/10][300/469] train_loss: 0.014881 train_acc: 0.316523
+[0/10][400/469] train_loss: 0.013975 train_acc: 0.356472
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+    valacc_quan,valloss_quan = helpers.test_model_quan(net,device,test_loader,nbits,do_linear=True)
+  File "/home/xy92/emerging-memory-project/helpers.py", line 66, in test_model_quan
+    quan_param(model,nbits,do_linear)
+  File "/home/xy92/emerging-memory-project/helpers.py", line 62, in quan_param
+    param.data=quantilization.Quantilizer(nbits).apply(param.data)
+NameError: name 'quantilization' is not defined

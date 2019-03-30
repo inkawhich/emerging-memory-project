@@ -29,7 +29,8 @@ save_model = False
 checkpoint = "checkpoints/sample_model_checkpoint.pth.tar"
 
 # Adversarial Training Inputs
-do_AT = True
+#do_AT = True
+do_AT=False
 #AT_eps = 0.3; AT_alpha = 0.01; AT_iters = 40 # Official Madry Config
 AT_eps = 0.3; AT_alpha = 0.05; AT_iters = 10
 
@@ -60,14 +61,15 @@ for nbits in range(1,9):
     
     #net = models.all_fc().to(device)
     #net = models.all_conv().to(device)
-    #net = models.conv_and_fc().to(device)
-    #do_quan = False
+    net = models.conv_and_fc().to(device)
+    do_quan = False
     print("nbits:{}".format(nbits)) 
 
 
-    net = models_quantilization.conv_and_fc_quan(nbits,do_linear=True).to(device)
-    do_quan = True
-
+    #net = models_quantilization.conv_and_fc_quan(nbits,do_linear=True).to(device)
+    #net = models_quantilization.conv_and_fc_quan(nbits,do_linear=False).to(device)
+    #do_quan = True
+    #do_quan = False
     net.train()
     
     # Loss and Optimizer

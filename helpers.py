@@ -20,43 +20,43 @@ import attack
 AT_eps = 0.3; AT_alpha = 0.05; AT_iters = 10
 #test data using original data
 def test_model(model,device,loader):
-	model.eval()
-	acc_sum = 0.;loss_sum = 0.;cnt = 0.
-	with torch.no_grad():
-		for dat,lbl in loader:
-			dat,lbl = dat.to(device),lbl.to(device)
-			output = model(dat)
-			loss_sum += F.cross_entropy(output,lbl).item()
-			pred = output.argmax(dim=1, keepdim=True)
-			correct = pred.eq(lbl.view_as(pred)).sum().item()
-			acc_sum += correct
-			cnt += lbl.size(0)
-	model.train()
-	return acc_sum/cnt,loss_sum/cnt
+        model.eval()
+        acc_sum = 0.;loss_sum = 0.;cnt = 0.
+        with torch.no_grad():
+                for dat,lbl in loader:
+                        dat,lbl = dat.to(device),lbl.to(device)
+                        output = model(dat)
+                        loss_sum += F.cross_entropy(output,lbl).item()
+                        pred = output.argmax(dim=1, keepdim=True)
+                        correct = pred.eq(lbl.view_as(pred)).sum().item()
+                        acc_sum += correct
+                        cnt += lbl.size(0)
+        model.train()
+        return acc_sum/cnt,loss_sum/cnt
 
 #test data using AT data
 def test_model_AT(model,device,loader):
 	model.eval()
 	acc_sum = 0.;loss_sum = 0.;cnt = 0.
 	#with torch.no_grad():
-	for dat,lbl in loader:            
-		dat,lbl = dat.to(device),lbl.to(device)
-                dat = attack.PGD_attack(model, device, dat, lbl, eps=AT_eps, alpha=AT_alpha, iters=AT_iters)
-		output = model(dat)
-		loss_sum += F.cross_entropy(output,lbl).item()
-		pred = output.argmax(dim=1, keepdim=True)
-		correct = pred.eq(lbl.view_as(pred)).sum().item()
-		acc_sum += correct
-		cnt += lbl.size(0)
+	for dat,lbl in loader:
+                dat,lbl = dat.to(device),lbl.to(device)
+                #dat = attack.PGD_attack(model, device, dat, lbl, eps=AT_eps, alpha=AT_alpha, iters=AT_iters)
+                dat = attack.PGD_attack(model,device,dat,lbl,eps=AT_eps,alpha=AT_alpha,iters=AT_iters)
+                output = model(dat)
+                loss_sum += F.cross_entropy(output,lbl).item()
+                pred = output.argmax(dim=1, keepdim=True)
+                correct = pred.eq(lbl.view_as(pred)).sum().item()
+                acc_sum += correct
+                cnt += lbl.size(0)
 	model.train()
 	return acc_sum/cnt,loss_sum/cnt
-
 #test data and apply quantilization
     
 
 ######QUAN
     
-def quan_param(model_pretrain,nbits,do_linear):
+def quan_param(model,nbits,do_linear):
     for param in model.parameters():
         if do_linear:
             param.data=quantilization.Quantilizer(nbits).apply(param.data)
