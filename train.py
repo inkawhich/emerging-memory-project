@@ -21,8 +21,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 ##################################################################
 # Inputs
 ##################################################################
-batch_size = 128
-test_batch_size = 128
+batch_size = 32
+test_batch_size = 32
 num_epochs = 10
 num_workers = 8
 save_model = False
@@ -53,6 +53,7 @@ test_loader = torch.utils.data.DataLoader(
 
 
 for nbits in range(1,9):
+#for nbits in [8]:
     ##################################################################
     # Load Model
     ##################################################################
@@ -62,7 +63,7 @@ for nbits in range(1,9):
     #net = models.conv_and_fc().to(device)
     #quantilization flag
     #do_quan = False
-    
+    print("nbits:{}".format(nbits)) 
     net = models_quantilization.conv_and_fc_quan(nbits).to(device)
     do_quan = True
     net.train()

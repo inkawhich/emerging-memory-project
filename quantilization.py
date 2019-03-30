@@ -13,8 +13,6 @@ def Binarize(tensor):
         E = tensor.abs().mean()        
         return tensor.sign() * E
 
- 
-an=2 # ACTIVATION BITS
 
 class Quantizer(torch.autograd.Function):
     """
@@ -22,7 +20,9 @@ class Quantizer(torch.autograd.Function):
     torch.autograd.Function and implementing the forward and backward passes
     which operate on Tensors.
     """
-
+    def __init__(self,nbits):
+        super(Quantizer,self).__init__()
+        self.nbits = nbits
     @staticmethod
     def forward(ctx, input):
         """
@@ -32,7 +32,7 @@ class Quantizer(torch.autograd.Function):
         objects for use in the backward pass using the ctx.save_for_backward method.
         """
         ctx.save_for_backward(input)
-        n = float(2 ** an - 1) 
+        n = float(2 ** self.nbits - 1) 
         input = input*n
         return input.round() / n 
 
@@ -54,6 +54,9 @@ class Quantizer_nonlinear(torch.autograd.Function):
     torch.autograd.Function and implementing the forward and backward passes
     which operate on Tensors.
     """
+    def __init__(self,nbits):
+        super(Quantizer_nonlinear,self).__init__()
+        self.nbits=nbits
     @staticmethod
     def forward(ctx, input):
         """
@@ -63,23 +66,12 @@ class Quantizer_nonlinear(torch.autograd.Function):
         objects for use in the backward pass using the ctx.save_for_backward method.
         """
         ctx.save_for_backward(input)
-        #list = [-1,-1/2,-1/4,-1/8,0,1/8,1/4,1/2,1]
+        n = float(2 ** self.nbits - 1)
+        input_norm = input/torch.max(torch.abs(input))
+        input_norm = torch.sign(input_norm)*1/np.log(1+n)*log(1+n*torch.abs(input_norm))
         
-        
-        #list=[-1,-3/4,-1/2,-3/8,-1/4,-3/16,-1/8,-1/16,0,1/16,1/8,3/16,1/4,3/8,1/2,3/4,1]
-        list = [-1,-1/3,0,1/3,1]
-        for i,num in enumerate(list[:-1]):
-            #print(i)
-            flag = torch.zeros_like(input)
-            quan_res = torch.ones_like(input)*num
-            if i == 0:
-                torch.where(input/torch.max(torch.abs(input))<=(num+list[i+1])/2,quan_res,input)
-            else:
-                torch.where((input/torch.max(torch.abs(input))>(num+list[i-1])/2)&(input/torch.max(torch.abs(input))<=(num+list[i+1])/2),quan_res,input)
-            if i == len(list)-2:
-                quan_res = torch.ones_like(input)*list[i+1]
-                torch.where(input/torch.max(torch.abs(input))>(num+list[i+1])/2,quan_res,input)
-        return input
+        input = input_norm*torch.max(torch.abs(input))*n
+        return input.round() / n
     @staticmethod
     def backward(ctx, grad_output):
         """
