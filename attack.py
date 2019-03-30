@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 #       normalize, forward pass, then unnorm the gradients before returning. Any
 #       fxn that uses this method should handle the data in [0,1] range
 MEAN = 0.; STD = 1.
-def gradient_wrt_data(model,device,data,lbl,nbits):
+def gradient_wrt_data(model,device,data,lbl):
     # MSTAR normalization
     mean = torch.tensor([MEAN], dtype=torch.float32).view([1,1,1]).to(device)
     std = torch.tensor([STD], dtype=torch.float32).view([1,1,1]).to(device)
@@ -31,7 +31,7 @@ def gradient_wrt_data(model,device,data,lbl,nbits):
     # Forward pass through the model
     dat.requires_grad = True
     #model = model()    
-    out = model(dat,nbits)
+    out = model(dat)
     # Calculate loss
     loss = F.cross_entropy(out,lbl)
     # zero all old gradients in the model
@@ -49,7 +49,7 @@ def gradient_wrt_data(model,device,data,lbl,nbits):
 ##############################################################################
 # Projected Gradient Descent Attack (PGD) with random start
 ##############################################################################
-def PGD_attack(model, device, dat, lbl, eps, alpha, iters,nbits):
+def PGD_attack(model, device, dat, lbl, eps, alpha, iters):
     x_nat = dat.clone().detach()
     # Randomly perturb within small eps-norm ball
     x_adv = dat + torch.FloatTensor(dat.shape).uniform_(-eps, eps).to(device)
@@ -57,7 +57,7 @@ def PGD_attack(model, device, dat, lbl, eps, alpha, iters,nbits):
     # Iteratively Perturb data  
     for i in range(iters):
         # Calculate gradient w.r.t. data
-        grad = gradient_wrt_data(model,device,x_adv,lbl,nbits)
+        grad = gradient_wrt_data(model,device,x_adv,lbl)
         # Get the sign of the gradient
         sign_data_grad = grad.sign()
         # Perturb by the small amount a
