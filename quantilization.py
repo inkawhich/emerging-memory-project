@@ -24,20 +24,21 @@ class Quantizer(torch.autograd.Function):
         super(Quantizer,self).__init__()
         self.nbits = nbits
     @staticmethod
-    def forward(self,ctx,input):
+    def forward(self,input):
         """
         In the forward pass we receive a Tensor containing the input and return
         a Tensor containing the output. ctx is a context object that can be used
         to stash information for backward computation. You can cache arbitrary
         objects for use in the backward pass using the ctx.save_for_backward method.
         """
-        ctx.save_for_backward(input)
+        #ctx.save_for_backward(input)
         n = float(2 ** self.nbits - 1) 
         input = input*n
         return input.round() / n 
 
+
     @staticmethod
-    def backward(ctx, grad_output):
+    def backward(self,grad_output):
         """
         In the backward pass we receive a Tensor containing the gradient of the loss
         with respect to the output, and we need to compute the gradient of the loss
@@ -58,14 +59,14 @@ class Quantizer_nonlinear(torch.autograd.Function):
         super(Quantizer_nonlinear,self).__init__()
         self.nbits=nbits
     @staticmethod
-    def forward(self,ctx, input):
+    def forward(self, input):
         """
         In the forward pass we receive a Tensor containing the input and return
         a Tensor containing the output. ctx is a context object that can be used
         to stash information for backward computation. You can cache arbitrary
         objects for use in the backward pass using the ctx.save_for_backward method.
         """
-        ctx.save_for_backward(input)
+        #ctx.save_for_backward(input)
         n = float(2 ** self.nbits - 1)
         input_norm = input/torch.max(torch.abs(input))
         input_norm = torch.sign(input_norm)*1/np.log(1+n)*log(1+n*torch.abs(input_norm))
@@ -73,7 +74,7 @@ class Quantizer_nonlinear(torch.autograd.Function):
         input = input_norm*torch.max(torch.abs(input))*n
         return input.round() / n
     @staticmethod
-    def backward(ctx, grad_output):
+    def backward(self, grad_output):
         """
         In the backward pass we receive a Tensor containing the gradient of the loss
         with respect to the output, and we need to compute the gradient of the loss
