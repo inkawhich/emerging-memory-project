@@ -14,16 +14,22 @@ conv_and_fc(
     (2): Linear(in_features=500, out_features=10, bias=True)
   )
 )
-[0/10][0/469] train_loss: 0.018658 train_acc: 0.000000
-[0/10][100/469] train_loss: 0.017479 train_acc: 0.178527
-[0/10][200/469] train_loss: 0.016031 train_acc: 0.262788
-[0/10][300/469] train_loss: 0.014881 train_acc: 0.316523
-[0/10][400/469] train_loss: 0.013975 train_acc: 0.356472
-Traceback (most recent call last):
-  File "train.py", line 137, in <module>
-    valacc_quan,valloss_quan = helpers.test_model_quan(net,device,test_loader,nbits,do_linear=True)
-  File "/home/xy92/emerging-memory-project/helpers.py", line 66, in test_model_quan
-    quan_param(model,nbits,do_linear)
-  File "/home/xy92/emerging-memory-project/helpers.py", line 62, in quan_param
-    param.data=quantilization.Quantilizer(nbits).apply(param.data)
-NameError: name 'quantilization' is not defined
+[0/10][0/469] train_loss: 0.018677 train_acc: 0.000000
+[0/10][100/469] train_loss: 0.017923 train_acc: 0.129100
+[0/10][200/469] train_loss: 0.017157 train_acc: 0.191814
+[0/10][300/469] train_loss: 0.016219 train_acc: 0.244160
+[0/10][400/469] train_loss: 0.015458 train_acc: 0.280315
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/10] val_loss: 0.018190 val_acc: 0.098000
+[Normal training Linear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.018190 val_acc: 0.098000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/10] val_loss: nan val_acc: 0.098000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: nan val_acc: 0.098000
+[1/10][0/469] train_loss: nan train_acc: 0.070312
+[1/10][100/469] train_loss: nan train_acc: 0.098159
+[1/10][200/469] train_loss: nan train_acc: 0.099153
+[1/10][300/469] train_loss: nan train_acc: 0.099201
+[1/10][400/469] train_loss: nan train_acc: 0.098601
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/10] val_loss: nan val_acc: 0.098000
+[Normal training Linear Quantilized testing]AT dataset testing:[1/10] val_loss: nan val_acc: 0.098000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/10] val_loss: nan val_acc: 0.098000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: nan val_acc: 0.098000
+[2/10][0/469] train_loss: nan train_acc: 0.070312
