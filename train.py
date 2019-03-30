@@ -21,8 +21,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 ##################################################################
 # Inputs
 ##################################################################
-batch_size = 32
-test_batch_size = 32
+batch_size = 128
+test_batch_size = 128
 num_epochs = 10
 num_workers = 8
 save_model = False
@@ -61,11 +61,13 @@ for nbits in range(1,9):
     #net = models.all_fc().to(device)
     #net = models.all_conv().to(device)
     #net = models.conv_and_fc().to(device)
-    #quantilization flag
     #do_quan = False
     print("nbits:{}".format(nbits)) 
-    net = models_quantilization.conv_and_fc_quan(nbits).to(device)
+
+
+    net = models_quantilization.conv_and_fc_quan(nbits,do_linear=True).to(device)
     do_quan = True
+
     net.train()
     
     # Loss and Optimizer
@@ -120,25 +122,28 @@ for nbits in range(1,9):
                         epoch,num_epochs,idx,len(train_loader),
                         train_loss_sum/cnt, train_acc_sum/cnt))
             # End of epoch. Run full test step	
-        valacc,valloss = helpers.test_model(net,device,test_loader)
-        print("Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(
+        if do_quan:
+            valacc,valloss = helpers.test_model(net,device,test_loader)
+        
+            print("Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(
     		epoch,num_epochs,valloss,valacc))
-        if do_AT:
             valacc_AT,valloss_AT = helpers.test_model_AT(net,device,test_loader)
             print("AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(
     		epoch,num_epochs,valloss_AT,valacc_AT))
-        if do_quan==False:
-            net_quan = models_quantilization.conv_and_fc_quan().to(device)
-            valacc_quan,valloss_quan = helpers.test_model_quan(net,net_quan,device,test_loader)
-            print("[Normal training Quantilized testing]Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(
-    		epoch,num_epochs,valloss_quan,valacc_quan))
-            if do_AT:
-                valacc_quan_AT,valloss_quan_AT = helpers.test_model_quan_AT(net,net_quan,device,test_loader)
-                print("[Normal training Quantilized testing]AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(
-    		epoch,num_epochs,valloss_quan_AT,valacc_quan_AT))
+
+        else:
+            valacc_quan,valloss_quan = helpers.test_model_quan(net,device,test_loader,nbits,do_linear=True)
+            print("[Normal training Linear Quantilized testing]Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan,valacc_quan))
+            valacc_quan_AT,valloss_quan_AT = helpers.test_model_quan_AT(net,device,test_loader,nbits,do_linear=True)
+            print("[Normal training Linear Quantilized testing]AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan_AT,valacc_quan_AT))
+            valacc_quan,valloss_quan = helpers.test_model_quan(net,device,test_loader,nbits,do_linear=False)
+            print("[Normal training NonLinear Quantilized testing]Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan,valacc_quan))
+            valacc_quan_AT,valloss_quan_AT = helpers.test_model_quan_AT(net,device,test_loader,nbits,do_linear=False)
+            print("[Normal training NonLinear Quantilized testing]AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan_AT,valacc_quan_AT))
     # Save model
-        if save_model:
-            torch.save(net.state_dict(),checkpoint)
+
+    #if save_model:
+     #       torch.save(net.state_dict(),checkpoint)
     			
 
 

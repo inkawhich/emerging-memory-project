@@ -24,7 +24,7 @@ class Quantizer(torch.autograd.Function):
         super(Quantizer,self).__init__()
         self.nbits = nbits
     @staticmethod
-    def forward(ctx, input):
+    def forward(self,ctx,input):
         """
         In the forward pass we receive a Tensor containing the input and return
         a Tensor containing the output. ctx is a context object that can be used
@@ -58,7 +58,7 @@ class Quantizer_nonlinear(torch.autograd.Function):
         super(Quantizer_nonlinear,self).__init__()
         self.nbits=nbits
     @staticmethod
-    def forward(ctx, input):
+    def forward(self,ctx, input):
         """
         In the forward pass we receive a Tensor containing the input and return
         a Tensor containing the output. ctx is a context object that can be used

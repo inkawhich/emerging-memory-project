@@ -3,16 +3,15 @@ import quantilization
 # All models input NCHW=[N,1,28,28]
 # All models return logits for use with a cross-entropy loss
 
-
-
 ##########################################################
 # Conv + FC + Quantilization
 ##########################################################
 # From official pytorch/mnist example
 class conv_and_fc_quan(nn.Module):
-    def __init__(self, nbits):
+    def __init__(self, nbits,do_linear):
         super(conv_and_fc_quan, self).__init__()
         self.nbits = nbits
+        self.do_linear = do_linear
         self.features = nn.Sequential(
             nn.Conv2d(1, 20, 5, 1),
             nn.ReLU(inplace=True),
@@ -28,11 +27,12 @@ class conv_and_fc_quan(nn.Module):
             )
     def forward(self, x):
         s = {}
-        #print(x.size())
         for ind,(name,param) in enumerate(self.named_parameters()):
             s[ind] = param.data
-            param.data = quantilization.Quantizer(self.nbits).apply(param.data)
-            #param.data = quantilization.Quantizer_nonlinear(self.nbits).apply(param.data)
+            if self.do_linear:
+                param.data = quantilization.Quantizer(self.nbits).apply(param.data)
+            else:
+                param.data = quantilization.Quantizer_nonlinear(self.nbits).apply(param.data)
         x = self.features(x)
         x = x.view(-1, 4*4*50)
         x = self.classifier(x)
