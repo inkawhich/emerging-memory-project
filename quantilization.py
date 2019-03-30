@@ -24,7 +24,7 @@ class Quantizer(torch.autograd.Function):
         super(Quantizer,self).__init__()
         self.nbits = nbits
     @staticmethod
-    def forward(self,input):
+    def forward(self,input,nbits):
         """
         In the forward pass we receive a Tensor containing the input and return
         a Tensor containing the output. ctx is a context object that can be used
@@ -32,7 +32,7 @@ class Quantizer(torch.autograd.Function):
         objects for use in the backward pass using the ctx.save_for_backward method.
         """
         #ctx.save_for_backward(input)
-        n = float(2 ** self.nbits - 1) 
+        n = float(2 ** nbits - 1) 
         input = input*n
         return input.round() / n 
 
@@ -59,7 +59,7 @@ class Quantizer_nonlinear(torch.autograd.Function):
         super(Quantizer_nonlinear,self).__init__()
         self.nbits=nbits
     @staticmethod
-    def forward(self, input):
+    def forward(self, input, nbits):
         """
         In the forward pass we receive a Tensor containing the input and return
         a Tensor containing the output. ctx is a context object that can be used
@@ -67,7 +67,7 @@ class Quantizer_nonlinear(torch.autograd.Function):
         objects for use in the backward pass using the ctx.save_for_backward method.
         """
         #ctx.save_for_backward(input)
-        n = float(2 ** self.nbits - 1)
+        n = float(2 ** nbits - 1)
         input_norm = input/torch.max(torch.abs(input))
         input_norm = torch.sign(input_norm)*1/np.log(1+n)*log(1+n*torch.abs(input_norm))
         

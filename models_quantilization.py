@@ -30,9 +30,9 @@ class conv_and_fc_quan(nn.Module):
         for ind,(name,param) in enumerate(self.named_parameters()):
             s[ind] = param.data
             if self.do_linear:
-                param.data = quantilization.Quantizer(self.nbits).apply(param.data)
+                param.data = quantilization.Quantizer(self.nbits).apply(param.data,self.nbits)
             else:
-                param.data = quantilization.Quantizer_nonlinear(self.nbits).apply(param.data)
+                param.data = quantilization.Quantizer_nonlinear(self.nbits).apply(param.data,self.nbits)
         x = self.features(x)
         x = x.view(-1, 4*4*50)
         x = self.classifier(x)
