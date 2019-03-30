@@ -69,7 +69,6 @@ for nbits in range(1,9):
     #net = models_quantilization.conv_and_fc_quan(nbits,do_linear=True).to(device)
     #net = models_quantilization.conv_and_fc_quan(nbits,do_linear=False).to(device)
     #do_quan = True
-    #do_quan = False
     net.train()
     
     # Loss and Optimizer

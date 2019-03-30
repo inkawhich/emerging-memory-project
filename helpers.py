@@ -53,18 +53,21 @@ def test_model_AT(model,device,loader):
 	model.train()
 	return acc_sum/cnt,loss_sum/cnt
 #test data and apply quantilization
-    
 
-######QUAN
-    
 def quan_param(model,nbits,do_linear):
-    for param in model.parameters():
+    s = {}
+    for index,param in enumerate(model.parameters()):
+        s[index]=param.data
         if do_linear:
             param.data=quantilization.Quantizer(nbits).apply(param.data,nbits)
         else:
             param.data=quantilization.Quantizer_nonlinear(nbits).apply(param.data,nbits)
+    return s
+def recover_param(model,s):
+    for index,param in enumerate(model.parameters()):
+        param.data=s[index]
 def test_model_quan(model,device,loader,nbits,do_linear):
-    quan_param(model,nbits,do_linear)
+    s=quan_param(model,nbits,do_linear)
     model.eval()
     acc_sum = 0.;loss_sum = 0.;cnt = 0.
     with torch.no_grad():
@@ -76,11 +79,12 @@ def test_model_quan(model,device,loader,nbits,do_linear):
             correct = pred.eq(lbl.view_as(pred)).sum().item()
             acc_sum += correct
             cnt += lbl.size(0)
+    recover_param(model,s)
     model.train()
     return acc_sum/cnt,loss_sum/cnt
 
 def test_model_quan_AT(model,device,loader,nbits,do_linear):
-    quan_param(model,nbits,do_linear)
+    s=quan_param(model,nbits,do_linear)
     model.eval()
     acc_sum = 0.;loss_sum = 0.;cnt = 0.
     #with torch.no_grad():
@@ -93,5 +97,6 @@ def test_model_quan_AT(model,device,loader,nbits,do_linear):
         correct = pred.eq(lbl.view_as(pred)).sum().item()
         acc_sum += correct
         cnt += lbl.size(0)
+    recover_param(model,s)
     model.train()
     return acc_sum/cnt,loss_sum/cnt
