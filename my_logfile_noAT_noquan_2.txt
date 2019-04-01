@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "train.py", line 64, in <module>
+    net = models.conv_and_fc().to(device)
+  File "/home/xy92/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 381, in to
+    return self._apply(convert)
+  File "/home/xy92/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 187, in _apply
+    module._apply(fn)
+  File "/home/xy92/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 187, in _apply
+    module._apply(fn)
+  File "/home/xy92/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 193, in _apply
+    param.data = fn(param.data)
+  File "/home/xy92/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 379, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
