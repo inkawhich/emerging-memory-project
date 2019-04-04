@@ -70,8 +70,8 @@ class Quantizer_nonlinear(torch.autograd.Function):
         n = float(2 ** nbits - 1)
         input_norm = input/torch.max(torch.abs(input))
         input_norm = torch.sign(input_norm)*1/np.log(1+n)*torch.log(1+n*torch.abs(input_norm))
-        
         input = input_norm*torch.max(torch.abs(input))*n
+        #return input_norm*torch.max(torch.abs(input))
         return input.round() / n
     @staticmethod
     def backward(self, grad_output):

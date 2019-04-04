@@ -54,7 +54,7 @@ test_loader = torch.utils.data.DataLoader(
 
 
 for nbits in range(1,9):
-#for nbits in [8]:
+#for nbits in [4,8,12,16]:
     ##################################################################
     # Load Model
     ##################################################################
@@ -69,6 +69,12 @@ for nbits in range(1,9):
     #net = models_quantilization.conv_and_fc_quan(nbits,do_linear=True).to(device)
     #net = models_quantilization.conv_and_fc_quan(nbits,do_linear=False).to(device)
     #do_quan = True
+    #net = models_quantilization.all_fc_quan(nbits,do_linear=True).to(device)
+    #net = models_quantilization.all_fc_quan(nbits,do_linear=False).to(device)
+    #do_quan = True
+    #net = models_quantilization.all_conv_quan(nbits,do_linear=True).to(device)
+    #net = models_quantilization.all_conv_quan(nbits,do_linear=False).to(device)
+    #do_quan = True 
     net.train()
     
     # Loss and Optimizer
@@ -139,10 +145,13 @@ for nbits in range(1,9):
             print("[Normal training Linear Quantilized testing]AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan_AT,valacc_quan_AT))
             valacc_quan,valloss_quan = helpers.test_model_quan(net,device,test_loader,nbits,do_linear=False)
             print("[Normal training NonLinear Quantilized testing]Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan,valacc_quan))
-            valacc_quan_AT,valloss_quan_AT = helpers.test_model_quan_AT(net,device,test_loader,nbits,do_linear=False)
-            print("[Normal training NonLinear Quantilized testing]AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan_AT,valacc_quan_AT))
+            valacc_quan_AT_nonlinear,valloss_quan_AT_nonlinear = helpers.test_model_quan_AT(net,device,test_loader,nbits,do_linear=False)
+            print("[Normal training NonLinear Quantilized testing]AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_quan_AT_nonlinear,valacc_quan_AT_nonlinear))
+            #valacc_AT,valloss_AT = helpers.test_model_AT(net,device,test_loader)
+            #print("AT dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss_AT,valacc_AT))
+            #valacc,valloss = helpers.test_model(net,device,test_loader)
+            #print("Clean dataset testing:[{}/{}] val_loss: {:.6f} val_acc: {:.6f}".format(epoch,num_epochs,valloss,valacc))
     # Save model
-
     #if save_model:
      #       torch.save(net.state_dict(),checkpoint)
     			
