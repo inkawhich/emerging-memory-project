@@ -15,6 +15,10 @@ class all_fc(nn.Module):
             nn.ReLU(inplace=True),
             nn.Linear(500, 500),
             nn.ReLU(inplace=True),
+            nn.Linear(500, 500),
+            nn.ReLU(inplace=True),
+            nn.Linear(500, 500),
+            nn.ReLU(inplace=True),
             nn.Linear(500, 10),
         )
     def forward(self,x):
@@ -45,6 +49,27 @@ class conv_and_fc(nn.Module):
     def forward(self, x):
         x = self.features(x)
         x = x.view(-1, 4*4*50)
+        x = self.classifier(x)
+        return x
+class conv_and_fc_big(nn.Module):
+    def __init__(self):
+        super(conv_and_fc_big, self).__init__()
+        self.features = nn.Sequential(
+            nn.Conv2d(1, 40, 5, 1),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2,2),
+            nn.Conv2d(40, 100, 5, 1),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2,2),
+            )
+        self.classifier = nn.Sequential(
+            nn.Linear(4*4*100, 1000),
+            nn.ReLU(inplace=True),
+            nn.Linear(1000, 10),
+            )
+    def forward(self, x):
+        x = self.features(x)
+        x = x.view(-1, 4*4*100)
         x = self.classifier(x)
         return x
 

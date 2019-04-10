@@ -1,0 +1,120 @@
+AT_alpha:0.01
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021672 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021669 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021669 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021669 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021668 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021669 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021667 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021670 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021671 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021669 val_acc: 0.000000
+AT_alpha:0.02
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021999 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.022000 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021998 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021998 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.022000 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.022001 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.022001 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021999 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021997 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.022002 val_acc: 0.000000
+AT_alpha:0.03
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021505 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021502 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021506 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021506 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021503 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021505 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021505 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021504 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021505 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021507 val_acc: 0.000000
+AT_alpha:0.04
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021687 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021685 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021684 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021687 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021684 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021682 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021686 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021688 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021686 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021686 val_acc: 0.000000
+AT_alpha:0.05
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021718 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021717 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021715 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021716 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021716 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021717 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021718 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021718 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021718 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021717 val_acc: 0.000000
+AT_alpha:0.06
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021441 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021442 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021441 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021440 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021441 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021444 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021441 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021443 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021443 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021442 val_acc: 0.000000
+AT_alpha:0.07
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021433 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021432 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021431 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021433 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021432 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021432 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021431 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021432 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021431 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021433 val_acc: 0.000000
+AT_alpha:0.08
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021457 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021458 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021455 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021456 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021457 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021458 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021455 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021457 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021456 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021459 val_acc: 0.000000
+AT_alpha:0.09
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.022439 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.022437 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.022437 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.022436 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.022438 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.022437 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.022438 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.022437 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.022437 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.022440 val_acc: 0.000000
+AT_alpha:0.1
+nbits:8
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/10] val_loss: 0.021321 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/10] val_loss: 0.021319 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/10] val_loss: 0.021322 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/10] val_loss: 0.021323 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/10] val_loss: 0.021321 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/10] val_loss: 0.021323 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/10] val_loss: 0.021319 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/10] val_loss: 0.021320 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/10] val_loss: 0.021321 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/10] val_loss: 0.021320 val_acc: 0.000000
