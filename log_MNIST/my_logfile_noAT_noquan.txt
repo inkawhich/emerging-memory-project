@@ -1,0 +1,1584 @@
+nbits:1
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018004 train_acc: 0.054688
+[0/20][100/469] train_loss: 0.004438 train_acc: 0.827661
+[0/20][200/469] train_loss: 0.002786 train_acc: 0.892491
+[0/20][300/469] train_loss: 0.002118 train_acc: 0.918034
+[0/20][400/469] train_loss: 0.001748 train_acc: 0.932298
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.018132 val_acc: 0.123900
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.018549 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.047282 val_acc: 0.965700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.824582 val_acc: 0.923500
+[1/20][0/469] train_loss: 0.000269 train_acc: 0.992188
+[1/20][100/469] train_loss: 0.000470 train_acc: 0.981358
+[1/20][200/469] train_loss: 0.000439 train_acc: 0.982432
+[1/20][300/469] train_loss: 0.000421 train_acc: 0.983129
+[1/20][400/469] train_loss: 0.000406 train_acc: 0.983693
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.018194 val_acc: 0.113500
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.018273 val_acc: 0.113500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.075943 val_acc: 0.979500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 1.239683 val_acc: 0.958100
+[2/20][0/469] train_loss: 0.000187 train_acc: 0.992188
+[2/20][100/469] train_loss: 0.000286 train_acc: 0.988011
+[2/20][200/469] train_loss: 0.000289 train_acc: 0.987718
+[2/20][300/469] train_loss: 0.000277 train_acc: 0.988476
+[2/20][400/469] train_loss: 0.000277 train_acc: 0.988603
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.018198 val_acc: 0.115300
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.018362 val_acc: 0.110100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.172049 val_acc: 0.962800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 2.732285 val_acc: 0.927700
+[3/20][0/469] train_loss: 0.000060 train_acc: 1.000000
+[3/20][100/469] train_loss: 0.000204 train_acc: 0.992961
+[3/20][200/469] train_loss: 0.000197 train_acc: 0.992654
+[3/20][300/469] train_loss: 0.000207 train_acc: 0.991746
+[3/20][400/469] train_loss: 0.000211 train_acc: 0.991369
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.018196 val_acc: 0.113700
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.018431 val_acc: 0.112300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.237686 val_acc: 0.954200
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 5.269336 val_acc: 0.883300
+[4/20][0/469] train_loss: 0.000042 train_acc: 1.000000
+[4/20][100/469] train_loss: 0.000125 train_acc: 0.995978
+[4/20][200/469] train_loss: 0.000159 train_acc: 0.994403
+[4/20][300/469] train_loss: 0.000172 train_acc: 0.993433
+[4/20][400/469] train_loss: 0.000166 train_acc: 0.993571
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.018124 val_acc: 0.119000
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.018555 val_acc: 0.113000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.093216 val_acc: 0.981700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 1.610633 val_acc: 0.969100
+[5/20][0/469] train_loss: 0.000140 train_acc: 0.992188
+[5/20][100/469] train_loss: 0.000087 train_acc: 0.996210
+[5/20][200/469] train_loss: 0.000098 train_acc: 0.995997
+[5/20][300/469] train_loss: 0.000110 train_acc: 0.995354
+[5/20][400/469] train_loss: 0.000124 train_acc: 0.994584
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.018117 val_acc: 0.123800
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.018405 val_acc: 0.112600
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.344406 val_acc: 0.960000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 7.074819 val_acc: 0.901000
+[6/20][0/469] train_loss: 0.000085 train_acc: 0.992188
+[6/20][100/469] train_loss: 0.000100 train_acc: 0.995359
+[6/20][200/469] train_loss: 0.000110 train_acc: 0.994986
+[6/20][300/469] train_loss: 0.000113 train_acc: 0.994939
+[6/20][400/469] train_loss: 0.000115 train_acc: 0.995051
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.018096 val_acc: 0.108300
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.018645 val_acc: 0.031700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.195606 val_acc: 0.972700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 6.233869 val_acc: 0.906800
+[7/20][0/469] train_loss: 0.000005 train_acc: 1.000000
+[7/20][100/469] train_loss: 0.000077 train_acc: 0.997061
+[7/20][200/469] train_loss: 0.000067 train_acc: 0.997046
+[7/20][300/469] train_loss: 0.000070 train_acc: 0.997041
+[7/20][400/469] train_loss: 0.000076 train_acc: 0.996707
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.018078 val_acc: 0.161800
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.018902 val_acc: 0.002100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.453063 val_acc: 0.947600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 9.205758 val_acc: 0.886900
+[8/20][0/469] train_loss: 0.000010 train_acc: 1.000000
+[8/20][100/469] train_loss: 0.000053 train_acc: 0.997989
+[8/20][200/469] train_loss: 0.000070 train_acc: 0.997318
+[8/20][300/469] train_loss: 0.000073 train_acc: 0.997119
+[8/20][400/469] train_loss: 0.000072 train_acc: 0.997019
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.018026 val_acc: 0.176300
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.018707 val_acc: 0.000900
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.282277 val_acc: 0.969900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 5.832376 val_acc: 0.933500
+[9/20][0/469] train_loss: 0.000001 train_acc: 1.000000
+[9/20][100/469] train_loss: 0.000056 train_acc: 0.997679
+[9/20][200/469] train_loss: 0.000054 train_acc: 0.997668
+[9/20][300/469] train_loss: 0.000059 train_acc: 0.997404
+[9/20][400/469] train_loss: 0.000068 train_acc: 0.997195
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.018126 val_acc: 0.080800
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.019232 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.312667 val_acc: 0.965100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 6.626781 val_acc: 0.922300
+[10/20][0/469] train_loss: 0.000283 train_acc: 0.984375
+[10/20][100/469] train_loss: 0.000066 train_acc: 0.997061
+[10/20][200/469] train_loss: 0.000057 train_acc: 0.997240
+[10/20][300/469] train_loss: 0.000062 train_acc: 0.997327
+[10/20][400/469] train_loss: 0.000061 train_acc: 0.997311
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.018152 val_acc: 0.151500
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.018583 val_acc: 0.041100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.181128 val_acc: 0.980700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 2.673480 val_acc: 0.969600
+[11/20][0/469] train_loss: 0.000096 train_acc: 0.992188
+[11/20][100/469] train_loss: 0.000044 train_acc: 0.998453
+[11/20][200/469] train_loss: 0.000047 train_acc: 0.998368
+[11/20][300/469] train_loss: 0.000055 train_acc: 0.997820
+[11/20][400/469] train_loss: 0.000055 train_acc: 0.997837
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.018202 val_acc: 0.149300
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.019372 val_acc: 0.041000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.173224 val_acc: 0.980800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 2.723119 val_acc: 0.970700
+[12/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[12/20][100/469] train_loss: 0.000034 train_acc: 0.998608
+[12/20][200/469] train_loss: 0.000031 train_acc: 0.998523
+[12/20][300/469] train_loss: 0.000039 train_acc: 0.998209
+[12/20][400/469] train_loss: 0.000040 train_acc: 0.998169
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.018169 val_acc: 0.160900
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.018698 val_acc: 0.074500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.234149 val_acc: 0.980600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 3.919294 val_acc: 0.968000
+[13/20][0/469] train_loss: 0.000018 train_acc: 1.000000
+[13/20][100/469] train_loss: 0.000023 train_acc: 0.998762
+[13/20][200/469] train_loss: 0.000019 train_acc: 0.999106
+[13/20][300/469] train_loss: 0.000023 train_acc: 0.998988
+[13/20][400/469] train_loss: 0.000039 train_acc: 0.998344
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.018109 val_acc: 0.156600
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.019561 val_acc: 0.113500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.257998 val_acc: 0.970700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 4.294956 val_acc: 0.958500
+[14/20][0/469] train_loss: 0.000016 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000030 train_acc: 0.998762
+[14/20][200/469] train_loss: 0.000025 train_acc: 0.999028
+[14/20][300/469] train_loss: 0.000025 train_acc: 0.998884
+[14/20][400/469] train_loss: 0.000042 train_acc: 0.998363
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.018079 val_acc: 0.168100
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.019694 val_acc: 0.000900
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.380821 val_acc: 0.956600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 11.707108 val_acc: 0.884300
+[15/20][0/469] train_loss: 0.000003 train_acc: 1.000000
+[15/20][100/469] train_loss: 0.000017 train_acc: 0.999226
+[15/20][200/469] train_loss: 0.000024 train_acc: 0.999028
+[15/20][300/469] train_loss: 0.000025 train_acc: 0.999066
+[15/20][400/469] train_loss: 0.000032 train_acc: 0.998617
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.018043 val_acc: 0.158800
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.019677 val_acc: 0.110100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.240429 val_acc: 0.975800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 3.422896 val_acc: 0.964800
+[16/20][0/469] train_loss: 0.000068 train_acc: 0.992188
+[16/20][100/469] train_loss: 0.000029 train_acc: 0.998530
+[16/20][200/469] train_loss: 0.000035 train_acc: 0.998329
+[16/20][300/469] train_loss: 0.000029 train_acc: 0.998728
+[16/20][400/469] train_loss: 0.000026 train_acc: 0.998909
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.018013 val_acc: 0.152700
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.018943 val_acc: 0.106700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.211828 val_acc: 0.982500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 3.052168 val_acc: 0.974300
+[17/20][0/469] train_loss: 0.000014 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000026 train_acc: 0.998685
+[17/20][200/469] train_loss: 0.000032 train_acc: 0.998601
+[17/20][300/469] train_loss: 0.000034 train_acc: 0.998469
+[17/20][400/469] train_loss: 0.000040 train_acc: 0.998208
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.017977 val_acc: 0.170000
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.019963 val_acc: 0.059700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.223817 val_acc: 0.974700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 3.917723 val_acc: 0.959900
+[18/20][0/469] train_loss: 0.000005 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000030 train_acc: 0.998685
+[18/20][200/469] train_loss: 0.000026 train_acc: 0.998912
+[18/20][300/469] train_loss: 0.000031 train_acc: 0.998650
+[18/20][400/469] train_loss: 0.000032 train_acc: 0.998519
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.018005 val_acc: 0.140800
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.018756 val_acc: 0.095500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.321136 val_acc: 0.971900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 5.116005 val_acc: 0.955500
+[19/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000027 train_acc: 0.999226
+[19/20][200/469] train_loss: 0.000026 train_acc: 0.999262
+[19/20][300/469] train_loss: 0.000030 train_acc: 0.999143
+[19/20][400/469] train_loss: 0.000025 train_acc: 0.999240
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.018038 val_acc: 0.154800
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.019258 val_acc: 0.113400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.231961 val_acc: 0.980300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 3.133499 val_acc: 0.973900
+nbits:2
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.017991 train_acc: 0.078125
+[0/20][100/469] train_loss: 0.004407 train_acc: 0.832147
+[0/20][200/469] train_loss: 0.002782 train_acc: 0.893696
+[0/20][300/469] train_loss: 0.002105 train_acc: 0.918968
+[0/20][400/469] train_loss: 0.001747 train_acc: 0.932493
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000529 val_acc: 0.979800
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.066657 val_acc: 0.000800
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.018645 val_acc: 0.970500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.536893 val_acc: 0.871700
+[1/20][0/469] train_loss: 0.000674 train_acc: 0.984375
+[1/20][100/469] train_loss: 0.000492 train_acc: 0.979657
+[1/20][200/469] train_loss: 0.000434 train_acc: 0.982626
+[1/20][300/469] train_loss: 0.000416 train_acc: 0.983518
+[1/20][400/469] train_loss: 0.000414 train_acc: 0.983674
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000411 val_acc: 0.982700
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.080409 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.026403 val_acc: 0.974500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.670773 val_acc: 0.913200
+[2/20][0/469] train_loss: 0.000495 train_acc: 0.976562
+[2/20][100/469] train_loss: 0.000339 train_acc: 0.985922
+[2/20][200/469] train_loss: 0.000309 train_acc: 0.987523
+[2/20][300/469] train_loss: 0.000307 train_acc: 0.987360
+[2/20][400/469] train_loss: 0.000290 train_acc: 0.987999
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000284 val_acc: 0.988000
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.087384 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.026325 val_acc: 0.980900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.530103 val_acc: 0.956900
+[3/20][0/469] train_loss: 0.000042 train_acc: 1.000000
+[3/20][100/469] train_loss: 0.000187 train_acc: 0.991955
+[3/20][200/469] train_loss: 0.000183 train_acc: 0.992343
+[3/20][300/469] train_loss: 0.000201 train_acc: 0.991591
+[3/20][400/469] train_loss: 0.000204 train_acc: 0.991506
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000314 val_acc: 0.986700
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.100080 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.019435 val_acc: 0.987600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.336771 val_acc: 0.972000
+[4/20][0/469] train_loss: 0.000195 train_acc: 0.992188
+[4/20][100/469] train_loss: 0.000141 train_acc: 0.994353
+[4/20][200/469] train_loss: 0.000142 train_acc: 0.994170
+[4/20][300/469] train_loss: 0.000146 train_acc: 0.993667
+[4/20][400/469] train_loss: 0.000148 train_acc: 0.993668
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000241 val_acc: 0.990100
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.093647 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.045665 val_acc: 0.982100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.630580 val_acc: 0.967100
+[5/20][0/469] train_loss: 0.000136 train_acc: 1.000000
+[5/20][100/469] train_loss: 0.000119 train_acc: 0.995359
+[5/20][200/469] train_loss: 0.000115 train_acc: 0.995452
+[5/20][300/469] train_loss: 0.000117 train_acc: 0.995198
+[5/20][400/469] train_loss: 0.000118 train_acc: 0.994993
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000347 val_acc: 0.985900
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.109531 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.023582 val_acc: 0.983400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.592974 val_acc: 0.953900
+[6/20][0/469] train_loss: 0.000093 train_acc: 1.000000
+[6/20][100/469] train_loss: 0.000105 train_acc: 0.995900
+[6/20][200/469] train_loss: 0.000104 train_acc: 0.995763
+[6/20][300/469] train_loss: 0.000102 train_acc: 0.995743
+[6/20][400/469] train_loss: 0.000107 train_acc: 0.995441
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000359 val_acc: 0.986600
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.099267 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.031356 val_acc: 0.983000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.628232 val_acc: 0.958500
+[7/20][0/469] train_loss: 0.000044 train_acc: 1.000000
+[7/20][100/469] train_loss: 0.000085 train_acc: 0.996983
+[7/20][200/469] train_loss: 0.000089 train_acc: 0.996424
+[7/20][300/469] train_loss: 0.000089 train_acc: 0.996340
+[7/20][400/469] train_loss: 0.000084 train_acc: 0.996376
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000418 val_acc: 0.984200
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.122073 val_acc: 0.000800
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.024194 val_acc: 0.984100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.567776 val_acc: 0.955300
+[8/20][0/469] train_loss: 0.000108 train_acc: 0.992188
+[8/20][100/469] train_loss: 0.000044 train_acc: 0.998144
+[8/20][200/469] train_loss: 0.000057 train_acc: 0.997785
+[8/20][300/469] train_loss: 0.000060 train_acc: 0.997560
+[8/20][400/469] train_loss: 0.000060 train_acc: 0.997526
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000277 val_acc: 0.989600
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.122257 val_acc: 0.001000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.045534 val_acc: 0.984200
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.735375 val_acc: 0.969200
+[9/20][0/469] train_loss: 0.000083 train_acc: 1.000000
+[9/20][100/469] train_loss: 0.000047 train_acc: 0.998066
+[9/20][200/469] train_loss: 0.000051 train_acc: 0.997668
+[9/20][300/469] train_loss: 0.000057 train_acc: 0.997430
+[9/20][400/469] train_loss: 0.000062 train_acc: 0.997214
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000344 val_acc: 0.987600
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.122532 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.087109 val_acc: 0.979500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 1.482456 val_acc: 0.958900
+[10/20][0/469] train_loss: 0.000007 train_acc: 1.000000
+[10/20][100/469] train_loss: 0.000080 train_acc: 0.995746
+[10/20][200/469] train_loss: 0.000064 train_acc: 0.996774
+[10/20][300/469] train_loss: 0.000062 train_acc: 0.996937
+[10/20][400/469] train_loss: 0.000063 train_acc: 0.997000
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000326 val_acc: 0.989400
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.131510 val_acc: 0.001100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.067890 val_acc: 0.984200
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 1.038626 val_acc: 0.973700
+[11/20][0/469] train_loss: 0.000003 train_acc: 1.000000
+[11/20][100/469] train_loss: 0.000041 train_acc: 0.998453
+[11/20][200/469] train_loss: 0.000041 train_acc: 0.998368
+[11/20][300/469] train_loss: 0.000045 train_acc: 0.998183
+[11/20][400/469] train_loss: 0.000052 train_acc: 0.997876
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000452 val_acc: 0.984600
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.144936 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.051971 val_acc: 0.984000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.854662 val_acc: 0.973500
+[12/20][0/469] train_loss: 0.000165 train_acc: 0.992188
+[12/20][100/469] train_loss: 0.000037 train_acc: 0.998762
+[12/20][200/469] train_loss: 0.000047 train_acc: 0.998057
+[12/20][300/469] train_loss: 0.000048 train_acc: 0.998053
+[12/20][400/469] train_loss: 0.000049 train_acc: 0.997954
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000443 val_acc: 0.984600
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.159866 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.026211 val_acc: 0.984700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.591090 val_acc: 0.962800
+[13/20][0/469] train_loss: 0.000073 train_acc: 1.000000
+[13/20][100/469] train_loss: 0.000040 train_acc: 0.998376
+[13/20][200/469] train_loss: 0.000032 train_acc: 0.998601
+[13/20][300/469] train_loss: 0.000034 train_acc: 0.998521
+[13/20][400/469] train_loss: 0.000039 train_acc: 0.998266
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000428 val_acc: 0.986400
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.140065 val_acc: 0.002100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.022641 val_acc: 0.986900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.398758 val_acc: 0.972400
+[14/20][0/469] train_loss: 0.000015 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000029 train_acc: 0.998762
+[14/20][200/469] train_loss: 0.000033 train_acc: 0.998640
+[14/20][300/469] train_loss: 0.000029 train_acc: 0.998728
+[14/20][400/469] train_loss: 0.000030 train_acc: 0.998695
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000467 val_acc: 0.983000
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.145287 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.039627 val_acc: 0.976600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.827840 val_acc: 0.946900
+[15/20][0/469] train_loss: 0.000047 train_acc: 0.992188
+[15/20][100/469] train_loss: 0.000041 train_acc: 0.998376
+[15/20][200/469] train_loss: 0.000041 train_acc: 0.998251
+[15/20][300/469] train_loss: 0.000043 train_acc: 0.998053
+[15/20][400/469] train_loss: 0.000049 train_acc: 0.997837
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000362 val_acc: 0.987200
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.147392 val_acc: 0.000600
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.035050 val_acc: 0.982700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.730014 val_acc: 0.955200
+[16/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000033 train_acc: 0.998994
+[16/20][200/469] train_loss: 0.000044 train_acc: 0.997823
+[16/20][300/469] train_loss: 0.000039 train_acc: 0.998339
+[16/20][400/469] train_loss: 0.000034 train_acc: 0.998578
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000436 val_acc: 0.986700
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.165607 val_acc: 0.000600
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.042349 val_acc: 0.979100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.837375 val_acc: 0.957200
+[17/20][0/469] train_loss: 0.000002 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000017 train_acc: 0.999226
+[17/20][200/469] train_loss: 0.000016 train_acc: 0.999378
+[17/20][300/469] train_loss: 0.000014 train_acc: 0.999455
+[17/20][400/469] train_loss: 0.000014 train_acc: 0.999454
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000362 val_acc: 0.988200
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.167704 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.051397 val_acc: 0.982600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.917027 val_acc: 0.968700
+[18/20][0/469] train_loss: 0.000001 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000041 train_acc: 0.998298
+[18/20][200/469] train_loss: 0.000025 train_acc: 0.998951
+[18/20][300/469] train_loss: 0.000027 train_acc: 0.998806
+[18/20][400/469] train_loss: 0.000028 train_acc: 0.998831
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000460 val_acc: 0.984600
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.175416 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.047454 val_acc: 0.982700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.975868 val_acc: 0.962200
+[19/20][0/469] train_loss: 0.000023 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000023 train_acc: 0.998840
+[19/20][200/469] train_loss: 0.000022 train_acc: 0.998989
+[19/20][300/469] train_loss: 0.000023 train_acc: 0.999040
+[19/20][400/469] train_loss: 0.000028 train_acc: 0.998851
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000389 val_acc: 0.987000
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.173719 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.038573 val_acc: 0.981100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.737052 val_acc: 0.961900
+nbits:3
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018005 train_acc: 0.070312
+[0/20][100/469] train_loss: 0.004707 train_acc: 0.820699
+[0/20][200/469] train_loss: 0.002922 train_acc: 0.888176
+[0/20][300/469] train_loss: 0.002214 train_acc: 0.915386
+[0/20][400/469] train_loss: 0.001808 train_acc: 0.930973
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000417 val_acc: 0.983500
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.065879 val_acc: 0.004100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000750 val_acc: 0.972200
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.066775 val_acc: 0.000400
+[1/20][0/469] train_loss: 0.000386 train_acc: 0.984375
+[1/20][100/469] train_loss: 0.000436 train_acc: 0.981281
+[1/20][200/469] train_loss: 0.000422 train_acc: 0.982937
+[1/20][300/469] train_loss: 0.000400 train_acc: 0.983830
+[1/20][400/469] train_loss: 0.000392 train_acc: 0.984453
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000349 val_acc: 0.987000
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.078241 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000711 val_acc: 0.975600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.063938 val_acc: 0.000000
+[2/20][0/469] train_loss: 0.000143 train_acc: 0.992188
+[2/20][100/469] train_loss: 0.000285 train_acc: 0.989093
+[2/20][200/469] train_loss: 0.000273 train_acc: 0.989350
+[2/20][300/469] train_loss: 0.000263 train_acc: 0.989592
+[2/20][400/469] train_loss: 0.000262 train_acc: 0.989635
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000286 val_acc: 0.988600
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.097497 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000489 val_acc: 0.980600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.090428 val_acc: 0.000100
+[3/20][0/469] train_loss: 0.000202 train_acc: 1.000000
+[3/20][100/469] train_loss: 0.000193 train_acc: 0.992729
+[3/20][200/469] train_loss: 0.000178 train_acc: 0.993548
+[3/20][300/469] train_loss: 0.000182 train_acc: 0.993044
+[3/20][400/469] train_loss: 0.000182 train_acc: 0.992733
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000414 val_acc: 0.982200
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.104058 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000934 val_acc: 0.960700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.094347 val_acc: 0.000100
+[4/20][0/469] train_loss: 0.000079 train_acc: 0.992188
+[4/20][100/469] train_loss: 0.000148 train_acc: 0.993889
+[4/20][200/469] train_loss: 0.000139 train_acc: 0.994481
+[4/20][300/469] train_loss: 0.000143 train_acc: 0.994342
+[4/20][400/469] train_loss: 0.000151 train_acc: 0.993999
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000277 val_acc: 0.989300
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.100623 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000353 val_acc: 0.986300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.092126 val_acc: 0.000000
+[5/20][0/469] train_loss: 0.000014 train_acc: 1.000000
+[5/20][100/469] train_loss: 0.000132 train_acc: 0.993967
+[5/20][200/469] train_loss: 0.000131 train_acc: 0.994053
+[5/20][300/469] train_loss: 0.000136 train_acc: 0.994056
+[5/20][400/469] train_loss: 0.000131 train_acc: 0.994370
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000278 val_acc: 0.988700
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.108744 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.001143 val_acc: 0.954000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.112126 val_acc: 0.000000
+[6/20][0/469] train_loss: 0.000502 train_acc: 0.976562
+[6/20][100/469] train_loss: 0.000087 train_acc: 0.996519
+[6/20][200/469] train_loss: 0.000079 train_acc: 0.996696
+[6/20][300/469] train_loss: 0.000093 train_acc: 0.995977
+[6/20][400/469] train_loss: 0.000095 train_acc: 0.995928
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000309 val_acc: 0.988700
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.116756 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000299 val_acc: 0.988300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.132926 val_acc: 0.000000
+[7/20][0/469] train_loss: 0.000016 train_acc: 1.000000
+[7/20][100/469] train_loss: 0.000059 train_acc: 0.998144
+[7/20][200/469] train_loss: 0.000063 train_acc: 0.997668
+[7/20][300/469] train_loss: 0.000071 train_acc: 0.997327
+[7/20][400/469] train_loss: 0.000083 train_acc: 0.996668
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000254 val_acc: 0.991100
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.138551 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000528 val_acc: 0.980700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.142377 val_acc: 0.000100
+[8/20][0/469] train_loss: 0.000040 train_acc: 1.000000
+[8/20][100/469] train_loss: 0.000066 train_acc: 0.997370
+[8/20][200/469] train_loss: 0.000060 train_acc: 0.997279
+[8/20][300/469] train_loss: 0.000070 train_acc: 0.996885
+[8/20][400/469] train_loss: 0.000074 train_acc: 0.996844
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000245 val_acc: 0.991300
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.136887 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000487 val_acc: 0.981500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.141521 val_acc: 0.000000
+[9/20][0/469] train_loss: 0.000005 train_acc: 1.000000
+[9/20][100/469] train_loss: 0.000046 train_acc: 0.997834
+[9/20][200/469] train_loss: 0.000047 train_acc: 0.997785
+[9/20][300/469] train_loss: 0.000051 train_acc: 0.997846
+[9/20][400/469] train_loss: 0.000053 train_acc: 0.997857
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000286 val_acc: 0.990100
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.146068 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000529 val_acc: 0.980000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.144441 val_acc: 0.002300
+[10/20][0/469] train_loss: 0.000071 train_acc: 0.992188
+[10/20][100/469] train_loss: 0.000049 train_acc: 0.997757
+[10/20][200/469] train_loss: 0.000055 train_acc: 0.997474
+[10/20][300/469] train_loss: 0.000055 train_acc: 0.997534
+[10/20][400/469] train_loss: 0.000054 train_acc: 0.997526
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000331 val_acc: 0.989000
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.160330 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000684 val_acc: 0.977100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.188579 val_acc: 0.000100
+[11/20][0/469] train_loss: 0.000102 train_acc: 0.992188
+[11/20][100/469] train_loss: 0.000045 train_acc: 0.998221
+[11/20][200/469] train_loss: 0.000042 train_acc: 0.998251
+[11/20][300/469] train_loss: 0.000054 train_acc: 0.997742
+[11/20][400/469] train_loss: 0.000052 train_acc: 0.997760
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000254 val_acc: 0.991600
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.161504 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000375 val_acc: 0.988100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.175727 val_acc: 0.000000
+[12/20][0/469] train_loss: 0.000008 train_acc: 1.000000
+[12/20][100/469] train_loss: 0.000046 train_acc: 0.998221
+[12/20][200/469] train_loss: 0.000043 train_acc: 0.998406
+[12/20][300/469] train_loss: 0.000048 train_acc: 0.998131
+[12/20][400/469] train_loss: 0.000049 train_acc: 0.998071
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000304 val_acc: 0.989800
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.174158 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000658 val_acc: 0.979100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.190516 val_acc: 0.003200
+[13/20][0/469] train_loss: 0.000259 train_acc: 0.984375
+[13/20][100/469] train_loss: 0.000022 train_acc: 0.999072
+[13/20][200/469] train_loss: 0.000022 train_acc: 0.999223
+[13/20][300/469] train_loss: 0.000027 train_acc: 0.998910
+[13/20][400/469] train_loss: 0.000032 train_acc: 0.998753
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000318 val_acc: 0.990900
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.190667 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000933 val_acc: 0.976700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.287555 val_acc: 0.001500
+[14/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000027 train_acc: 0.998840
+[14/20][200/469] train_loss: 0.000032 train_acc: 0.998795
+[14/20][300/469] train_loss: 0.000027 train_acc: 0.999040
+[14/20][400/469] train_loss: 0.000024 train_acc: 0.999104
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000367 val_acc: 0.991000
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.208946 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000514 val_acc: 0.986000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.217237 val_acc: 0.002000
+[15/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[15/20][100/469] train_loss: 0.000039 train_acc: 0.998376
+[15/20][200/469] train_loss: 0.000045 train_acc: 0.997940
+[15/20][300/469] train_loss: 0.000048 train_acc: 0.998053
+[15/20][400/469] train_loss: 0.000044 train_acc: 0.998208
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000344 val_acc: 0.990100
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.203459 val_acc: 0.001000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.001157 val_acc: 0.968900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.284419 val_acc: 0.000900
+[16/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000058 train_acc: 0.997679
+[16/20][200/469] train_loss: 0.000054 train_acc: 0.997512
+[16/20][300/469] train_loss: 0.000050 train_acc: 0.997846
+[16/20][400/469] train_loss: 0.000043 train_acc: 0.998091
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000335 val_acc: 0.990800
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.224118 val_acc: 0.000700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.001948 val_acc: 0.943800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.242004 val_acc: 0.000000
+[17/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000020 train_acc: 0.998917
+[17/20][200/469] train_loss: 0.000025 train_acc: 0.998717
+[17/20][300/469] train_loss: 0.000027 train_acc: 0.998806
+[17/20][400/469] train_loss: 0.000025 train_acc: 0.998792
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000305 val_acc: 0.991800
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.225273 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000502 val_acc: 0.987100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.251384 val_acc: 0.002400
+[18/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000004 train_acc: 0.999845
+[18/20][200/469] train_loss: 0.000004 train_acc: 0.999845
+[18/20][300/469] train_loss: 0.000005 train_acc: 0.999740
+[18/20][400/469] train_loss: 0.000010 train_acc: 0.999649
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000361 val_acc: 0.990500
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.227013 val_acc: 0.000500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000757 val_acc: 0.979400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.258459 val_acc: 0.000600
+[19/20][0/469] train_loss: 0.000001 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000029 train_acc: 0.998608
+[19/20][200/469] train_loss: 0.000034 train_acc: 0.998562
+[19/20][300/469] train_loss: 0.000030 train_acc: 0.998728
+[19/20][400/469] train_loss: 0.000029 train_acc: 0.998792
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000444 val_acc: 0.989300
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.248356 val_acc: 0.000600
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000717 val_acc: 0.984100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.286963 val_acc: 0.009100
+nbits:4
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018021 train_acc: 0.101562
+[0/20][100/469] train_loss: 0.004507 train_acc: 0.834545
+[0/20][200/469] train_loss: 0.002906 train_acc: 0.892102
+[0/20][300/469] train_loss: 0.002229 train_acc: 0.916840
+[0/20][400/469] train_loss: 0.001847 train_acc: 0.930993
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000392 val_acc: 0.984500
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.066660 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000389 val_acc: 0.983800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.075290 val_acc: 0.000200
+[1/20][0/469] train_loss: 0.000761 train_acc: 0.953125
+[1/20][100/469] train_loss: 0.000467 train_acc: 0.980894
+[1/20][200/469] train_loss: 0.000473 train_acc: 0.981188
+[1/20][300/469] train_loss: 0.000449 train_acc: 0.982039
+[1/20][400/469] train_loss: 0.000433 train_acc: 0.982466
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000306 val_acc: 0.988400
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.072180 val_acc: 0.000800
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000339 val_acc: 0.985900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.079822 val_acc: 0.000100
+[2/20][0/469] train_loss: 0.000225 train_acc: 0.992188
+[2/20][100/469] train_loss: 0.000311 train_acc: 0.988784
+[2/20][200/469] train_loss: 0.000304 train_acc: 0.988340
+[2/20][300/469] train_loss: 0.000295 train_acc: 0.988502
+[2/20][400/469] train_loss: 0.000286 train_acc: 0.988856
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000305 val_acc: 0.987700
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.090677 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000332 val_acc: 0.987500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.101753 val_acc: 0.000100
+[3/20][0/469] train_loss: 0.000640 train_acc: 0.968750
+[3/20][100/469] train_loss: 0.000218 train_acc: 0.991491
+[3/20][200/469] train_loss: 0.000215 train_acc: 0.991332
+[3/20][300/469] train_loss: 0.000211 train_acc: 0.991487
+[3/20][400/469] train_loss: 0.000214 train_acc: 0.991311
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000261 val_acc: 0.989500
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.095020 val_acc: 0.002300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000311 val_acc: 0.987900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.111653 val_acc: 0.002100
+[4/20][0/469] train_loss: 0.000214 train_acc: 0.984375
+[4/20][100/469] train_loss: 0.000144 train_acc: 0.993812
+[4/20][200/469] train_loss: 0.000161 train_acc: 0.993120
+[4/20][300/469] train_loss: 0.000162 train_acc: 0.993174
+[4/20][400/469] train_loss: 0.000167 train_acc: 0.993025
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000202 val_acc: 0.991500
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.107483 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000216 val_acc: 0.991500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.127960 val_acc: 0.000000
+[5/20][0/469] train_loss: 0.000077 train_acc: 1.000000
+[5/20][100/469] train_loss: 0.000131 train_acc: 0.994895
+[5/20][200/469] train_loss: 0.000128 train_acc: 0.995141
+[5/20][300/469] train_loss: 0.000114 train_acc: 0.995743
+[5/20][400/469] train_loss: 0.000127 train_acc: 0.995032
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000226 val_acc: 0.990700
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.111960 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000234 val_acc: 0.990500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.121351 val_acc: 0.000000
+[6/20][0/469] train_loss: 0.000272 train_acc: 0.992188
+[6/20][100/469] train_loss: 0.000091 train_acc: 0.996132
+[6/20][200/469] train_loss: 0.000097 train_acc: 0.996113
+[6/20][300/469] train_loss: 0.000101 train_acc: 0.995743
+[6/20][400/469] train_loss: 0.000106 train_acc: 0.995519
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000274 val_acc: 0.988900
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.129124 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000321 val_acc: 0.988100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.148182 val_acc: 0.000200
+[7/20][0/469] train_loss: 0.000087 train_acc: 0.992188
+[7/20][100/469] train_loss: 0.000085 train_acc: 0.997215
+[7/20][200/469] train_loss: 0.000106 train_acc: 0.995841
+[7/20][300/469] train_loss: 0.000094 train_acc: 0.996340
+[7/20][400/469] train_loss: 0.000090 train_acc: 0.996318
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000227 val_acc: 0.991000
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.134896 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000242 val_acc: 0.990700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.148239 val_acc: 0.000200
+[8/20][0/469] train_loss: 0.000082 train_acc: 0.992188
+[8/20][100/469] train_loss: 0.000039 train_acc: 0.998376
+[8/20][200/469] train_loss: 0.000060 train_acc: 0.997279
+[8/20][300/469] train_loss: 0.000068 train_acc: 0.997015
+[8/20][400/469] train_loss: 0.000070 train_acc: 0.996902
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000285 val_acc: 0.989400
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.150948 val_acc: 0.001400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000310 val_acc: 0.989100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.166601 val_acc: 0.001100
+[9/20][0/469] train_loss: 0.000228 train_acc: 0.992188
+[9/20][100/469] train_loss: 0.000051 train_acc: 0.998298
+[9/20][200/469] train_loss: 0.000052 train_acc: 0.998057
+[9/20][300/469] train_loss: 0.000058 train_acc: 0.997638
+[9/20][400/469] train_loss: 0.000066 train_acc: 0.997331
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000342 val_acc: 0.987700
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.157432 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000366 val_acc: 0.987500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.177558 val_acc: 0.000300
+[10/20][0/469] train_loss: 0.000081 train_acc: 1.000000
+[10/20][100/469] train_loss: 0.000050 train_acc: 0.997912
+[10/20][200/469] train_loss: 0.000056 train_acc: 0.997823
+[10/20][300/469] train_loss: 0.000058 train_acc: 0.997508
+[10/20][400/469] train_loss: 0.000054 train_acc: 0.997701
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000244 val_acc: 0.990800
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.164079 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000282 val_acc: 0.990700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.176516 val_acc: 0.001200
+[11/20][0/469] train_loss: 0.000052 train_acc: 0.992188
+[11/20][100/469] train_loss: 0.000033 train_acc: 0.998453
+[11/20][200/469] train_loss: 0.000034 train_acc: 0.998406
+[11/20][300/469] train_loss: 0.000041 train_acc: 0.998105
+[11/20][400/469] train_loss: 0.000043 train_acc: 0.998110
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000274 val_acc: 0.989700
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.165254 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000309 val_acc: 0.988700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.176295 val_acc: 0.000000
+[12/20][0/469] train_loss: 0.000319 train_acc: 0.992188
+[12/20][100/469] train_loss: 0.000049 train_acc: 0.997989
+[12/20][200/469] train_loss: 0.000049 train_acc: 0.997746
+[12/20][300/469] train_loss: 0.000045 train_acc: 0.997950
+[12/20][400/469] train_loss: 0.000042 train_acc: 0.998130
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000257 val_acc: 0.992000
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.176020 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000300 val_acc: 0.991800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.186173 val_acc: 0.000300
+[13/20][0/469] train_loss: 0.000003 train_acc: 1.000000
+[13/20][100/469] train_loss: 0.000050 train_acc: 0.998221
+[13/20][200/469] train_loss: 0.000049 train_acc: 0.998018
+[13/20][300/469] train_loss: 0.000043 train_acc: 0.998313
+[13/20][400/469] train_loss: 0.000045 train_acc: 0.998208
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000282 val_acc: 0.991100
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.177260 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000304 val_acc: 0.991300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.198574 val_acc: 0.001900
+[14/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000040 train_acc: 0.998221
+[14/20][200/469] train_loss: 0.000032 train_acc: 0.998562
+[14/20][300/469] train_loss: 0.000041 train_acc: 0.998313
+[14/20][400/469] train_loss: 0.000039 train_acc: 0.998363
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000316 val_acc: 0.990800
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.207833 val_acc: 0.002700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000379 val_acc: 0.989800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.221007 val_acc: 0.002700
+[15/20][0/469] train_loss: 0.000079 train_acc: 0.992188
+[15/20][100/469] train_loss: 0.000044 train_acc: 0.997757
+[15/20][200/469] train_loss: 0.000038 train_acc: 0.998173
+[15/20][300/469] train_loss: 0.000041 train_acc: 0.998131
+[15/20][400/469] train_loss: 0.000046 train_acc: 0.997837
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000261 val_acc: 0.992100
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.204220 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000269 val_acc: 0.991700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.227438 val_acc: 0.000500
+[16/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000033 train_acc: 0.998530
+[16/20][200/469] train_loss: 0.000036 train_acc: 0.998523
+[16/20][300/469] train_loss: 0.000036 train_acc: 0.998650
+[16/20][400/469] train_loss: 0.000036 train_acc: 0.998636
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000318 val_acc: 0.991800
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.224978 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000375 val_acc: 0.990700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.243067 val_acc: 0.001100
+[17/20][0/469] train_loss: 0.000007 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000011 train_acc: 0.999459
+[17/20][200/469] train_loss: 0.000016 train_acc: 0.999223
+[17/20][300/469] train_loss: 0.000016 train_acc: 0.999221
+[17/20][400/469] train_loss: 0.000019 train_acc: 0.999162
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000307 val_acc: 0.990100
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.219681 val_acc: 0.000500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000352 val_acc: 0.989600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.242950 val_acc: 0.001000
+[18/20][0/469] train_loss: 0.000025 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000045 train_acc: 0.998144
+[18/20][200/469] train_loss: 0.000039 train_acc: 0.998484
+[18/20][300/469] train_loss: 0.000039 train_acc: 0.998443
+[18/20][400/469] train_loss: 0.000039 train_acc: 0.998383
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000328 val_acc: 0.991000
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.234927 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000382 val_acc: 0.989700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.262816 val_acc: 0.000000
+[19/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000032 train_acc: 0.998608
+[19/20][200/469] train_loss: 0.000026 train_acc: 0.998951
+[19/20][300/469] train_loss: 0.000032 train_acc: 0.998676
+[19/20][400/469] train_loss: 0.000042 train_acc: 0.998383
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000316 val_acc: 0.991200
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.239271 val_acc: 0.001400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000429 val_acc: 0.989700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.281505 val_acc: 0.003400
+nbits:5
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.017970 train_acc: 0.117188
+[0/20][100/469] train_loss: 0.004470 train_acc: 0.829595
+[0/20][200/469] train_loss: 0.002790 train_acc: 0.892607
+[0/20][300/469] train_loss: 0.002135 train_acc: 0.917618
+[0/20][400/469] train_loss: 0.001763 train_acc: 0.931831
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000361 val_acc: 0.984800
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.069336 val_acc: 0.000900
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000358 val_acc: 0.984600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.072483 val_acc: 0.000500
+[1/20][0/469] train_loss: 0.000110 train_acc: 1.000000
+[1/20][100/469] train_loss: 0.000459 train_acc: 0.982054
+[1/20][200/469] train_loss: 0.000431 train_acc: 0.982781
+[1/20][300/469] train_loss: 0.000410 train_acc: 0.983570
+[1/20][400/469] train_loss: 0.000402 train_acc: 0.984063
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000266 val_acc: 0.988600
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.076322 val_acc: 0.000500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000247 val_acc: 0.989100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.079726 val_acc: 0.000400
+[2/20][0/469] train_loss: 0.000253 train_acc: 0.992188
+[2/20][100/469] train_loss: 0.000283 train_acc: 0.989325
+[2/20][200/469] train_loss: 0.000278 train_acc: 0.989000
+[2/20][300/469] train_loss: 0.000272 train_acc: 0.989384
+[2/20][400/469] train_loss: 0.000274 train_acc: 0.988895
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000233 val_acc: 0.989200
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.089960 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000236 val_acc: 0.989600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.090075 val_acc: 0.000000
+[3/20][0/469] train_loss: 0.000101 train_acc: 1.000000
+[3/20][100/469] train_loss: 0.000175 train_acc: 0.993425
+[3/20][200/469] train_loss: 0.000200 train_acc: 0.992071
+[3/20][300/469] train_loss: 0.000199 train_acc: 0.992213
+[3/20][400/469] train_loss: 0.000203 train_acc: 0.991973
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000280 val_acc: 0.988600
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.092559 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000278 val_acc: 0.989000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.094012 val_acc: 0.000000
+[4/20][0/469] train_loss: 0.000292 train_acc: 0.984375
+[4/20][100/469] train_loss: 0.000151 train_acc: 0.994431
+[4/20][200/469] train_loss: 0.000152 train_acc: 0.993470
+[4/20][300/469] train_loss: 0.000158 train_acc: 0.992940
+[4/20][400/469] train_loss: 0.000164 train_acc: 0.992714
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000226 val_acc: 0.990700
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.111639 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000219 val_acc: 0.990900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.113103 val_acc: 0.000000
+[5/20][0/469] train_loss: 0.000141 train_acc: 0.992188
+[5/20][100/469] train_loss: 0.000118 train_acc: 0.994740
+[5/20][200/469] train_loss: 0.000124 train_acc: 0.994753
+[5/20][300/469] train_loss: 0.000139 train_acc: 0.994264
+[5/20][400/469] train_loss: 0.000131 train_acc: 0.994798
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000216 val_acc: 0.991300
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.111993 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000216 val_acc: 0.990900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.114661 val_acc: 0.000000
+[6/20][0/469] train_loss: 0.000319 train_acc: 0.984375
+[6/20][100/469] train_loss: 0.000091 train_acc: 0.996132
+[6/20][200/469] train_loss: 0.000101 train_acc: 0.995725
+[6/20][300/469] train_loss: 0.000100 train_acc: 0.995717
+[6/20][400/469] train_loss: 0.000102 train_acc: 0.995636
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000220 val_acc: 0.990300
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.134269 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000245 val_acc: 0.989300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.140367 val_acc: 0.000000
+[7/20][0/469] train_loss: 0.000061 train_acc: 1.000000
+[7/20][100/469] train_loss: 0.000082 train_acc: 0.996597
+[7/20][200/469] train_loss: 0.000081 train_acc: 0.996774
+[7/20][300/469] train_loss: 0.000080 train_acc: 0.996678
+[7/20][400/469] train_loss: 0.000088 train_acc: 0.996415
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000193 val_acc: 0.992400
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.132339 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000200 val_acc: 0.992300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.136948 val_acc: 0.000000
+[8/20][0/469] train_loss: 0.000007 train_acc: 1.000000
+[8/20][100/469] train_loss: 0.000041 train_acc: 0.998685
+[8/20][200/469] train_loss: 0.000052 train_acc: 0.998290
+[8/20][300/469] train_loss: 0.000060 train_acc: 0.997820
+[8/20][400/469] train_loss: 0.000068 train_acc: 0.997506
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000208 val_acc: 0.992200
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.152095 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000204 val_acc: 0.992800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.154898 val_acc: 0.000100
+[9/20][0/469] train_loss: 0.000036 train_acc: 1.000000
+[9/20][100/469] train_loss: 0.000065 train_acc: 0.997293
+[9/20][200/469] train_loss: 0.000073 train_acc: 0.996891
+[9/20][300/469] train_loss: 0.000079 train_acc: 0.996756
+[9/20][400/469] train_loss: 0.000076 train_acc: 0.996785
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000226 val_acc: 0.991800
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.155985 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000221 val_acc: 0.991900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.163705 val_acc: 0.000000
+[10/20][0/469] train_loss: 0.000026 train_acc: 1.000000
+[10/20][100/469] train_loss: 0.000046 train_acc: 0.998453
+[10/20][200/469] train_loss: 0.000044 train_acc: 0.998484
+[10/20][300/469] train_loss: 0.000044 train_acc: 0.998417
+[10/20][400/469] train_loss: 0.000054 train_acc: 0.997993
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000244 val_acc: 0.991300
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.153000 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000245 val_acc: 0.991600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.156931 val_acc: 0.000200
+[11/20][0/469] train_loss: 0.000003 train_acc: 1.000000
+[11/20][100/469] train_loss: 0.000045 train_acc: 0.997834
+[11/20][200/469] train_loss: 0.000032 train_acc: 0.998290
+[11/20][300/469] train_loss: 0.000040 train_acc: 0.998027
+[11/20][400/469] train_loss: 0.000044 train_acc: 0.998052
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000252 val_acc: 0.991900
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.154829 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000260 val_acc: 0.991300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.156739 val_acc: 0.000100
+[12/20][0/469] train_loss: 0.000035 train_acc: 1.000000
+[12/20][100/469] train_loss: 0.000045 train_acc: 0.997912
+[12/20][200/469] train_loss: 0.000055 train_acc: 0.997590
+[12/20][300/469] train_loss: 0.000051 train_acc: 0.997716
+[12/20][400/469] train_loss: 0.000047 train_acc: 0.997954
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000215 val_acc: 0.993200
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.178945 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000230 val_acc: 0.992800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.182475 val_acc: 0.000200
+[13/20][0/469] train_loss: 0.000043 train_acc: 0.992188
+[13/20][100/469] train_loss: 0.000046 train_acc: 0.997989
+[13/20][200/469] train_loss: 0.000037 train_acc: 0.998484
+[13/20][300/469] train_loss: 0.000033 train_acc: 0.998728
+[13/20][400/469] train_loss: 0.000035 train_acc: 0.998656
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000261 val_acc: 0.991100
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.195629 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000271 val_acc: 0.991000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.200056 val_acc: 0.000000
+[14/20][0/469] train_loss: 0.000005 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000048 train_acc: 0.998066
+[14/20][200/469] train_loss: 0.000045 train_acc: 0.998212
+[14/20][300/469] train_loss: 0.000044 train_acc: 0.998235
+[14/20][400/469] train_loss: 0.000040 train_acc: 0.998461
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000221 val_acc: 0.991900
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.196594 val_acc: 0.000700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000223 val_acc: 0.992100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.200460 val_acc: 0.001400
+[15/20][0/469] train_loss: 0.000029 train_acc: 1.000000
+[15/20][100/469] train_loss: 0.000048 train_acc: 0.997757
+[15/20][200/469] train_loss: 0.000049 train_acc: 0.997746
+[15/20][300/469] train_loss: 0.000050 train_acc: 0.997560
+[15/20][400/469] train_loss: 0.000049 train_acc: 0.997760
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000262 val_acc: 0.991500
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.196140 val_acc: 0.000700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000268 val_acc: 0.991100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.202371 val_acc: 0.001100
+[16/20][0/469] train_loss: 0.000006 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000010 train_acc: 0.999845
+[16/20][200/469] train_loss: 0.000010 train_acc: 0.999689
+[16/20][300/469] train_loss: 0.000012 train_acc: 0.999533
+[16/20][400/469] train_loss: 0.000015 train_acc: 0.999357
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000316 val_acc: 0.991000
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.222225 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000320 val_acc: 0.991000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.228496 val_acc: 0.000600
+[17/20][0/469] train_loss: 0.000011 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000087 train_acc: 0.996829
+[17/20][200/469] train_loss: 0.000074 train_acc: 0.997163
+[17/20][300/469] train_loss: 0.000065 train_acc: 0.997586
+[17/20][400/469] train_loss: 0.000059 train_acc: 0.997701
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000234 val_acc: 0.992200
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.196213 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000247 val_acc: 0.992700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.198633 val_acc: 0.000000
+[18/20][0/469] train_loss: 0.000001 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000030 train_acc: 0.998762
+[18/20][200/469] train_loss: 0.000025 train_acc: 0.998873
+[18/20][300/469] train_loss: 0.000021 train_acc: 0.999066
+[18/20][400/469] train_loss: 0.000026 train_acc: 0.999045
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000197 val_acc: 0.993900
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.207898 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000206 val_acc: 0.993500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.210911 val_acc: 0.000100
+[19/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000023 train_acc: 0.998917
+[19/20][200/469] train_loss: 0.000016 train_acc: 0.999339
+[19/20][300/469] train_loss: 0.000019 train_acc: 0.999247
+[19/20][400/469] train_loss: 0.000021 train_acc: 0.999201
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000210 val_acc: 0.992800
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.214692 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000216 val_acc: 0.992900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.219956 val_acc: 0.000300
+nbits:6
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.017972 train_acc: 0.093750
+[0/20][100/469] train_loss: 0.004558 train_acc: 0.821318
+[0/20][200/469] train_loss: 0.002930 train_acc: 0.885417
+[0/20][300/469] train_loss: 0.002238 train_acc: 0.912479
+[0/20][400/469] train_loss: 0.001837 train_acc: 0.928012
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000494 val_acc: 0.979800
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.063619 val_acc: 0.000800
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000491 val_acc: 0.980100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.064170 val_acc: 0.000700
+[1/20][0/469] train_loss: 0.000879 train_acc: 0.968750
+[1/20][100/469] train_loss: 0.000510 train_acc: 0.981281
+[1/20][200/469] train_loss: 0.000462 train_acc: 0.981810
+[1/20][300/469] train_loss: 0.000458 train_acc: 0.981624
+[1/20][400/469] train_loss: 0.000430 train_acc: 0.982602
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000297 val_acc: 0.986700
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.079246 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000300 val_acc: 0.986700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.080468 val_acc: 0.000000
+[2/20][0/469] train_loss: 0.000079 train_acc: 1.000000
+[2/20][100/469] train_loss: 0.000271 train_acc: 0.990254
+[2/20][200/469] train_loss: 0.000298 train_acc: 0.988573
+[2/20][300/469] train_loss: 0.000291 train_acc: 0.989047
+[2/20][400/469] train_loss: 0.000286 train_acc: 0.988992
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000244 val_acc: 0.989200
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.083728 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000243 val_acc: 0.989500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.084010 val_acc: 0.000000
+[3/20][0/469] train_loss: 0.000355 train_acc: 0.984375
+[3/20][100/469] train_loss: 0.000203 train_acc: 0.992188
+[3/20][200/469] train_loss: 0.000213 train_acc: 0.991488
+[3/20][300/469] train_loss: 0.000213 train_acc: 0.991565
+[3/20][400/469] train_loss: 0.000215 train_acc: 0.991330
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000255 val_acc: 0.989200
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.093188 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000259 val_acc: 0.988700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.093907 val_acc: 0.000200
+[4/20][0/469] train_loss: 0.000051 train_acc: 1.000000
+[4/20][100/469] train_loss: 0.000155 train_acc: 0.994044
+[4/20][200/469] train_loss: 0.000159 train_acc: 0.993703
+[4/20][300/469] train_loss: 0.000154 train_acc: 0.994030
+[4/20][400/469] train_loss: 0.000159 train_acc: 0.993785
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000238 val_acc: 0.989600
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.096345 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000243 val_acc: 0.989400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.096820 val_acc: 0.000100
+[5/20][0/469] train_loss: 0.000338 train_acc: 0.984375
+[5/20][100/469] train_loss: 0.000121 train_acc: 0.995514
+[5/20][200/469] train_loss: 0.000117 train_acc: 0.995608
+[5/20][300/469] train_loss: 0.000133 train_acc: 0.995094
+[5/20][400/469] train_loss: 0.000134 train_acc: 0.994740
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000189 val_acc: 0.991300
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.106986 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000192 val_acc: 0.991300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.107569 val_acc: 0.000000
+[6/20][0/469] train_loss: 0.000012 train_acc: 1.000000
+[6/20][100/469] train_loss: 0.000100 train_acc: 0.995900
+[6/20][200/469] train_loss: 0.000106 train_acc: 0.995725
+[6/20][300/469] train_loss: 0.000107 train_acc: 0.995769
+[6/20][400/469] train_loss: 0.000110 train_acc: 0.995714
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000219 val_acc: 0.990600
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.110529 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000226 val_acc: 0.990500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.114237 val_acc: 0.000000
+[7/20][0/469] train_loss: 0.000193 train_acc: 0.984375
+[7/20][100/469] train_loss: 0.000080 train_acc: 0.996983
+[7/20][200/469] train_loss: 0.000088 train_acc: 0.996346
+[7/20][300/469] train_loss: 0.000091 train_acc: 0.996262
+[7/20][400/469] train_loss: 0.000090 train_acc: 0.996201
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000287 val_acc: 0.989400
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.118360 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000285 val_acc: 0.989400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.119304 val_acc: 0.000000
+[8/20][0/469] train_loss: 0.000146 train_acc: 0.992188
+[8/20][100/469] train_loss: 0.000064 train_acc: 0.997370
+[8/20][200/469] train_loss: 0.000071 train_acc: 0.996774
+[8/20][300/469] train_loss: 0.000076 train_acc: 0.996626
+[8/20][400/469] train_loss: 0.000076 train_acc: 0.996746
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000226 val_acc: 0.991300
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.126969 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000227 val_acc: 0.991200
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.126091 val_acc: 0.000000
+[9/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[9/20][100/469] train_loss: 0.000033 train_acc: 0.998840
+[9/20][200/469] train_loss: 0.000042 train_acc: 0.998251
+[9/20][300/469] train_loss: 0.000059 train_acc: 0.997379
+[9/20][400/469] train_loss: 0.000067 train_acc: 0.997214
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000242 val_acc: 0.991500
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.138432 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000244 val_acc: 0.991700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.140914 val_acc: 0.000100
+[10/20][0/469] train_loss: 0.000123 train_acc: 0.992188
+[10/20][100/469] train_loss: 0.000055 train_acc: 0.998221
+[10/20][200/469] train_loss: 0.000069 train_acc: 0.997240
+[10/20][300/469] train_loss: 0.000067 train_acc: 0.997404
+[10/20][400/469] train_loss: 0.000078 train_acc: 0.996805
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000215 val_acc: 0.991200
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.139886 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000214 val_acc: 0.991600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.139124 val_acc: 0.000000
+[11/20][0/469] train_loss: 0.000003 train_acc: 1.000000
+[11/20][100/469] train_loss: 0.000056 train_acc: 0.997757
+[11/20][200/469] train_loss: 0.000053 train_acc: 0.997785
+[11/20][300/469] train_loss: 0.000054 train_acc: 0.997638
+[11/20][400/469] train_loss: 0.000053 train_acc: 0.997818
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000272 val_acc: 0.991400
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.163409 val_acc: 0.001100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000276 val_acc: 0.991600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.164415 val_acc: 0.000800
+[12/20][0/469] train_loss: 0.000078 train_acc: 0.992188
+[12/20][100/469] train_loss: 0.000049 train_acc: 0.998066
+[12/20][200/469] train_loss: 0.000053 train_acc: 0.998018
+[12/20][300/469] train_loss: 0.000042 train_acc: 0.998443
+[12/20][400/469] train_loss: 0.000042 train_acc: 0.998344
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000275 val_acc: 0.991100
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.179253 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000283 val_acc: 0.990900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.183307 val_acc: 0.000000
+[13/20][0/469] train_loss: 0.000054 train_acc: 0.992188
+[13/20][100/469] train_loss: 0.000041 train_acc: 0.998453
+[13/20][200/469] train_loss: 0.000038 train_acc: 0.998484
+[13/20][300/469] train_loss: 0.000034 train_acc: 0.998598
+[13/20][400/469] train_loss: 0.000042 train_acc: 0.998110
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000282 val_acc: 0.991100
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.176991 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000282 val_acc: 0.991100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.177074 val_acc: 0.000100
+[14/20][0/469] train_loss: 0.000010 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000035 train_acc: 0.998530
+[14/20][200/469] train_loss: 0.000046 train_acc: 0.997979
+[14/20][300/469] train_loss: 0.000038 train_acc: 0.998391
+[14/20][400/469] train_loss: 0.000041 train_acc: 0.998266
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000240 val_acc: 0.991800
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.172641 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000237 val_acc: 0.992200
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.172761 val_acc: 0.000000
+[15/20][0/469] train_loss: 0.000004 train_acc: 1.000000
+[15/20][100/469] train_loss: 0.000043 train_acc: 0.997679
+[15/20][200/469] train_loss: 0.000050 train_acc: 0.997823
+[15/20][300/469] train_loss: 0.000043 train_acc: 0.998183
+[15/20][400/469] train_loss: 0.000042 train_acc: 0.998188
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000239 val_acc: 0.991900
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.197027 val_acc: 0.000700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000234 val_acc: 0.991600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.196032 val_acc: 0.000600
+[16/20][0/469] train_loss: 0.000005 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000034 train_acc: 0.998994
+[16/20][200/469] train_loss: 0.000024 train_acc: 0.999184
+[16/20][300/469] train_loss: 0.000021 train_acc: 0.999247
+[16/20][400/469] train_loss: 0.000020 train_acc: 0.999240
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000228 val_acc: 0.993200
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.200800 val_acc: 0.002800
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000233 val_acc: 0.992900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.198191 val_acc: 0.001900
+[17/20][0/469] train_loss: 0.000006 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000002 train_acc: 1.000000
+[17/20][200/469] train_loss: 0.000006 train_acc: 0.999806
+[17/20][300/469] train_loss: 0.000011 train_acc: 0.999611
+[17/20][400/469] train_loss: 0.000017 train_acc: 0.999279
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000263 val_acc: 0.991700
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.194809 val_acc: 0.000700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000266 val_acc: 0.991300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.195395 val_acc: 0.001000
+[18/20][0/469] train_loss: 0.000011 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000043 train_acc: 0.998376
+[18/20][200/469] train_loss: 0.000037 train_acc: 0.998484
+[18/20][300/469] train_loss: 0.000037 train_acc: 0.998572
+[18/20][400/469] train_loss: 0.000036 train_acc: 0.998558
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000285 val_acc: 0.992500
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.206092 val_acc: 0.002200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000295 val_acc: 0.992000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.208493 val_acc: 0.003300
+[19/20][0/469] train_loss: 0.000054 train_acc: 0.992188
+[19/20][100/469] train_loss: 0.000055 train_acc: 0.998144
+[19/20][200/469] train_loss: 0.000046 train_acc: 0.998173
+[19/20][300/469] train_loss: 0.000051 train_acc: 0.997872
+[19/20][400/469] train_loss: 0.000045 train_acc: 0.998149
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000270 val_acc: 0.992900
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.200313 val_acc: 0.003900
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000279 val_acc: 0.992500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.201467 val_acc: 0.003800
+nbits:7
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.017895 train_acc: 0.039062
+[0/20][100/469] train_loss: 0.004250 train_acc: 0.837175
+[0/20][200/469] train_loss: 0.002709 train_acc: 0.896261
+[0/20][300/469] train_loss: 0.002088 train_acc: 0.920266
+[0/20][400/469] train_loss: 0.001746 train_acc: 0.933448
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000437 val_acc: 0.981700
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.065856 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000442 val_acc: 0.981500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.065840 val_acc: 0.000300
+[1/20][0/469] train_loss: 0.000233 train_acc: 0.992188
+[1/20][100/469] train_loss: 0.000499 train_acc: 0.980662
+[1/20][200/469] train_loss: 0.000467 train_acc: 0.981965
+[1/20][300/469] train_loss: 0.000434 train_acc: 0.983025
+[1/20][400/469] train_loss: 0.000423 train_acc: 0.983206
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000312 val_acc: 0.986300
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.074885 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000307 val_acc: 0.986500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.074882 val_acc: 0.000300
+[2/20][0/469] train_loss: 0.000221 train_acc: 0.984375
+[2/20][100/469] train_loss: 0.000236 train_acc: 0.990099
+[2/20][200/469] train_loss: 0.000251 train_acc: 0.989933
+[2/20][300/469] train_loss: 0.000268 train_acc: 0.988710
+[2/20][400/469] train_loss: 0.000275 train_acc: 0.988583
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000253 val_acc: 0.990100
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.076282 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000253 val_acc: 0.989900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.076606 val_acc: 0.000000
+[3/20][0/469] train_loss: 0.000071 train_acc: 1.000000
+[3/20][100/469] train_loss: 0.000193 train_acc: 0.992265
+[3/20][200/469] train_loss: 0.000203 train_acc: 0.991643
+[3/20][300/469] train_loss: 0.000214 train_acc: 0.991279
+[3/20][400/469] train_loss: 0.000219 train_acc: 0.990980
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000201 val_acc: 0.992000
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.090305 val_acc: 0.000500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000201 val_acc: 0.991800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.090566 val_acc: 0.000300
+[4/20][0/469] train_loss: 0.000063 train_acc: 1.000000
+[4/20][100/469] train_loss: 0.000127 train_acc: 0.995204
+[4/20][200/469] train_loss: 0.000137 train_acc: 0.994131
+[4/20][300/469] train_loss: 0.000143 train_acc: 0.993823
+[4/20][400/469] train_loss: 0.000148 train_acc: 0.993668
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000227 val_acc: 0.990800
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.089499 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000225 val_acc: 0.991000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.089509 val_acc: 0.000600
+[5/20][0/469] train_loss: 0.000075 train_acc: 1.000000
+[5/20][100/469] train_loss: 0.000115 train_acc: 0.995668
+[5/20][200/469] train_loss: 0.000119 train_acc: 0.995608
+[5/20][300/469] train_loss: 0.000122 train_acc: 0.995146
+[5/20][400/469] train_loss: 0.000116 train_acc: 0.995324
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000215 val_acc: 0.991200
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.106697 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000217 val_acc: 0.991500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.107303 val_acc: 0.000100
+[6/20][0/469] train_loss: 0.000071 train_acc: 0.992188
+[6/20][100/469] train_loss: 0.000086 train_acc: 0.996287
+[6/20][200/469] train_loss: 0.000094 train_acc: 0.996113
+[6/20][300/469] train_loss: 0.000093 train_acc: 0.996081
+[6/20][400/469] train_loss: 0.000101 train_acc: 0.995831
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000205 val_acc: 0.992100
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.115483 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000203 val_acc: 0.992100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.114811 val_acc: 0.000000
+[7/20][0/469] train_loss: 0.000020 train_acc: 1.000000
+[7/20][100/469] train_loss: 0.000065 train_acc: 0.997447
+[7/20][200/469] train_loss: 0.000073 train_acc: 0.996657
+[7/20][300/469] train_loss: 0.000080 train_acc: 0.996548
+[7/20][400/469] train_loss: 0.000080 train_acc: 0.996513
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000250 val_acc: 0.990600
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.119803 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000248 val_acc: 0.990600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.119833 val_acc: 0.000100
+[8/20][0/469] train_loss: 0.000198 train_acc: 0.992188
+[8/20][100/469] train_loss: 0.000072 train_acc: 0.996751
+[8/20][200/469] train_loss: 0.000076 train_acc: 0.996774
+[8/20][300/469] train_loss: 0.000074 train_acc: 0.996782
+[8/20][400/469] train_loss: 0.000072 train_acc: 0.996824
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000334 val_acc: 0.988100
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.145662 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000330 val_acc: 0.988100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.144817 val_acc: 0.000100
+[9/20][0/469] train_loss: 0.000142 train_acc: 0.992188
+[9/20][100/469] train_loss: 0.000078 train_acc: 0.996751
+[9/20][200/469] train_loss: 0.000076 train_acc: 0.996735
+[9/20][300/469] train_loss: 0.000076 train_acc: 0.996756
+[9/20][400/469] train_loss: 0.000079 train_acc: 0.996571
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000234 val_acc: 0.992500
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.136784 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000234 val_acc: 0.992400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.137017 val_acc: 0.000000
+[10/20][0/469] train_loss: 0.000015 train_acc: 1.000000
+[10/20][100/469] train_loss: 0.000034 train_acc: 0.998530
+[10/20][200/469] train_loss: 0.000039 train_acc: 0.998368
+[10/20][300/469] train_loss: 0.000045 train_acc: 0.998131
+[10/20][400/469] train_loss: 0.000045 train_acc: 0.998149
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000271 val_acc: 0.991000
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.146387 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000268 val_acc: 0.991000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.146342 val_acc: 0.000000
+[11/20][0/469] train_loss: 0.000076 train_acc: 0.992188
+[11/20][100/469] train_loss: 0.000037 train_acc: 0.998066
+[11/20][200/469] train_loss: 0.000040 train_acc: 0.998251
+[11/20][300/469] train_loss: 0.000036 train_acc: 0.998469
+[11/20][400/469] train_loss: 0.000040 train_acc: 0.998247
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000256 val_acc: 0.992400
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.156980 val_acc: 0.000500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000254 val_acc: 0.992400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.158850 val_acc: 0.000600
+[12/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[12/20][100/469] train_loss: 0.000038 train_acc: 0.998453
+[12/20][200/469] train_loss: 0.000041 train_acc: 0.998251
+[12/20][300/469] train_loss: 0.000046 train_acc: 0.997975
+[12/20][400/469] train_loss: 0.000063 train_acc: 0.997156
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000283 val_acc: 0.990700
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.151514 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000282 val_acc: 0.991100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.151703 val_acc: 0.000100
+[13/20][0/469] train_loss: 0.000001 train_acc: 1.000000
+[13/20][100/469] train_loss: 0.000025 train_acc: 0.998762
+[13/20][200/469] train_loss: 0.000026 train_acc: 0.998678
+[13/20][300/469] train_loss: 0.000031 train_acc: 0.998443
+[13/20][400/469] train_loss: 0.000038 train_acc: 0.998052
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000317 val_acc: 0.990800
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.165109 val_acc: 0.001500
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000310 val_acc: 0.990700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.165836 val_acc: 0.001500
+[14/20][0/469] train_loss: 0.000078 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000021 train_acc: 0.998917
+[14/20][200/469] train_loss: 0.000036 train_acc: 0.998368
+[14/20][300/469] train_loss: 0.000038 train_acc: 0.998235
+[14/20][400/469] train_loss: 0.000040 train_acc: 0.998091
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000304 val_acc: 0.991200
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.172765 val_acc: 0.001200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000301 val_acc: 0.991000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.172687 val_acc: 0.001400
+[15/20][0/469] train_loss: 0.000002 train_acc: 1.000000
+[15/20][100/469] train_loss: 0.000026 train_acc: 0.998917
+[15/20][200/469] train_loss: 0.000019 train_acc: 0.999300
+[15/20][300/469] train_loss: 0.000021 train_acc: 0.999092
+[15/20][400/469] train_loss: 0.000023 train_acc: 0.999006
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000297 val_acc: 0.991300
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.177637 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000294 val_acc: 0.991400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.177068 val_acc: 0.000300
+[16/20][0/469] train_loss: 0.000014 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000030 train_acc: 0.998453
+[16/20][200/469] train_loss: 0.000026 train_acc: 0.998795
+[16/20][300/469] train_loss: 0.000024 train_acc: 0.998910
+[16/20][400/469] train_loss: 0.000028 train_acc: 0.998792
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000340 val_acc: 0.990200
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.179587 val_acc: 0.000600
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000343 val_acc: 0.990300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.179214 val_acc: 0.000400
+[17/20][0/469] train_loss: 0.000059 train_acc: 0.992188
+[17/20][100/469] train_loss: 0.000016 train_acc: 0.999304
+[17/20][200/469] train_loss: 0.000018 train_acc: 0.999145
+[17/20][300/469] train_loss: 0.000025 train_acc: 0.998806
+[17/20][400/469] train_loss: 0.000032 train_acc: 0.998480
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000370 val_acc: 0.990800
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.207550 val_acc: 0.000400
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000369 val_acc: 0.990800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.205512 val_acc: 0.000500
+[18/20][0/469] train_loss: 0.000048 train_acc: 0.992188
+[18/20][100/469] train_loss: 0.000028 train_acc: 0.998608
+[18/20][200/469] train_loss: 0.000039 train_acc: 0.998290
+[18/20][300/469] train_loss: 0.000032 train_acc: 0.998521
+[18/20][400/469] train_loss: 0.000031 train_acc: 0.998578
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000361 val_acc: 0.991800
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.198125 val_acc: 0.004700
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000355 val_acc: 0.991900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.198728 val_acc: 0.004000
+[19/20][0/469] train_loss: 0.000000 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000015 train_acc: 0.999226
+[19/20][200/469] train_loss: 0.000022 train_acc: 0.998912
+[19/20][300/469] train_loss: 0.000031 train_acc: 0.998728
+[19/20][400/469] train_loss: 0.000031 train_acc: 0.998734
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000354 val_acc: 0.989900
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.208056 val_acc: 0.007000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000347 val_acc: 0.989700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.208306 val_acc: 0.007800
+nbits:8
+quantilized:False
+training data AT:False
+conv_and_fc(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018045 train_acc: 0.132812
+[0/20][100/469] train_loss: 0.004799 train_acc: 0.816136
+[0/20][200/469] train_loss: 0.002999 train_acc: 0.884911
+[0/20][300/469] train_loss: 0.002267 train_acc: 0.912557
+[0/20][400/469] train_loss: 0.001863 train_acc: 0.928674
+[Normal training Linear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000424 val_acc: 0.983800
+[Normal training Linear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.065255 val_acc: 0.005600
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[0/20] val_loss: 0.000423 val_acc: 0.984000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[0/20] val_loss: 0.065493 val_acc: 0.005700
+[1/20][0/469] train_loss: 0.000178 train_acc: 1.000000
+[1/20][100/469] train_loss: 0.000460 train_acc: 0.982132
+[1/20][200/469] train_loss: 0.000428 train_acc: 0.982898
+[1/20][300/469] train_loss: 0.000437 train_acc: 0.982714
+[1/20][400/469] train_loss: 0.000421 train_acc: 0.983323
+[Normal training Linear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000293 val_acc: 0.987900
+[Normal training Linear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.074416 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[1/20] val_loss: 0.000293 val_acc: 0.988100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[1/20] val_loss: 0.074748 val_acc: 0.000000
+[2/20][0/469] train_loss: 0.000298 train_acc: 0.976562
+[2/20][100/469] train_loss: 0.000308 train_acc: 0.988088
+[2/20][200/469] train_loss: 0.000287 train_acc: 0.988106
+[2/20][300/469] train_loss: 0.000284 train_acc: 0.988398
+[2/20][400/469] train_loss: 0.000280 train_acc: 0.988447
+[Normal training Linear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000220 val_acc: 0.990700
+[Normal training Linear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.087518 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[2/20] val_loss: 0.000220 val_acc: 0.990800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[2/20] val_loss: 0.087511 val_acc: 0.000300
+[3/20][0/469] train_loss: 0.000325 train_acc: 0.984375
+[3/20][100/469] train_loss: 0.000202 train_acc: 0.991955
+[3/20][200/469] train_loss: 0.000207 train_acc: 0.991915
+[3/20][300/469] train_loss: 0.000216 train_acc: 0.991487
+[3/20][400/469] train_loss: 0.000215 train_acc: 0.991291
+[Normal training Linear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000192 val_acc: 0.992700
+[Normal training Linear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.087007 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[3/20] val_loss: 0.000193 val_acc: 0.992600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[3/20] val_loss: 0.087003 val_acc: 0.000000
+[4/20][0/469] train_loss: 0.000082 train_acc: 1.000000
+[4/20][100/469] train_loss: 0.000149 train_acc: 0.994508
+[4/20][200/469] train_loss: 0.000158 train_acc: 0.994092
+[4/20][300/469] train_loss: 0.000158 train_acc: 0.993875
+[4/20][400/469] train_loss: 0.000158 train_acc: 0.993941
+[Normal training Linear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000245 val_acc: 0.990400
+[Normal training Linear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.096990 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[4/20] val_loss: 0.000247 val_acc: 0.990300
+[Normal training NonLinear Quantilized testing]AT dataset testing:[4/20] val_loss: 0.097186 val_acc: 0.000400
+[5/20][0/469] train_loss: 0.000253 train_acc: 0.992188
+[5/20][100/469] train_loss: 0.000141 train_acc: 0.995359
+[5/20][200/469] train_loss: 0.000154 train_acc: 0.993742
+[5/20][300/469] train_loss: 0.000142 train_acc: 0.994186
+[5/20][400/469] train_loss: 0.000143 train_acc: 0.994233
+[Normal training Linear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000166 val_acc: 0.993200
+[Normal training Linear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.104038 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[5/20] val_loss: 0.000167 val_acc: 0.993100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[5/20] val_loss: 0.103997 val_acc: 0.000100
+[6/20][0/469] train_loss: 0.000042 train_acc: 1.000000
+[6/20][100/469] train_loss: 0.000094 train_acc: 0.996674
+[6/20][200/469] train_loss: 0.000095 train_acc: 0.996346
+[6/20][300/469] train_loss: 0.000103 train_acc: 0.995847
+[6/20][400/469] train_loss: 0.000100 train_acc: 0.995792
+[Normal training Linear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000182 val_acc: 0.992700
+[Normal training Linear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.114344 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[6/20] val_loss: 0.000182 val_acc: 0.992600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[6/20] val_loss: 0.114513 val_acc: 0.000200
+[7/20][0/469] train_loss: 0.000017 train_acc: 1.000000
+[7/20][100/469] train_loss: 0.000065 train_acc: 0.997679
+[7/20][200/469] train_loss: 0.000060 train_acc: 0.997823
+[7/20][300/469] train_loss: 0.000066 train_acc: 0.997379
+[7/20][400/469] train_loss: 0.000078 train_acc: 0.996883
+[Normal training Linear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000258 val_acc: 0.988900
+[Normal training Linear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.115951 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[7/20] val_loss: 0.000259 val_acc: 0.988900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[7/20] val_loss: 0.115963 val_acc: 0.000000
+[8/20][0/469] train_loss: 0.000079 train_acc: 1.000000
+[8/20][100/469] train_loss: 0.000075 train_acc: 0.996829
+[8/20][200/469] train_loss: 0.000068 train_acc: 0.997163
+[8/20][300/469] train_loss: 0.000069 train_acc: 0.997197
+[8/20][400/469] train_loss: 0.000073 train_acc: 0.996883
+[Normal training Linear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000209 val_acc: 0.992300
+[Normal training Linear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.120764 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[8/20] val_loss: 0.000211 val_acc: 0.992000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[8/20] val_loss: 0.120460 val_acc: 0.000200
+[9/20][0/469] train_loss: 0.000021 train_acc: 1.000000
+[9/20][100/469] train_loss: 0.000043 train_acc: 0.998066
+[9/20][200/469] train_loss: 0.000051 train_acc: 0.997823
+[9/20][300/469] train_loss: 0.000068 train_acc: 0.997145
+[9/20][400/469] train_loss: 0.000070 train_acc: 0.997195
+[Normal training Linear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000219 val_acc: 0.990900
+[Normal training Linear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.129590 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[9/20] val_loss: 0.000218 val_acc: 0.991000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[9/20] val_loss: 0.129808 val_acc: 0.000100
+[10/20][0/469] train_loss: 0.000041 train_acc: 1.000000
+[10/20][100/469] train_loss: 0.000038 train_acc: 0.998530
+[10/20][200/469] train_loss: 0.000034 train_acc: 0.998795
+[10/20][300/469] train_loss: 0.000030 train_acc: 0.998988
+[10/20][400/469] train_loss: 0.000037 train_acc: 0.998656
+[Normal training Linear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000177 val_acc: 0.993500
+[Normal training Linear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.144173 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[10/20] val_loss: 0.000177 val_acc: 0.993500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[10/20] val_loss: 0.144353 val_acc: 0.000000
+[11/20][0/469] train_loss: 0.000027 train_acc: 1.000000
+[11/20][100/469] train_loss: 0.000041 train_acc: 0.998144
+[11/20][200/469] train_loss: 0.000045 train_acc: 0.998057
+[11/20][300/469] train_loss: 0.000045 train_acc: 0.998157
+[11/20][400/469] train_loss: 0.000047 train_acc: 0.997993
+[Normal training Linear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000227 val_acc: 0.991800
+[Normal training Linear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.157632 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[11/20] val_loss: 0.000228 val_acc: 0.992000
+[Normal training NonLinear Quantilized testing]AT dataset testing:[11/20] val_loss: 0.157497 val_acc: 0.000000
+[12/20][0/469] train_loss: 0.000036 train_acc: 1.000000
+[12/20][100/469] train_loss: 0.000042 train_acc: 0.998066
+[12/20][200/469] train_loss: 0.000042 train_acc: 0.998134
+[12/20][300/469] train_loss: 0.000046 train_acc: 0.998027
+[12/20][400/469] train_loss: 0.000047 train_acc: 0.998052
+[Normal training Linear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000238 val_acc: 0.992400
+[Normal training Linear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.161321 val_acc: 0.000000
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[12/20] val_loss: 0.000239 val_acc: 0.992500
+[Normal training NonLinear Quantilized testing]AT dataset testing:[12/20] val_loss: 0.161591 val_acc: 0.000200
+[13/20][0/469] train_loss: 0.000003 train_acc: 1.000000
+[13/20][100/469] train_loss: 0.000042 train_acc: 0.998376
+[13/20][200/469] train_loss: 0.000032 train_acc: 0.998717
+[13/20][300/469] train_loss: 0.000047 train_acc: 0.998183
+[13/20][400/469] train_loss: 0.000047 train_acc: 0.998091
+[Normal training Linear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000197 val_acc: 0.993400
+[Normal training Linear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.161021 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[13/20] val_loss: 0.000199 val_acc: 0.993400
+[Normal training NonLinear Quantilized testing]AT dataset testing:[13/20] val_loss: 0.160834 val_acc: 0.000200
+[14/20][0/469] train_loss: 0.000007 train_acc: 1.000000
+[14/20][100/469] train_loss: 0.000026 train_acc: 0.998994
+[14/20][200/469] train_loss: 0.000027 train_acc: 0.998989
+[14/20][300/469] train_loss: 0.000030 train_acc: 0.998806
+[14/20][400/469] train_loss: 0.000035 train_acc: 0.998441
+[Normal training Linear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000233 val_acc: 0.992200
+[Normal training Linear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.171495 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[14/20] val_loss: 0.000235 val_acc: 0.992100
+[Normal training NonLinear Quantilized testing]AT dataset testing:[14/20] val_loss: 0.171727 val_acc: 0.000000
+[15/20][0/469] train_loss: 0.000012 train_acc: 1.000000
+[15/20][100/469] train_loss: 0.000020 train_acc: 0.999304
+[15/20][200/469] train_loss: 0.000022 train_acc: 0.999145
+[15/20][300/469] train_loss: 0.000032 train_acc: 0.998806
+[15/20][400/469] train_loss: 0.000032 train_acc: 0.998578
+[Normal training Linear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000230 val_acc: 0.991900
+[Normal training Linear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.174931 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[15/20] val_loss: 0.000230 val_acc: 0.991800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[15/20] val_loss: 0.175179 val_acc: 0.000100
+[16/20][0/469] train_loss: 0.000027 train_acc: 1.000000
+[16/20][100/469] train_loss: 0.000029 train_acc: 0.998762
+[16/20][200/469] train_loss: 0.000021 train_acc: 0.999184
+[16/20][300/469] train_loss: 0.000035 train_acc: 0.998469
+[16/20][400/469] train_loss: 0.000032 train_acc: 0.998617
+[Normal training Linear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000227 val_acc: 0.992600
+[Normal training Linear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.176015 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[16/20] val_loss: 0.000227 val_acc: 0.992700
+[Normal training NonLinear Quantilized testing]AT dataset testing:[16/20] val_loss: 0.176609 val_acc: 0.000300
+[17/20][0/469] train_loss: 0.000002 train_acc: 1.000000
+[17/20][100/469] train_loss: 0.000009 train_acc: 0.999768
+[17/20][200/469] train_loss: 0.000008 train_acc: 0.999806
+[17/20][300/469] train_loss: 0.000009 train_acc: 0.999766
+[17/20][400/469] train_loss: 0.000014 train_acc: 0.999513
+[Normal training Linear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000244 val_acc: 0.992900
+[Normal training Linear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.184216 val_acc: 0.000200
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[17/20] val_loss: 0.000244 val_acc: 0.992800
+[Normal training NonLinear Quantilized testing]AT dataset testing:[17/20] val_loss: 0.183646 val_acc: 0.000100
+[18/20][0/469] train_loss: 0.000008 train_acc: 1.000000
+[18/20][100/469] train_loss: 0.000025 train_acc: 0.998685
+[18/20][200/469] train_loss: 0.000035 train_acc: 0.998368
+[18/20][300/469] train_loss: 0.000032 train_acc: 0.998572
+[18/20][400/469] train_loss: 0.000028 train_acc: 0.998753
+[Normal training Linear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000207 val_acc: 0.993800
+[Normal training Linear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.200354 val_acc: 0.000300
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[18/20] val_loss: 0.000209 val_acc: 0.993600
+[Normal training NonLinear Quantilized testing]AT dataset testing:[18/20] val_loss: 0.200912 val_acc: 0.000400
+[19/20][0/469] train_loss: 0.000002 train_acc: 1.000000
+[19/20][100/469] train_loss: 0.000040 train_acc: 0.998685
+[19/20][200/469] train_loss: 0.000050 train_acc: 0.998251
+[19/20][300/469] train_loss: 0.000044 train_acc: 0.998365
+[19/20][400/469] train_loss: 0.000043 train_acc: 0.998383
+[Normal training Linear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000299 val_acc: 0.990900
+[Normal training Linear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.190052 val_acc: 0.000100
+[Normal training NonLinear Quantilized testing]Clean dataset testing:[19/20] val_loss: 0.000298 val_acc: 0.990900
+[Normal training NonLinear Quantilized testing]AT dataset testing:[19/20] val_loss: 0.188724 val_acc: 0.000200

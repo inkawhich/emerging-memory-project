@@ -39,6 +39,42 @@ class conv_and_fc_quan(nn.Module):
         for ind,(name,param) in enumerate(self.named_parameters()):
             param.data = s[ind]
         return x
+##########################################################                                                                                                                                              
+# Conv + FC + Quantilization + BIG                                                                                                                                                                            
+##########################################################                                                                                                                                              
+# From official pytorch/mnist example                                                                                                                                                                   
+class conv_and_fc_big_quan(nn.Module):
+    def __init__(self, nbits,do_linear):
+        super(conv_and_fc_big_quan, self).__init__()
+        self.nbits = nbits
+        self.do_linear = do_linear
+        self.features = nn.Sequential(
+            nn.Conv2d(1, 40, 5, 1),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2,2),
+            nn.Conv2d(40, 100, 5, 1),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(2,2),
+            )
+        self.classifier = nn.Sequential(
+            nn.Linear(4*4*100, 1000),
+            nn.ReLU(inplace=True),
+            nn.Linear(1000, 10),
+            )
+    def forward(self, x):
+        s = {}
+        for ind,(name,param) in enumerate(self.named_parameters()):
+            s[ind] = param.data
+            if self.do_linear:
+                param.data = quantilization.Quantizer(self.nbits).apply(param.data,self.nbits)
+            else:
+                param.data = quantilization.Quantizer_nonlinear(self.nbits).apply(param.data,self.nbits)
+        x = self.features(x)
+        x = x.view(-1, 4*4*100)
+        x = self.classifier(x)
+        for ind,(name,param) in enumerate(self.named_parameters()):
+            param.data = s[ind]
+        return x
 ##########################################################
 # FC only + Quantilization        
 ##########################################################

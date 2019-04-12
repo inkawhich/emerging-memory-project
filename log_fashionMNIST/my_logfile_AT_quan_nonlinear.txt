@@ -1,0 +1,1264 @@
+nbits:1
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.026132 train_acc: 0.000000
+[0/20][100/469] train_loss: 0.019766 train_acc: 0.018642
+[0/20][200/469] train_loss: 0.018996 train_acc: 0.050295
+[0/20][300/469] train_loss: 0.018663 train_acc: 0.065667
+[0/20][400/469] train_loss: 0.018495 train_acc: 0.075125
+Clean dataset testing:[0/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[0/20] val_loss: 0.018191 val_acc: 0.100000
+[1/20][0/469] train_loss: 0.017998 train_acc: 0.062500
+[1/20][100/469] train_loss: 0.017991 train_acc: 0.097076
+[1/20][200/469] train_loss: 0.017991 train_acc: 0.099813
+[1/20][300/469] train_loss: 0.017990 train_acc: 0.099746
+[1/20][400/469] train_loss: 0.017991 train_acc: 0.098913
+Clean dataset testing:[1/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[1/20] val_loss: 0.018190 val_acc: 0.100000
+[2/20][0/469] train_loss: 0.017989 train_acc: 0.179688
+[2/20][100/469] train_loss: 0.017991 train_acc: 0.102645
+[2/20][200/469] train_loss: 0.017990 train_acc: 0.100047
+[2/20][300/469] train_loss: 0.017990 train_acc: 0.099227
+[2/20][400/469] train_loss: 0.017990 train_acc: 0.100355
+Clean dataset testing:[2/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[2/20] val_loss: 0.018191 val_acc: 0.100000
+[3/20][0/469] train_loss: 0.017992 train_acc: 0.062500
+[3/20][100/469] train_loss: 0.017989 train_acc: 0.100712
+[3/20][200/469] train_loss: 0.017990 train_acc: 0.102340
+[3/20][300/469] train_loss: 0.017990 train_acc: 0.101303
+[3/20][400/469] train_loss: 0.017990 train_acc: 0.100764
+Clean dataset testing:[3/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[3/20] val_loss: 0.018190 val_acc: 0.100000
+[4/20][0/469] train_loss: 0.017988 train_acc: 0.031250
+[4/20][100/469] train_loss: 0.017990 train_acc: 0.101098
+[4/20][200/469] train_loss: 0.017990 train_acc: 0.101213
+[4/20][300/469] train_loss: 0.017990 train_acc: 0.101770
+[4/20][400/469] train_loss: 0.017990 train_acc: 0.100491
+Clean dataset testing:[4/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[4/20] val_loss: 0.018190 val_acc: 0.100000
+[5/20][0/469] train_loss: 0.017983 train_acc: 0.125000
+[5/20][100/469] train_loss: 0.017989 train_acc: 0.098468
+[5/20][200/469] train_loss: 0.017989 train_acc: 0.097054
+[5/20][300/469] train_loss: 0.017990 train_acc: 0.098214
+[5/20][400/469] train_loss: 0.017990 train_acc: 0.098348
+Clean dataset testing:[5/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[5/20] val_loss: 0.018191 val_acc: 0.100000
+[6/20][0/469] train_loss: 0.017988 train_acc: 0.132812
+[6/20][100/469] train_loss: 0.017989 train_acc: 0.097850
+[6/20][200/469] train_loss: 0.017990 train_acc: 0.098181
+[6/20][300/469] train_loss: 0.017990 train_acc: 0.098707
+[6/20][400/469] train_loss: 0.017990 train_acc: 0.097900
+Clean dataset testing:[6/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[6/20] val_loss: 0.018191 val_acc: 0.100000
+[7/20][0/469] train_loss: 0.017990 train_acc: 0.070312
+[7/20][100/469] train_loss: 0.017989 train_acc: 0.102027
+[7/20][200/469] train_loss: 0.017990 train_acc: 0.100358
+[7/20][300/469] train_loss: 0.017989 train_acc: 0.101277
+[7/20][400/469] train_loss: 0.017990 train_acc: 0.100588
+Clean dataset testing:[7/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[7/20] val_loss: 0.018190 val_acc: 0.100000
+[8/20][0/469] train_loss: 0.017998 train_acc: 0.101562
+[8/20][100/469] train_loss: 0.017989 train_acc: 0.100325
+[8/20][200/469] train_loss: 0.017989 train_acc: 0.100358
+[8/20][300/469] train_loss: 0.017990 train_acc: 0.101692
+[8/20][400/469] train_loss: 0.017990 train_acc: 0.100413
+Clean dataset testing:[8/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[8/20] val_loss: 0.018191 val_acc: 0.100000
+[9/20][0/469] train_loss: 0.017996 train_acc: 0.109375
+[9/20][100/469] train_loss: 0.017989 train_acc: 0.099087
+[9/20][200/469] train_loss: 0.017990 train_acc: 0.098958
+[9/20][300/469] train_loss: 0.017990 train_acc: 0.099201
+[9/20][400/469] train_loss: 0.017990 train_acc: 0.099361
+Clean dataset testing:[9/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[9/20] val_loss: 0.018191 val_acc: 0.100000
+[10/20][0/469] train_loss: 0.017983 train_acc: 0.101562
+[10/20][100/469] train_loss: 0.017989 train_acc: 0.099629
+[10/20][200/469] train_loss: 0.017989 train_acc: 0.098609
+[10/20][300/469] train_loss: 0.017989 train_acc: 0.099486
+[10/20][400/469] train_loss: 0.017990 train_acc: 0.099731
+Clean dataset testing:[10/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[10/20] val_loss: 0.018191 val_acc: 0.100000
+[11/20][0/469] train_loss: 0.017996 train_acc: 0.125000
+[11/20][100/469] train_loss: 0.017990 train_acc: 0.101640
+[11/20][200/469] train_loss: 0.017990 train_acc: 0.100746
+[11/20][300/469] train_loss: 0.017990 train_acc: 0.099772
+[11/20][400/469] train_loss: 0.017990 train_acc: 0.100218
+Clean dataset testing:[11/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[11/20] val_loss: 0.018191 val_acc: 0.100000
+[12/20][0/469] train_loss: 0.017986 train_acc: 0.101562
+[12/20][100/469] train_loss: 0.017989 train_acc: 0.101640
+[12/20][200/469] train_loss: 0.017990 train_acc: 0.101174
+[12/20][300/469] train_loss: 0.017990 train_acc: 0.102108
+[12/20][400/469] train_loss: 0.017990 train_acc: 0.100491
+Clean dataset testing:[12/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[12/20] val_loss: 0.018191 val_acc: 0.100000
+[13/20][0/469] train_loss: 0.017983 train_acc: 0.078125
+[13/20][100/469] train_loss: 0.017992 train_acc: 0.092590
+[13/20][200/469] train_loss: 0.017991 train_acc: 0.095305
+[13/20][300/469] train_loss: 0.017991 train_acc: 0.097124
+[13/20][400/469] train_loss: 0.017991 train_acc: 0.097530
+Clean dataset testing:[13/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[13/20] val_loss: 0.018191 val_acc: 0.100000
+[14/20][0/469] train_loss: 0.017989 train_acc: 0.109375
+[14/20][100/469] train_loss: 0.017988 train_acc: 0.102723
+[14/20][200/469] train_loss: 0.017990 train_acc: 0.100941
+[14/20][300/469] train_loss: 0.017990 train_acc: 0.099590
+[14/20][400/469] train_loss: 0.017991 train_acc: 0.099965
+Clean dataset testing:[14/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[14/20] val_loss: 0.018191 val_acc: 0.100000
+[15/20][0/469] train_loss: 0.017995 train_acc: 0.093750
+[15/20][100/469] train_loss: 0.017990 train_acc: 0.104115
+[15/20][200/469] train_loss: 0.017991 train_acc: 0.102184
+[15/20][300/469] train_loss: 0.017990 train_acc: 0.100810
+[15/20][400/469] train_loss: 0.017990 train_acc: 0.100803
+Clean dataset testing:[15/20] val_loss: 0.018190 val_acc: 0.101800
+AT dataset testing:[15/20] val_loss: 0.018191 val_acc: 0.100000
+[16/20][0/469] train_loss: 0.017983 train_acc: 0.156250
+[16/20][100/469] train_loss: 0.017989 train_acc: 0.097927
+[16/20][200/469] train_loss: 0.017989 train_acc: 0.099425
+[16/20][300/469] train_loss: 0.017990 train_acc: 0.098448
+[16/20][400/469] train_loss: 0.017990 train_acc: 0.098971
+Clean dataset testing:[16/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[16/20] val_loss: 0.018191 val_acc: 0.100000
+[17/20][0/469] train_loss: 0.017994 train_acc: 0.054688
+[17/20][100/469] train_loss: 0.017989 train_acc: 0.097618
+[17/20][200/469] train_loss: 0.017989 train_acc: 0.099425
+[17/20][300/469] train_loss: 0.017989 train_acc: 0.098733
+[17/20][400/469] train_loss: 0.017989 train_acc: 0.099010
+Clean dataset testing:[17/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[17/20] val_loss: 0.018191 val_acc: 0.100000
+[18/20][0/469] train_loss: 0.017980 train_acc: 0.140625
+[18/20][100/469] train_loss: 0.017990 train_acc: 0.100402
+[18/20][200/469] train_loss: 0.017989 train_acc: 0.098181
+[18/20][300/469] train_loss: 0.017989 train_acc: 0.100369
+[18/20][400/469] train_loss: 0.017990 train_acc: 0.099088
+Clean dataset testing:[18/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[18/20] val_loss: 0.018191 val_acc: 0.100000
+[19/20][0/469] train_loss: 0.017997 train_acc: 0.109375
+[19/20][100/469] train_loss: 0.017990 train_acc: 0.100712
+[19/20][200/469] train_loss: 0.017990 train_acc: 0.098453
+[19/20][300/469] train_loss: 0.017990 train_acc: 0.099097
+[19/20][400/469] train_loss: 0.017990 train_acc: 0.098406
+Clean dataset testing:[19/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[19/20] val_loss: 0.018191 val_acc: 0.100000
+nbits:2
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.022182 train_acc: 0.000000
+[0/20][100/469] train_loss: 0.018669 train_acc: 0.066368
+[0/20][200/469] train_loss: 0.018450 train_acc: 0.080496
+[0/20][300/469] train_loss: 0.018287 train_acc: 0.096579
+[0/20][400/469] train_loss: 0.018250 train_acc: 0.101017
+Clean dataset testing:[0/20] val_loss: 0.017447 val_acc: 0.262300
+AT dataset testing:[0/20] val_loss: 0.017995 val_acc: 0.204400
+[1/20][0/469] train_loss: 0.017748 train_acc: 0.234375
+[1/20][100/469] train_loss: 0.018072 train_acc: 0.123453
+[1/20][200/469] train_loss: 0.018013 train_acc: 0.133551
+[1/20][300/469] train_loss: 0.018021 train_acc: 0.132579
+[1/20][400/469] train_loss: 0.018024 train_acc: 0.132228
+Clean dataset testing:[1/20] val_loss: 0.017484 val_acc: 0.201700
+AT dataset testing:[1/20] val_loss: 0.018260 val_acc: 0.086200
+[2/20][0/469] train_loss: 0.018101 train_acc: 0.093750
+[2/20][100/469] train_loss: 0.017887 train_acc: 0.140934
+[2/20][200/469] train_loss: 0.017839 train_acc: 0.142879
+[2/20][300/469] train_loss: 0.017837 train_acc: 0.144207
+[2/20][400/469] train_loss: 0.017852 train_acc: 0.142495
+Clean dataset testing:[2/20] val_loss: 0.017511 val_acc: 0.147600
+AT dataset testing:[2/20] val_loss: 0.018383 val_acc: 0.098500
+[3/20][0/469] train_loss: 0.018406 train_acc: 0.070312
+[3/20][100/469] train_loss: 0.017534 train_acc: 0.151454
+[3/20][200/469] train_loss: 0.017636 train_acc: 0.142063
+[3/20][300/469] train_loss: 0.017654 train_acc: 0.141689
+[3/20][400/469] train_loss: 0.017579 train_acc: 0.145184
+Clean dataset testing:[3/20] val_loss: 0.014774 val_acc: 0.306600
+AT dataset testing:[3/20] val_loss: 0.017497 val_acc: 0.169600
+[4/20][0/469] train_loss: 0.017194 train_acc: 0.187500
+[4/20][100/469] train_loss: 0.017411 train_acc: 0.154858
+[4/20][200/469] train_loss: 0.017385 train_acc: 0.154112
+[4/20][300/469] train_loss: 0.017219 train_acc: 0.166476
+[4/20][400/469] train_loss: 0.017221 train_acc: 0.164842
+Clean dataset testing:[4/20] val_loss: 0.018207 val_acc: 0.100000
+AT dataset testing:[4/20] val_loss: 0.018207 val_acc: 0.100000
+[5/20][0/469] train_loss: 0.017988 train_acc: 0.117188
+[5/20][100/469] train_loss: 0.018017 train_acc: 0.103728
+[5/20][200/469] train_loss: 0.018010 train_acc: 0.100591
+[5/20][300/469] train_loss: 0.018004 train_acc: 0.101381
+[5/20][400/469] train_loss: 0.018001 train_acc: 0.100842
+Clean dataset testing:[5/20] val_loss: 0.018192 val_acc: 0.100000
+AT dataset testing:[5/20] val_loss: 0.018192 val_acc: 0.100000
+[6/20][0/469] train_loss: 0.018004 train_acc: 0.062500
+[6/20][100/469] train_loss: 0.017990 train_acc: 0.099165
+[6/20][200/469] train_loss: 0.017990 train_acc: 0.101524
+[6/20][300/469] train_loss: 0.017990 train_acc: 0.100420
+[6/20][400/469] train_loss: 0.017990 train_acc: 0.099984
+Clean dataset testing:[6/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[6/20] val_loss: 0.018190 val_acc: 0.100000
+[7/20][0/469] train_loss: 0.017988 train_acc: 0.148438
+[7/20][100/469] train_loss: 0.017989 train_acc: 0.098082
+[7/20][200/469] train_loss: 0.017989 train_acc: 0.097598
+[7/20][300/469] train_loss: 0.017990 train_acc: 0.098733
+[7/20][400/469] train_loss: 0.017990 train_acc: 0.098582
+Clean dataset testing:[7/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[7/20] val_loss: 0.018191 val_acc: 0.100000
+[8/20][0/469] train_loss: 0.017996 train_acc: 0.062500
+[8/20][100/469] train_loss: 0.017990 train_acc: 0.095761
+[8/20][200/469] train_loss: 0.017990 train_acc: 0.095577
+[8/20][300/469] train_loss: 0.017990 train_acc: 0.097591
+[8/20][400/469] train_loss: 0.017990 train_acc: 0.097549
+Clean dataset testing:[8/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[8/20] val_loss: 0.018191 val_acc: 0.100000
+[9/20][0/469] train_loss: 0.017988 train_acc: 0.093750
+[9/20][100/469] train_loss: 0.017989 train_acc: 0.100325
+[9/20][200/469] train_loss: 0.017990 train_acc: 0.098259
+[9/20][300/469] train_loss: 0.017990 train_acc: 0.098889
+[9/20][400/469] train_loss: 0.017990 train_acc: 0.098660
+Clean dataset testing:[9/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[9/20] val_loss: 0.018191 val_acc: 0.100000
+[10/20][0/469] train_loss: 0.017993 train_acc: 0.093750
+[10/20][100/469] train_loss: 0.017990 train_acc: 0.096225
+[10/20][200/469] train_loss: 0.017990 train_acc: 0.094527
+[10/20][300/469] train_loss: 0.017990 train_acc: 0.093958
+[10/20][400/469] train_loss: 0.017990 train_acc: 0.094198
+Clean dataset testing:[10/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[10/20] val_loss: 0.018191 val_acc: 0.100000
+[11/20][0/469] train_loss: 0.017987 train_acc: 0.078125
+[11/20][100/469] train_loss: 0.017990 train_acc: 0.102568
+[11/20][200/469] train_loss: 0.017990 train_acc: 0.100707
+[11/20][300/469] train_loss: 0.017990 train_acc: 0.100446
+[11/20][400/469] train_loss: 0.017990 train_acc: 0.100861
+Clean dataset testing:[11/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[11/20] val_loss: 0.018190 val_acc: 0.100000
+[12/20][0/469] train_loss: 0.017988 train_acc: 0.140625
+[12/20][100/469] train_loss: 0.017990 train_acc: 0.102259
+[12/20][200/469] train_loss: 0.017990 train_acc: 0.100008
+[12/20][300/469] train_loss: 0.017990 train_acc: 0.099071
+[12/20][400/469] train_loss: 0.017990 train_acc: 0.098932
+Clean dataset testing:[12/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[12/20] val_loss: 0.018190 val_acc: 0.100000
+[13/20][0/469] train_loss: 0.017987 train_acc: 0.117188
+[13/20][100/469] train_loss: 0.017989 train_acc: 0.100866
+[13/20][200/469] train_loss: 0.017990 train_acc: 0.100319
+[13/20][300/469] train_loss: 0.017990 train_acc: 0.100472
+[13/20][400/469] train_loss: 0.017990 train_acc: 0.099108
+Clean dataset testing:[13/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[13/20] val_loss: 0.018190 val_acc: 0.100000
+[14/20][0/469] train_loss: 0.017984 train_acc: 0.101562
+[14/20][100/469] train_loss: 0.017989 train_acc: 0.102104
+[14/20][200/469] train_loss: 0.017989 train_acc: 0.102107
+[14/20][300/469] train_loss: 0.017990 train_acc: 0.100343
+[14/20][400/469] train_loss: 0.017990 train_acc: 0.098776
+Clean dataset testing:[14/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[14/20] val_loss: 0.018191 val_acc: 0.100000
+[15/20][0/469] train_loss: 0.017987 train_acc: 0.125000
+[15/20][100/469] train_loss: 0.017989 train_acc: 0.103032
+[15/20][200/469] train_loss: 0.017990 train_acc: 0.100591
+[15/20][300/469] train_loss: 0.017990 train_acc: 0.100317
+[15/20][400/469] train_loss: 0.017990 train_acc: 0.100218
+Clean dataset testing:[15/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[15/20] val_loss: 0.018191 val_acc: 0.100000
+[16/20][0/469] train_loss: 0.017989 train_acc: 0.117188
+[16/20][100/469] train_loss: 0.017989 train_acc: 0.101485
+[16/20][200/469] train_loss: 0.017990 train_acc: 0.100241
+[16/20][300/469] train_loss: 0.017990 train_acc: 0.099538
+[16/20][400/469] train_loss: 0.017990 train_acc: 0.099751
+Clean dataset testing:[16/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[16/20] val_loss: 0.018191 val_acc: 0.100000
+[17/20][0/469] train_loss: 0.017984 train_acc: 0.140625
+[17/20][100/469] train_loss: 0.017989 train_acc: 0.099861
+[17/20][200/469] train_loss: 0.017990 train_acc: 0.099425
+[17/20][300/469] train_loss: 0.017990 train_acc: 0.098292
+[17/20][400/469] train_loss: 0.017990 train_acc: 0.098114
+Clean dataset testing:[17/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[17/20] val_loss: 0.018190 val_acc: 0.100000
+[18/20][0/469] train_loss: 0.017986 train_acc: 0.140625
+[18/20][100/469] train_loss: 0.017989 train_acc: 0.102259
+[18/20][200/469] train_loss: 0.017990 train_acc: 0.101057
+[18/20][300/469] train_loss: 0.017990 train_acc: 0.101251
+[18/20][400/469] train_loss: 0.017990 train_acc: 0.099829
+Clean dataset testing:[18/20] val_loss: 0.018190 val_acc: 0.100000
+AT dataset testing:[18/20] val_loss: 0.018190 val_acc: 0.100000
+[19/20][0/469] train_loss: 0.017993 train_acc: 0.078125
+[19/20][100/469] train_loss: 0.017989 train_acc: 0.101330
+[19/20][200/469] train_loss: 0.017990 train_acc: 0.099930
+[19/20][300/469] train_loss: 0.017990 train_acc: 0.098214
+[19/20][400/469] train_loss: 0.017990 train_acc: 0.097705
+Clean dataset testing:[19/20] val_loss: 0.018191 val_acc: 0.100000
+AT dataset testing:[19/20] val_loss: 0.018191 val_acc: 0.100000
+nbits:3
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: nan train_acc: 0.093750
+[0/20][100/469] train_loss: nan train_acc: 0.099087
+[0/20][200/469] train_loss: nan train_acc: 0.099658
+[0/20][300/469] train_loss: nan train_acc: 0.099953
+[0/20][400/469] train_loss: nan train_acc: 0.099497
+Clean dataset testing:[0/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[0/20] val_loss: nan val_acc: 0.100000
+[1/20][0/469] train_loss: nan train_acc: 0.109375
+[1/20][100/469] train_loss: nan train_acc: 0.100789
+[1/20][200/469] train_loss: nan train_acc: 0.101562
+[1/20][300/469] train_loss: nan train_acc: 0.100213
+[1/20][400/469] train_loss: nan train_acc: 0.099926
+Clean dataset testing:[1/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[1/20] val_loss: nan val_acc: 0.100000
+[2/20][0/469] train_loss: nan train_acc: 0.101562
+[2/20][100/469] train_loss: nan train_acc: 0.096689
+[2/20][200/469] train_loss: nan train_acc: 0.099269
+[2/20][300/469] train_loss: nan train_acc: 0.098967
+[2/20][400/469] train_loss: nan train_acc: 0.099595
+Clean dataset testing:[2/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[2/20] val_loss: nan val_acc: 0.100000
+[3/20][0/469] train_loss: nan train_acc: 0.093750
+[3/20][100/469] train_loss: nan train_acc: 0.096303
+[3/20][200/469] train_loss: nan train_acc: 0.098492
+[3/20][300/469] train_loss: nan train_acc: 0.100213
+[3/20][400/469] train_loss: nan train_acc: 0.099264
+Clean dataset testing:[3/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[3/20] val_loss: nan val_acc: 0.100000
+[4/20][0/469] train_loss: nan train_acc: 0.101562
+[4/20][100/469] train_loss: nan train_acc: 0.103496
+[4/20][200/469] train_loss: nan train_acc: 0.101640
+[4/20][300/469] train_loss: nan train_acc: 0.099616
+[4/20][400/469] train_loss: nan train_acc: 0.100335
+Clean dataset testing:[4/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[4/20] val_loss: nan val_acc: 0.100000
+[5/20][0/469] train_loss: nan train_acc: 0.093750
+[5/20][100/469] train_loss: nan train_acc: 0.102645
+[5/20][200/469] train_loss: nan train_acc: 0.101018
+[5/20][300/469] train_loss: nan train_acc: 0.101485
+[5/20][400/469] train_loss: nan train_acc: 0.100452
+Clean dataset testing:[5/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[5/20] val_loss: nan val_acc: 0.100000
+[6/20][0/469] train_loss: nan train_acc: 0.062500
+[6/20][100/469] train_loss: nan train_acc: 0.098468
+[6/20][200/469] train_loss: nan train_acc: 0.101290
+[6/20][300/469] train_loss: nan train_acc: 0.100291
+[6/20][400/469] train_loss: nan train_acc: 0.100452
+Clean dataset testing:[6/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[6/20] val_loss: nan val_acc: 0.100000
+[7/20][0/469] train_loss: nan train_acc: 0.140625
+[7/20][100/469] train_loss: nan train_acc: 0.102181
+[7/20][200/469] train_loss: nan train_acc: 0.101135
+[7/20][300/469] train_loss: nan train_acc: 0.100628
+[7/20][400/469] train_loss: nan train_acc: 0.099751
+Clean dataset testing:[7/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[7/20] val_loss: nan val_acc: 0.100000
+[8/20][0/469] train_loss: nan train_acc: 0.132812
+[8/20][100/469] train_loss: nan train_acc: 0.097076
+[8/20][200/469] train_loss: nan train_acc: 0.098647
+[8/20][300/469] train_loss: nan train_acc: 0.099045
+[8/20][400/469] train_loss: nan train_acc: 0.099400
+Clean dataset testing:[8/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[8/20] val_loss: nan val_acc: 0.100000
+[9/20][0/469] train_loss: nan train_acc: 0.046875
+[9/20][100/469] train_loss: nan train_acc: 0.097231
+[9/20][200/469] train_loss: nan train_acc: 0.097948
+[9/20][300/469] train_loss: nan train_acc: 0.099538
+[9/20][400/469] train_loss: nan train_acc: 0.100842
+Clean dataset testing:[9/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[9/20] val_loss: nan val_acc: 0.100000
+[10/20][0/469] train_loss: nan train_acc: 0.085938
+[10/20][100/469] train_loss: nan train_acc: 0.105043
+[10/20][200/469] train_loss: nan train_acc: 0.100902
+[10/20][300/469] train_loss: nan train_acc: 0.101485
+[10/20][400/469] train_loss: nan train_acc: 0.100510
+Clean dataset testing:[10/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[10/20] val_loss: nan val_acc: 0.100000
+[11/20][0/469] train_loss: nan train_acc: 0.117188
+[11/20][100/469] train_loss: nan train_acc: 0.098933
+[11/20][200/469] train_loss: nan train_acc: 0.098997
+[11/20][300/469] train_loss: nan train_acc: 0.099486
+[11/20][400/469] train_loss: nan train_acc: 0.100627
+Clean dataset testing:[11/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[11/20] val_loss: nan val_acc: 0.100000
+[12/20][0/469] train_loss: nan train_acc: 0.140625
+[12/20][100/469] train_loss: nan train_acc: 0.099242
+[12/20][200/469] train_loss: nan train_acc: 0.100591
+[12/20][300/469] train_loss: nan train_acc: 0.100810
+[12/20][400/469] train_loss: nan train_acc: 0.099984
+Clean dataset testing:[12/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[12/20] val_loss: nan val_acc: 0.100000
+[13/20][0/469] train_loss: nan train_acc: 0.125000
+[13/20][100/469] train_loss: nan train_acc: 0.101408
+[13/20][200/469] train_loss: nan train_acc: 0.101252
+[13/20][300/469] train_loss: nan train_acc: 0.100654
+[13/20][400/469] train_loss: nan train_acc: 0.099829
+Clean dataset testing:[13/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[13/20] val_loss: nan val_acc: 0.100000
+[14/20][0/469] train_loss: nan train_acc: 0.140625
+[14/20][100/469] train_loss: nan train_acc: 0.100944
+[14/20][200/469] train_loss: nan train_acc: 0.101524
+[14/20][300/469] train_loss: nan train_acc: 0.101173
+[14/20][400/469] train_loss: nan train_acc: 0.100257
+Clean dataset testing:[14/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[14/20] val_loss: nan val_acc: 0.100000
+[15/20][0/469] train_loss: nan train_acc: 0.085938
+[15/20][100/469] train_loss: nan train_acc: 0.097231
+[15/20][200/469] train_loss: nan train_acc: 0.098375
+[15/20][300/469] train_loss: nan train_acc: 0.099486
+[15/20][400/469] train_loss: nan train_acc: 0.099770
+Clean dataset testing:[15/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[15/20] val_loss: nan val_acc: 0.100000
+[16/20][0/469] train_loss: nan train_acc: 0.117188
+[16/20][100/469] train_loss: nan train_acc: 0.098314
+[16/20][200/469] train_loss: nan train_acc: 0.099347
+[16/20][300/469] train_loss: nan train_acc: 0.100472
+[16/20][400/469] train_loss: nan train_acc: 0.100121
+Clean dataset testing:[16/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[16/20] val_loss: nan val_acc: 0.100000
+[17/20][0/469] train_loss: nan train_acc: 0.117188
+[17/20][100/469] train_loss: nan train_acc: 0.101021
+[17/20][200/469] train_loss: nan train_acc: 0.101757
+[17/20][300/469] train_loss: nan train_acc: 0.100524
+[17/20][400/469] train_loss: nan train_acc: 0.100179
+Clean dataset testing:[17/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[17/20] val_loss: nan val_acc: 0.100000
+[18/20][0/469] train_loss: nan train_acc: 0.109375
+[18/20][100/469] train_loss: nan train_acc: 0.101717
+[18/20][200/469] train_loss: nan train_acc: 0.101329
+[18/20][300/469] train_loss: nan train_acc: 0.100161
+[18/20][400/469] train_loss: nan train_acc: 0.099809
+Clean dataset testing:[18/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[18/20] val_loss: nan val_acc: 0.100000
+[19/20][0/469] train_loss: nan train_acc: 0.125000
+[19/20][100/469] train_loss: nan train_acc: 0.102259
+[19/20][200/469] train_loss: nan train_acc: 0.102262
+[19/20][300/469] train_loss: nan train_acc: 0.102289
+[19/20][400/469] train_loss: nan train_acc: 0.100803
+Clean dataset testing:[19/20] val_loss: nan val_acc: 0.100000
+AT dataset testing:[19/20] val_loss: nan val_acc: 0.100000
+nbits:4
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018961 train_acc: 0.000000
+[0/20][100/469] train_loss: 0.017995 train_acc: 0.111696
+[0/20][200/469] train_loss: 0.017514 train_acc: 0.149137
+[0/20][300/469] train_loss: 0.017060 train_acc: 0.169435
+[0/20][400/469] train_loss: 0.016709 train_acc: 0.183077
+Clean dataset testing:[0/20] val_loss: 0.011863 val_acc: 0.494000
+AT dataset testing:[0/20] val_loss: 0.015329 val_acc: 0.230800
+[1/20][0/469] train_loss: 0.014875 train_acc: 0.195312
+[1/20][100/469] train_loss: 0.015127 train_acc: 0.235226
+[1/20][200/469] train_loss: 0.014974 train_acc: 0.247318
+[1/20][300/469] train_loss: 0.014828 train_acc: 0.255321
+[1/20][400/469] train_loss: 0.014759 train_acc: 0.258904
+Clean dataset testing:[1/20] val_loss: 0.011084 val_acc: 0.524400
+AT dataset testing:[1/20] val_loss: 0.014377 val_acc: 0.288200
+[2/20][0/469] train_loss: 0.013442 train_acc: 0.320312
+[2/20][100/469] train_loss: 0.014310 train_acc: 0.282874
+[2/20][200/469] train_loss: 0.014181 train_acc: 0.286847
+[2/20][300/469] train_loss: 0.014055 train_acc: 0.291814
+[2/20][400/469] train_loss: 0.013973 train_acc: 0.295550
+Clean dataset testing:[2/20] val_loss: 0.009932 val_acc: 0.553100
+AT dataset testing:[2/20] val_loss: 0.013479 val_acc: 0.297600
+[3/20][0/469] train_loss: 0.013835 train_acc: 0.289062
+[3/20][100/469] train_loss: 0.013169 train_acc: 0.327893
+[3/20][200/469] train_loss: 0.013118 train_acc: 0.330030
+[3/20][300/469] train_loss: 0.013019 train_acc: 0.335263
+[3/20][400/469] train_loss: 0.012936 train_acc: 0.338217
+Clean dataset testing:[3/20] val_loss: 0.009550 val_acc: 0.557400
+AT dataset testing:[3/20] val_loss: 0.012495 val_acc: 0.370400
+[4/20][0/469] train_loss: 0.012202 train_acc: 0.429688
+[4/20][100/469] train_loss: 0.012459 train_acc: 0.359839
+[4/20][200/469] train_loss: 0.012600 train_acc: 0.349425
+[4/20][300/469] train_loss: 0.012557 train_acc: 0.349849
+[4/20][400/469] train_loss: 0.012561 train_acc: 0.349283
+Clean dataset testing:[4/20] val_loss: 0.009257 val_acc: 0.570700
+AT dataset testing:[4/20] val_loss: 0.011911 val_acc: 0.380600
+[5/20][0/469] train_loss: 0.011618 train_acc: 0.406250
+[5/20][100/469] train_loss: 0.012204 train_acc: 0.358911
+[5/20][200/469] train_loss: 0.012148 train_acc: 0.366099
+[5/20][300/469] train_loss: 0.012110 train_acc: 0.367836
+[5/20][400/469] train_loss: 0.012130 train_acc: 0.366798
+Clean dataset testing:[5/20] val_loss: 0.009313 val_acc: 0.578000
+AT dataset testing:[5/20] val_loss: 0.013244 val_acc: 0.299200
+[6/20][0/469] train_loss: 0.012877 train_acc: 0.312500
+[6/20][100/469] train_loss: 0.012377 train_acc: 0.361773
+[6/20][200/469] train_loss: 0.012510 train_acc: 0.358947
+[6/20][300/469] train_loss: 0.012572 train_acc: 0.349123
+[6/20][400/469] train_loss: 0.012630 train_acc: 0.350296
+Clean dataset testing:[6/20] val_loss: 0.008584 val_acc: 0.570200
+AT dataset testing:[6/20] val_loss: 0.011792 val_acc: 0.392000
+[7/20][0/469] train_loss: 0.011084 train_acc: 0.414062
+[7/20][100/469] train_loss: 0.012462 train_acc: 0.352259
+[7/20][200/469] train_loss: 0.012545 train_acc: 0.342040
+[7/20][300/469] train_loss: 0.012518 train_acc: 0.346346
+[7/20][400/469] train_loss: 0.012392 train_acc: 0.354154
+Clean dataset testing:[7/20] val_loss: 0.008928 val_acc: 0.556700
+AT dataset testing:[7/20] val_loss: 0.012563 val_acc: 0.355800
+[8/20][0/469] train_loss: 0.012135 train_acc: 0.359375
+[8/20][100/469] train_loss: 0.012048 train_acc: 0.382658
+[8/20][200/469] train_loss: 0.011867 train_acc: 0.381957
+[8/20][300/469] train_loss: 0.011876 train_acc: 0.379205
+[8/20][400/469] train_loss: 0.011817 train_acc: 0.380884
+Clean dataset testing:[8/20] val_loss: 0.008587 val_acc: 0.604700
+AT dataset testing:[8/20] val_loss: 0.011065 val_acc: 0.408900
+[9/20][0/469] train_loss: 0.010091 train_acc: 0.414062
+[9/20][100/469] train_loss: 0.011633 train_acc: 0.394183
+[9/20][200/469] train_loss: 0.011729 train_acc: 0.392452
+[9/20][300/469] train_loss: 0.011786 train_acc: 0.387484
+[9/20][400/469] train_loss: 0.011765 train_acc: 0.387625
+Clean dataset testing:[9/20] val_loss: 0.008090 val_acc: 0.593000
+AT dataset testing:[9/20] val_loss: 0.011313 val_acc: 0.401600
+[10/20][0/469] train_loss: 0.010420 train_acc: 0.460938
+[10/20][100/469] train_loss: 0.011093 train_acc: 0.416925
+[10/20][200/469] train_loss: 0.011440 train_acc: 0.398671
+[10/20][300/469] train_loss: 0.011486 train_acc: 0.394363
+[10/20][400/469] train_loss: 0.011498 train_acc: 0.394210
+Clean dataset testing:[10/20] val_loss: 0.008383 val_acc: 0.583100
+AT dataset testing:[10/20] val_loss: 0.011660 val_acc: 0.389100
+[11/20][0/469] train_loss: 0.011645 train_acc: 0.414062
+[11/20][100/469] train_loss: 0.011226 train_acc: 0.404162
+[11/20][200/469] train_loss: 0.011278 train_acc: 0.405317
+[11/20][300/469] train_loss: 0.011217 train_acc: 0.407781
+[11/20][400/469] train_loss: 0.011224 train_acc: 0.406133
+Clean dataset testing:[11/20] val_loss: 0.008077 val_acc: 0.610600
+AT dataset testing:[11/20] val_loss: 0.010938 val_acc: 0.417900
+[12/20][0/469] train_loss: 0.010918 train_acc: 0.398438
+[12/20][100/469] train_loss: 0.011109 train_acc: 0.412361
+[12/20][200/469] train_loss: 0.011053 train_acc: 0.414412
+[12/20][300/469] train_loss: 0.010923 train_acc: 0.422706
+[12/20][400/469] train_loss: 0.010820 train_acc: 0.427155
+Clean dataset testing:[12/20] val_loss: 0.007651 val_acc: 0.640700
+AT dataset testing:[12/20] val_loss: 0.010190 val_acc: 0.450500
+[13/20][0/469] train_loss: 0.009290 train_acc: 0.507812
+[13/20][100/469] train_loss: 0.009945 train_acc: 0.468363
+[13/20][200/469] train_loss: 0.009981 train_acc: 0.463775
+[13/20][300/469] train_loss: 0.010056 train_acc: 0.461379
+[13/20][400/469] train_loss: 0.010128 train_acc: 0.457002
+Clean dataset testing:[13/20] val_loss: 0.007622 val_acc: 0.618200
+AT dataset testing:[13/20] val_loss: 0.010833 val_acc: 0.452100
+[14/20][0/469] train_loss: 0.010088 train_acc: 0.500000
+[14/20][100/469] train_loss: 0.010317 train_acc: 0.452584
+[14/20][200/469] train_loss: 0.010198 train_acc: 0.459305
+[14/20][300/469] train_loss: 0.010182 train_acc: 0.459121
+[14/20][400/469] train_loss: 0.010192 train_acc: 0.457411
+Clean dataset testing:[14/20] val_loss: 0.007574 val_acc: 0.646300
+AT dataset testing:[14/20] val_loss: 0.011466 val_acc: 0.404500
+[15/20][0/469] train_loss: 0.011051 train_acc: 0.367188
+[15/20][100/469] train_loss: 0.009918 train_acc: 0.472850
+[15/20][200/469] train_loss: 0.009935 train_acc: 0.472481
+[15/20][300/469] train_loss: 0.009948 train_acc: 0.471709
+[15/20][400/469] train_loss: 0.009839 train_acc: 0.476153
+Clean dataset testing:[15/20] val_loss: 0.006969 val_acc: 0.654500
+AT dataset testing:[15/20] val_loss: 0.009093 val_acc: 0.532900
+[16/20][0/469] train_loss: 0.009035 train_acc: 0.578125
+[16/20][100/469] train_loss: 0.010107 train_acc: 0.467667
+[16/20][200/469] train_loss: 0.010077 train_acc: 0.464475
+[16/20][300/469] train_loss: 0.010053 train_acc: 0.469139
+[16/20][400/469] train_loss: 0.009943 train_acc: 0.474536
+Clean dataset testing:[16/20] val_loss: 0.007053 val_acc: 0.658100
+AT dataset testing:[16/20] val_loss: 0.010039 val_acc: 0.479200
+[17/20][0/469] train_loss: 0.009523 train_acc: 0.460938
+[17/20][100/469] train_loss: 0.009428 train_acc: 0.495050
+[17/20][200/469] train_loss: 0.009723 train_acc: 0.485735
+[17/20][300/469] train_loss: 0.009731 train_acc: 0.482428
+[17/20][400/469] train_loss: 0.009754 train_acc: 0.482602
+Clean dataset testing:[17/20] val_loss: 0.007537 val_acc: 0.604800
+AT dataset testing:[17/20] val_loss: 0.010382 val_acc: 0.446700
+[18/20][0/469] train_loss: 0.011056 train_acc: 0.398438
+[18/20][100/469] train_loss: 0.009828 train_acc: 0.487082
+[18/20][200/469] train_loss: 0.009786 train_acc: 0.488573
+[18/20][300/469] train_loss: 0.009762 train_acc: 0.488372
+[18/20][400/469] train_loss: 0.009721 train_acc: 0.489148
+Clean dataset testing:[18/20] val_loss: 0.007639 val_acc: 0.619500
+AT dataset testing:[18/20] val_loss: 0.010746 val_acc: 0.439600
+[19/20][0/469] train_loss: 0.009781 train_acc: 0.492188
+[19/20][100/469] train_loss: 0.009557 train_acc: 0.489325
+[19/20][200/469] train_loss: 0.009576 train_acc: 0.490322
+[19/20][300/469] train_loss: 0.009571 train_acc: 0.494186
+[19/20][400/469] train_loss: 0.009518 train_acc: 0.498130
+Clean dataset testing:[19/20] val_loss: 0.007576 val_acc: 0.626900
+AT dataset testing:[19/20] val_loss: 0.008687 val_acc: 0.554500
+nbits:5
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018746 train_acc: 0.023438
+[0/20][100/469] train_loss: 0.017814 train_acc: 0.131652
+[0/20][200/469] train_loss: 0.017118 train_acc: 0.168649
+[0/20][300/469] train_loss: 0.016596 train_acc: 0.193054
+[0/20][400/469] train_loss: 0.016262 train_acc: 0.207801
+Clean dataset testing:[0/20] val_loss: 0.010952 val_acc: 0.545100
+AT dataset testing:[0/20] val_loss: 0.015055 val_acc: 0.265500
+[1/20][0/469] train_loss: 0.014559 train_acc: 0.242188
+[1/20][100/469] train_loss: 0.014660 train_acc: 0.289913
+[1/20][200/469] train_loss: 0.014467 train_acc: 0.295553
+[1/20][300/469] train_loss: 0.014316 train_acc: 0.302611
+[1/20][400/469] train_loss: 0.014150 train_acc: 0.310786
+Clean dataset testing:[1/20] val_loss: 0.009834 val_acc: 0.587600
+AT dataset testing:[1/20] val_loss: 0.013238 val_acc: 0.381300
+[2/20][0/469] train_loss: 0.011954 train_acc: 0.429688
+[2/20][100/469] train_loss: 0.013082 train_acc: 0.363320
+[2/20][200/469] train_loss: 0.012980 train_acc: 0.364117
+[2/20][300/469] train_loss: 0.012853 train_acc: 0.369030
+[2/20][400/469] train_loss: 0.012723 train_acc: 0.374844
+Clean dataset testing:[2/20] val_loss: 0.008839 val_acc: 0.601100
+AT dataset testing:[2/20] val_loss: 0.012021 val_acc: 0.424100
+[3/20][0/469] train_loss: 0.012054 train_acc: 0.421875
+[3/20][100/469] train_loss: 0.011907 train_acc: 0.401996
+[3/20][200/469] train_loss: 0.011880 train_acc: 0.403762
+[3/20][300/469] train_loss: 0.011784 train_acc: 0.405913
+[3/20][400/469] train_loss: 0.011726 train_acc: 0.409094
+Clean dataset testing:[3/20] val_loss: 0.008080 val_acc: 0.622600
+AT dataset testing:[3/20] val_loss: 0.011559 val_acc: 0.405500
+[4/20][0/469] train_loss: 0.011677 train_acc: 0.359375
+[4/20][100/469] train_loss: 0.011351 train_acc: 0.417930
+[4/20][200/469] train_loss: 0.011204 train_acc: 0.425023
+[4/20][300/469] train_loss: 0.011143 train_acc: 0.427429
+[4/20][400/469] train_loss: 0.011066 train_acc: 0.429317
+Clean dataset testing:[4/20] val_loss: 0.007870 val_acc: 0.628100
+AT dataset testing:[4/20] val_loss: 0.011561 val_acc: 0.402000
+[5/20][0/469] train_loss: 0.010922 train_acc: 0.437500
+[5/20][100/469] train_loss: 0.010859 train_acc: 0.443920
+[5/20][200/469] train_loss: 0.010899 train_acc: 0.441270
+[5/20][300/469] train_loss: 0.010883 train_acc: 0.440433
+[5/20][400/469] train_loss: 0.010833 train_acc: 0.439351
+Clean dataset testing:[5/20] val_loss: 0.007493 val_acc: 0.614600
+AT dataset testing:[5/20] val_loss: 0.010531 val_acc: 0.458800
+[6/20][0/469] train_loss: 0.009986 train_acc: 0.453125
+[6/20][100/469] train_loss: 0.010566 train_acc: 0.453357
+[6/20][200/469] train_loss: 0.010467 train_acc: 0.457284
+[6/20][300/469] train_loss: 0.010534 train_acc: 0.455824
+[6/20][400/469] train_loss: 0.010526 train_acc: 0.453904
+Clean dataset testing:[6/20] val_loss: 0.007371 val_acc: 0.644700
+AT dataset testing:[6/20] val_loss: 0.011097 val_acc: 0.422200
+[7/20][0/469] train_loss: 0.010465 train_acc: 0.437500
+[7/20][100/469] train_loss: 0.010317 train_acc: 0.464960
+[7/20][200/469] train_loss: 0.010360 train_acc: 0.457284
+[7/20][300/469] train_loss: 0.010314 train_acc: 0.460678
+[7/20][400/469] train_loss: 0.010295 train_acc: 0.462652
+Clean dataset testing:[7/20] val_loss: 0.007310 val_acc: 0.701800
+AT dataset testing:[7/20] val_loss: 0.010072 val_acc: 0.474100
+[8/20][0/469] train_loss: 0.009833 train_acc: 0.515625
+[8/20][100/469] train_loss: 0.009874 train_acc: 0.482983
+[8/20][200/469] train_loss: 0.009954 train_acc: 0.479089
+[8/20][300/469] train_loss: 0.010005 train_acc: 0.477782
+[8/20][400/469] train_loss: 0.010055 train_acc: 0.474419
+Clean dataset testing:[8/20] val_loss: 0.007224 val_acc: 0.681000
+AT dataset testing:[8/20] val_loss: 0.010586 val_acc: 0.452300
+[9/20][0/469] train_loss: 0.009586 train_acc: 0.500000
+[9/20][100/469] train_loss: 0.010177 train_acc: 0.470529
+[9/20][200/469] train_loss: 0.010128 train_acc: 0.472404
+[9/20][300/469] train_loss: 0.010135 train_acc: 0.472721
+[9/20][400/469] train_loss: 0.010118 train_acc: 0.472393
+Clean dataset testing:[9/20] val_loss: 0.006952 val_acc: 0.650500
+AT dataset testing:[9/20] val_loss: 0.010358 val_acc: 0.468800
+[10/20][0/469] train_loss: 0.011076 train_acc: 0.445312
+[10/20][100/469] train_loss: 0.010057 train_acc: 0.478496
+[10/20][200/469] train_loss: 0.009986 train_acc: 0.477107
+[10/20][300/469] train_loss: 0.009977 train_acc: 0.480456
+[10/20][400/469] train_loss: 0.009922 train_acc: 0.482700
+Clean dataset testing:[10/20] val_loss: 0.006859 val_acc: 0.642500
+AT dataset testing:[10/20] val_loss: 0.009695 val_acc: 0.498300
+[11/20][0/469] train_loss: 0.009269 train_acc: 0.492188
+[11/20][100/469] train_loss: 0.009617 train_acc: 0.498376
+[11/20][200/469] train_loss: 0.009587 train_acc: 0.499106
+[11/20][300/469] train_loss: 0.009647 train_acc: 0.494316
+[11/20][400/469] train_loss: 0.009640 train_acc: 0.494935
+Clean dataset testing:[11/20] val_loss: 0.006827 val_acc: 0.677000
+AT dataset testing:[11/20] val_loss: 0.010541 val_acc: 0.426700
+[12/20][0/469] train_loss: 0.010262 train_acc: 0.476562
+[12/20][100/469] train_loss: 0.009529 train_acc: 0.496055
+[12/20][200/469] train_loss: 0.009538 train_acc: 0.501594
+[12/20][300/469] train_loss: 0.009570 train_acc: 0.499792
+[12/20][400/469] train_loss: 0.009543 train_acc: 0.500390
+Clean dataset testing:[12/20] val_loss: 0.006531 val_acc: 0.677800
+AT dataset testing:[12/20] val_loss: 0.009447 val_acc: 0.507900
+[13/20][0/469] train_loss: 0.008931 train_acc: 0.523438
+[13/20][100/469] train_loss: 0.009613 train_acc: 0.488165
+[13/20][200/469] train_loss: 0.009500 train_acc: 0.497046
+[13/20][300/469] train_loss: 0.009451 train_acc: 0.501895
+[13/20][400/469] train_loss: 0.009455 train_acc: 0.502650
+Clean dataset testing:[13/20] val_loss: 0.006959 val_acc: 0.690300
+AT dataset testing:[13/20] val_loss: 0.009516 val_acc: 0.509000
+[14/20][0/469] train_loss: 0.009946 train_acc: 0.539062
+[14/20][100/469] train_loss: 0.009308 train_acc: 0.510056
+[14/20][200/469] train_loss: 0.009329 train_acc: 0.509445
+[14/20][300/469] train_loss: 0.009364 train_acc: 0.506930
+[14/20][400/469] train_loss: 0.009325 train_acc: 0.509020
+Clean dataset testing:[14/20] val_loss: 0.006567 val_acc: 0.714900
+AT dataset testing:[14/20] val_loss: 0.009576 val_acc: 0.495500
+[15/20][0/469] train_loss: 0.009182 train_acc: 0.500000
+[15/20][100/469] train_loss: 0.009319 train_acc: 0.508663
+[15/20][200/469] train_loss: 0.009379 train_acc: 0.506258
+[15/20][300/469] train_loss: 0.009404 train_acc: 0.506489
+[15/20][400/469] train_loss: 0.009355 train_acc: 0.508748
+Clean dataset testing:[15/20] val_loss: 0.006539 val_acc: 0.669000
+AT dataset testing:[15/20] val_loss: 0.009684 val_acc: 0.478600
+[16/20][0/469] train_loss: 0.009845 train_acc: 0.460938
+[16/20][100/469] train_loss: 0.009224 train_acc: 0.507503
+[16/20][200/469] train_loss: 0.009221 train_acc: 0.510572
+[16/20][300/469] train_loss: 0.009231 train_acc: 0.512952
+[16/20][400/469] train_loss: 0.009215 train_acc: 0.515430
+Clean dataset testing:[16/20] val_loss: 0.006573 val_acc: 0.708200
+AT dataset testing:[16/20] val_loss: 0.009350 val_acc: 0.527400
+[17/20][0/469] train_loss: 0.010037 train_acc: 0.523438
+[17/20][100/469] train_loss: 0.009033 train_acc: 0.532642
+[17/20][200/469] train_loss: 0.009031 train_acc: 0.528607
+[17/20][300/469] train_loss: 0.009026 train_acc: 0.530004
+[17/20][400/469] train_loss: 0.009058 train_acc: 0.528639
+Clean dataset testing:[17/20] val_loss: 0.006278 val_acc: 0.695400
+AT dataset testing:[17/20] val_loss: 0.009706 val_acc: 0.504400
+[18/20][0/469] train_loss: 0.009300 train_acc: 0.539062
+[18/20][100/469] train_loss: 0.008918 train_acc: 0.537515
+[18/20][200/469] train_loss: 0.008863 train_acc: 0.541239
+[18/20][300/469] train_loss: 0.008951 train_acc: 0.535844
+[18/20][400/469] train_loss: 0.008924 train_acc: 0.534659
+Clean dataset testing:[18/20] val_loss: 0.006435 val_acc: 0.712300
+AT dataset testing:[18/20] val_loss: 0.008851 val_acc: 0.540800
+[19/20][0/469] train_loss: 0.009011 train_acc: 0.507812
+[19/20][100/469] train_loss: 0.008776 train_acc: 0.536897
+[19/20][200/469] train_loss: 0.008786 train_acc: 0.537158
+[19/20][300/469] train_loss: 0.008758 train_acc: 0.540672
+[19/20][400/469] train_loss: 0.008755 train_acc: 0.542102
+Clean dataset testing:[19/20] val_loss: 0.006049 val_acc: 0.672500
+AT dataset testing:[19/20] val_loss: 0.008024 val_acc: 0.558500
+nbits:6
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018763 train_acc: 0.000000
+[0/20][100/469] train_loss: 0.017668 train_acc: 0.118812
+[0/20][200/469] train_loss: 0.016995 train_acc: 0.165034
+[0/20][300/469] train_loss: 0.016554 train_acc: 0.192250
+[0/20][400/469] train_loss: 0.016207 train_acc: 0.210548
+Clean dataset testing:[0/20] val_loss: 0.011186 val_acc: 0.513500
+AT dataset testing:[0/20] val_loss: 0.014951 val_acc: 0.296700
+[1/20][0/469] train_loss: 0.014575 train_acc: 0.320312
+[1/20][100/469] train_loss: 0.014657 train_acc: 0.284267
+[1/20][200/469] train_loss: 0.014409 train_acc: 0.297030
+[1/20][300/469] train_loss: 0.014216 train_acc: 0.304428
+[1/20][400/469] train_loss: 0.014106 train_acc: 0.308136
+Clean dataset testing:[1/20] val_loss: 0.009444 val_acc: 0.585100
+AT dataset testing:[1/20] val_loss: 0.013314 val_acc: 0.340000
+[2/20][0/469] train_loss: 0.012077 train_acc: 0.359375
+[2/20][100/469] train_loss: 0.012901 train_acc: 0.361773
+[2/20][200/469] train_loss: 0.012697 train_acc: 0.365089
+[2/20][300/469] train_loss: 0.012548 train_acc: 0.369939
+[2/20][400/469] train_loss: 0.012373 train_acc: 0.376422
+Clean dataset testing:[2/20] val_loss: 0.008274 val_acc: 0.601200
+AT dataset testing:[2/20] val_loss: 0.011588 val_acc: 0.399900
+[3/20][0/469] train_loss: 0.012305 train_acc: 0.382812
+[3/20][100/469] train_loss: 0.011409 train_acc: 0.409267
+[3/20][200/469] train_loss: 0.011252 train_acc: 0.417327
+[3/20][300/469] train_loss: 0.011156 train_acc: 0.421200
+[3/20][400/469] train_loss: 0.011034 train_acc: 0.425343
+Clean dataset testing:[3/20] val_loss: 0.007784 val_acc: 0.618400
+AT dataset testing:[3/20] val_loss: 0.010539 val_acc: 0.452900
+[4/20][0/469] train_loss: 0.010333 train_acc: 0.437500
+[4/20][100/469] train_loss: 0.010486 train_acc: 0.455136
+[4/20][200/469] train_loss: 0.010410 train_acc: 0.455807
+[4/20][300/469] train_loss: 0.010334 train_acc: 0.458965
+[4/20][400/469] train_loss: 0.010263 train_acc: 0.460489
+Clean dataset testing:[4/20] val_loss: 0.007618 val_acc: 0.631600
+AT dataset testing:[4/20] val_loss: 0.010243 val_acc: 0.456100
+[5/20][0/469] train_loss: 0.010224 train_acc: 0.429688
+[5/20][100/469] train_loss: 0.010026 train_acc: 0.467822
+[5/20][200/469] train_loss: 0.009982 train_acc: 0.470965
+[5/20][300/469] train_loss: 0.009930 train_acc: 0.475498
+[5/20][400/469] train_loss: 0.009903 train_acc: 0.477576
+Clean dataset testing:[5/20] val_loss: 0.007302 val_acc: 0.663900
+AT dataset testing:[5/20] val_loss: 0.009491 val_acc: 0.516500
+[6/20][0/469] train_loss: 0.009835 train_acc: 0.468750
+[6/20][100/469] train_loss: 0.009553 train_acc: 0.503171
+[6/20][200/469] train_loss: 0.009508 train_acc: 0.501788
+[6/20][300/469] train_loss: 0.009499 train_acc: 0.500026
+[6/20][400/469] train_loss: 0.009499 train_acc: 0.500662
+Clean dataset testing:[6/20] val_loss: 0.006939 val_acc: 0.710100
+AT dataset testing:[6/20] val_loss: 0.010231 val_acc: 0.467600
+[7/20][0/469] train_loss: 0.009586 train_acc: 0.484375
+[7/20][100/469] train_loss: 0.009465 train_acc: 0.500851
+[7/20][200/469] train_loss: 0.009465 train_acc: 0.501322
+[7/20][300/469] train_loss: 0.009421 train_acc: 0.505944
+[7/20][400/469] train_loss: 0.009410 train_acc: 0.505747
+Clean dataset testing:[7/20] val_loss: 0.006825 val_acc: 0.681400
+AT dataset testing:[7/20] val_loss: 0.009829 val_acc: 0.485100
+[8/20][0/469] train_loss: 0.009595 train_acc: 0.515625
+[8/20][100/469] train_loss: 0.009560 train_acc: 0.496210
+[8/20][200/469] train_loss: 0.009463 train_acc: 0.501671
+[8/20][300/469] train_loss: 0.009407 train_acc: 0.505528
+[8/20][400/469] train_loss: 0.009399 train_acc: 0.505611
+Clean dataset testing:[8/20] val_loss: 0.006784 val_acc: 0.677100
+AT dataset testing:[8/20] val_loss: 0.010041 val_acc: 0.495700
+[9/20][0/469] train_loss: 0.009519 train_acc: 0.539062
+[9/20][100/469] train_loss: 0.009334 train_acc: 0.514851
+[9/20][200/469] train_loss: 0.009259 train_acc: 0.518307
+[9/20][300/469] train_loss: 0.009273 train_acc: 0.516456
+[9/20][400/469] train_loss: 0.009273 train_acc: 0.516658
+Clean dataset testing:[9/20] val_loss: 0.006663 val_acc: 0.682900
+AT dataset testing:[9/20] val_loss: 0.009192 val_acc: 0.514400
+[10/20][0/469] train_loss: 0.009746 train_acc: 0.500000
+[10/20][100/469] train_loss: 0.009134 train_acc: 0.517327
+[10/20][200/469] train_loss: 0.009214 train_acc: 0.513604
+[10/20][300/469] train_loss: 0.009203 train_acc: 0.516767
+[10/20][400/469] train_loss: 0.009172 train_acc: 0.518353
+Clean dataset testing:[10/20] val_loss: 0.006616 val_acc: 0.684600
+AT dataset testing:[10/20] val_loss: 0.008762 val_acc: 0.535700
+[11/20][0/469] train_loss: 0.008816 train_acc: 0.546875
+[11/20][100/469] train_loss: 0.009232 train_acc: 0.519570
+[11/20][200/469] train_loss: 0.009122 train_acc: 0.524681
+[11/20][300/469] train_loss: 0.009065 train_acc: 0.524969
+[11/20][400/469] train_loss: 0.009030 train_acc: 0.526750
+Clean dataset testing:[11/20] val_loss: 0.006545 val_acc: 0.702000
+AT dataset testing:[11/20] val_loss: 0.009370 val_acc: 0.522200
+[12/20][0/469] train_loss: 0.008522 train_acc: 0.546875
+[12/20][100/469] train_loss: 0.009017 train_acc: 0.531173
+[12/20][200/469] train_loss: 0.008968 train_acc: 0.530084
+[12/20][300/469] train_loss: 0.008930 train_acc: 0.531873
+[12/20][400/469] train_loss: 0.008881 train_acc: 0.533900
+Clean dataset testing:[12/20] val_loss: 0.006463 val_acc: 0.710000
+AT dataset testing:[12/20] val_loss: 0.009265 val_acc: 0.512400
+[13/20][0/469] train_loss: 0.009525 train_acc: 0.460938
+[13/20][100/469] train_loss: 0.008726 train_acc: 0.545483
+[13/20][200/469] train_loss: 0.008812 train_acc: 0.538674
+[13/20][300/469] train_loss: 0.008769 train_acc: 0.540205
+[13/20][400/469] train_loss: 0.008767 train_acc: 0.540368
+Clean dataset testing:[13/20] val_loss: 0.006299 val_acc: 0.707000
+AT dataset testing:[13/20] val_loss: 0.009416 val_acc: 0.509800
+[14/20][0/469] train_loss: 0.010104 train_acc: 0.531250
+[14/20][100/469] train_loss: 0.008545 train_acc: 0.543162
+[14/20][200/469] train_loss: 0.008604 train_acc: 0.540151
+[14/20][300/469] train_loss: 0.008628 train_acc: 0.542540
+[14/20][400/469] train_loss: 0.008665 train_acc: 0.541186
+Clean dataset testing:[14/20] val_loss: 0.006533 val_acc: 0.694600
+AT dataset testing:[14/20] val_loss: 0.008709 val_acc: 0.559500
+[15/20][0/469] train_loss: 0.008293 train_acc: 0.601562
+[15/20][100/469] train_loss: 0.008746 train_acc: 0.539991
+[15/20][200/469] train_loss: 0.008694 train_acc: 0.541706
+[15/20][300/469] train_loss: 0.008705 train_acc: 0.541866
+[15/20][400/469] train_loss: 0.008644 train_acc: 0.543388
+Clean dataset testing:[15/20] val_loss: 0.006362 val_acc: 0.704800
+AT dataset testing:[15/20] val_loss: 0.008263 val_acc: 0.569100
+[16/20][0/469] train_loss: 0.008296 train_acc: 0.539062
+[16/20][100/469] train_loss: 0.008507 train_acc: 0.551980
+[16/20][200/469] train_loss: 0.008548 train_acc: 0.546836
+[16/20][300/469] train_loss: 0.008601 train_acc: 0.546174
+[16/20][400/469] train_loss: 0.008599 train_acc: 0.546817
+Clean dataset testing:[16/20] val_loss: 0.006189 val_acc: 0.710300
+AT dataset testing:[16/20] val_loss: 0.008912 val_acc: 0.535900
+[17/20][0/469] train_loss: 0.008728 train_acc: 0.500000
+[17/20][100/469] train_loss: 0.008543 train_acc: 0.548190
+[17/20][200/469] train_loss: 0.008603 train_acc: 0.547497
+[17/20][300/469] train_loss: 0.008580 train_acc: 0.547576
+[17/20][400/469] train_loss: 0.008557 train_acc: 0.549583
+Clean dataset testing:[17/20] val_loss: 0.006128 val_acc: 0.719900
+AT dataset testing:[17/20] val_loss: 0.009205 val_acc: 0.520200
+[18/20][0/469] train_loss: 0.008445 train_acc: 0.507812
+[18/20][100/469] train_loss: 0.008511 train_acc: 0.548422
+[18/20][200/469] train_loss: 0.008497 train_acc: 0.547419
+[18/20][300/469] train_loss: 0.008501 train_acc: 0.549600
+[18/20][400/469] train_loss: 0.008496 train_acc: 0.551726
+Clean dataset testing:[18/20] val_loss: 0.006087 val_acc: 0.720300
+AT dataset testing:[18/20] val_loss: 0.009302 val_acc: 0.517000
+[19/20][0/469] train_loss: 0.009899 train_acc: 0.531250
+[19/20][100/469] train_loss: 0.008487 train_acc: 0.555152
+[19/20][200/469] train_loss: 0.008466 train_acc: 0.555465
+[19/20][300/469] train_loss: 0.008456 train_acc: 0.556401
+[19/20][400/469] train_loss: 0.008433 train_acc: 0.557415
+Clean dataset testing:[19/20] val_loss: 0.006226 val_acc: 0.696500
+AT dataset testing:[19/20] val_loss: 0.007887 val_acc: 0.579800
+nbits:7
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018855 train_acc: 0.015625
+[0/20][100/469] train_loss: 0.017848 train_acc: 0.126624
+[0/20][200/469] train_loss: 0.017171 train_acc: 0.168688
+[0/20][300/469] train_loss: 0.016676 train_acc: 0.190147
+[0/20][400/469] train_loss: 0.016305 train_acc: 0.207255
+Clean dataset testing:[0/20] val_loss: 0.010855 val_acc: 0.533500
+AT dataset testing:[0/20] val_loss: 0.014687 val_acc: 0.293100
+[1/20][0/469] train_loss: 0.014523 train_acc: 0.250000
+[1/20][100/469] train_loss: 0.014275 train_acc: 0.312500
+[1/20][200/469] train_loss: 0.014028 train_acc: 0.323189
+[1/20][300/469] train_loss: 0.013782 train_acc: 0.331992
+[1/20][400/469] train_loss: 0.013509 train_acc: 0.341821
+Clean dataset testing:[1/20] val_loss: 0.008824 val_acc: 0.560200
+AT dataset testing:[1/20] val_loss: 0.012339 val_acc: 0.382300
+[2/20][0/469] train_loss: 0.011864 train_acc: 0.414062
+[2/20][100/469] train_loss: 0.011931 train_acc: 0.396040
+[2/20][200/469] train_loss: 0.011758 train_acc: 0.401314
+[2/20][300/469] train_loss: 0.011574 train_acc: 0.408223
+[2/20][400/469] train_loss: 0.011461 train_acc: 0.413264
+Clean dataset testing:[2/20] val_loss: 0.008309 val_acc: 0.593200
+AT dataset testing:[2/20] val_loss: 0.010912 val_acc: 0.442000
+[3/20][0/469] train_loss: 0.010920 train_acc: 0.437500
+[3/20][100/469] train_loss: 0.010844 train_acc: 0.444384
+[3/20][200/469] train_loss: 0.010769 train_acc: 0.442864
+[3/20][300/469] train_loss: 0.010691 train_acc: 0.448090
+[3/20][400/469] train_loss: 0.010584 train_acc: 0.455327
+Clean dataset testing:[3/20] val_loss: 0.007895 val_acc: 0.637400
+AT dataset testing:[3/20] val_loss: 0.010209 val_acc: 0.477300
+[4/20][0/469] train_loss: 0.010609 train_acc: 0.492188
+[4/20][100/469] train_loss: 0.010226 train_acc: 0.476098
+[4/20][200/469] train_loss: 0.010100 train_acc: 0.480177
+[4/20][300/469] train_loss: 0.010021 train_acc: 0.485621
+[4/20][400/469] train_loss: 0.009946 train_acc: 0.488155
+Clean dataset testing:[4/20] val_loss: 0.007345 val_acc: 0.658600
+AT dataset testing:[4/20] val_loss: 0.010385 val_acc: 0.471400
+[5/20][0/469] train_loss: 0.009686 train_acc: 0.484375
+[5/20][100/469] train_loss: 0.009657 train_acc: 0.506575
+[5/20][200/469] train_loss: 0.009652 train_acc: 0.506180
+[5/20][300/469] train_loss: 0.009602 train_acc: 0.506982
+[5/20][400/469] train_loss: 0.009563 train_acc: 0.508183
+Clean dataset testing:[5/20] val_loss: 0.007234 val_acc: 0.652500
+AT dataset testing:[5/20] val_loss: 0.008983 val_acc: 0.534200
+[6/20][0/469] train_loss: 0.008084 train_acc: 0.570312
+[6/20][100/469] train_loss: 0.009330 train_acc: 0.518796
+[6/20][200/469] train_loss: 0.009277 train_acc: 0.520522
+[6/20][300/469] train_loss: 0.009237 train_acc: 0.521387
+[6/20][400/469] train_loss: 0.009155 train_acc: 0.526107
+Clean dataset testing:[6/20] val_loss: 0.006700 val_acc: 0.708800
+AT dataset testing:[6/20] val_loss: 0.009722 val_acc: 0.501400
+[7/20][0/469] train_loss: 0.009659 train_acc: 0.484375
+[7/20][100/469] train_loss: 0.008954 train_acc: 0.536587
+[7/20][200/469] train_loss: 0.008866 train_acc: 0.542444
+[7/20][300/469] train_loss: 0.008768 train_acc: 0.547809
+[7/20][400/469] train_loss: 0.008707 train_acc: 0.549291
+Clean dataset testing:[7/20] val_loss: 0.006389 val_acc: 0.713600
+AT dataset testing:[7/20] val_loss: 0.008957 val_acc: 0.529600
+[8/20][0/469] train_loss: 0.008997 train_acc: 0.523438
+[8/20][100/469] train_loss: 0.008304 train_acc: 0.568920
+[8/20][200/469] train_loss: 0.008327 train_acc: 0.567786
+[8/20][300/469] train_loss: 0.008266 train_acc: 0.569949
+[8/20][400/469] train_loss: 0.008252 train_acc: 0.571715
+Clean dataset testing:[8/20] val_loss: 0.006331 val_acc: 0.713800
+AT dataset testing:[8/20] val_loss: 0.008545 val_acc: 0.557000
+[9/20][0/469] train_loss: 0.008718 train_acc: 0.539062
+[9/20][100/469] train_loss: 0.008326 train_acc: 0.571241
+[9/20][200/469] train_loss: 0.008200 train_acc: 0.577775
+[9/20][300/469] train_loss: 0.008193 train_acc: 0.577788
+[9/20][400/469] train_loss: 0.008234 train_acc: 0.575631
+Clean dataset testing:[9/20] val_loss: 0.006142 val_acc: 0.707600
+AT dataset testing:[9/20] val_loss: 0.009449 val_acc: 0.506600
+[10/20][0/469] train_loss: 0.009697 train_acc: 0.398438
+[10/20][100/469] train_loss: 0.008218 train_acc: 0.576655
+[10/20][200/469] train_loss: 0.008197 train_acc: 0.577581
+[10/20][300/469] train_loss: 0.008159 train_acc: 0.577320
+[10/20][400/469] train_loss: 0.008153 train_acc: 0.576703
+Clean dataset testing:[10/20] val_loss: 0.006094 val_acc: 0.708100
+AT dataset testing:[10/20] val_loss: 0.008896 val_acc: 0.521600
+[11/20][0/469] train_loss: 0.008662 train_acc: 0.554688
+[11/20][100/469] train_loss: 0.008185 train_acc: 0.577893
+[11/20][200/469] train_loss: 0.008124 train_acc: 0.582090
+[11/20][300/469] train_loss: 0.008085 train_acc: 0.583913
+[11/20][400/469] train_loss: 0.008071 train_acc: 0.583970
+Clean dataset testing:[11/20] val_loss: 0.006008 val_acc: 0.711400
+AT dataset testing:[11/20] val_loss: 0.007994 val_acc: 0.589500
+[12/20][0/469] train_loss: 0.005927 train_acc: 0.750000
+[12/20][100/469] train_loss: 0.007845 train_acc: 0.586943
+[12/20][200/469] train_loss: 0.007958 train_acc: 0.585005
+[12/20][300/469] train_loss: 0.007969 train_acc: 0.585185
+[12/20][400/469] train_loss: 0.007974 train_acc: 0.586015
+Clean dataset testing:[12/20] val_loss: 0.006023 val_acc: 0.714900
+AT dataset testing:[12/20] val_loss: 0.009465 val_acc: 0.520000
+[13/20][0/469] train_loss: 0.008183 train_acc: 0.585938
+[13/20][100/469] train_loss: 0.008040 train_acc: 0.582689
+[13/20][200/469] train_loss: 0.008042 train_acc: 0.582400
+[13/20][300/469] train_loss: 0.007971 train_acc: 0.587235
+[13/20][400/469] train_loss: 0.008003 train_acc: 0.586113
+Clean dataset testing:[13/20] val_loss: 0.005948 val_acc: 0.711900
+AT dataset testing:[13/20] val_loss: 0.008038 val_acc: 0.573600
+[14/20][0/469] train_loss: 0.006844 train_acc: 0.625000
+[14/20][100/469] train_loss: 0.008068 train_acc: 0.578821
+[14/20][200/469] train_loss: 0.007996 train_acc: 0.584227
+[14/20][300/469] train_loss: 0.007975 train_acc: 0.585315
+[14/20][400/469] train_loss: 0.007958 train_acc: 0.587340
+Clean dataset testing:[14/20] val_loss: 0.005935 val_acc: 0.718800
+AT dataset testing:[14/20] val_loss: 0.007039 val_acc: 0.647000
+[15/20][0/469] train_loss: 0.007305 train_acc: 0.625000
+[15/20][100/469] train_loss: 0.007877 train_acc: 0.585164
+[15/20][200/469] train_loss: 0.007899 train_acc: 0.590718
+[15/20][300/469] train_loss: 0.007850 train_acc: 0.592348
+[15/20][400/469] train_loss: 0.007876 train_acc: 0.591646
+Clean dataset testing:[15/20] val_loss: 0.005853 val_acc: 0.723700
+AT dataset testing:[15/20] val_loss: 0.008823 val_acc: 0.551300
+[16/20][0/469] train_loss: 0.009284 train_acc: 0.539062
+[16/20][100/469] train_loss: 0.007890 train_acc: 0.594833
+[16/20][200/469] train_loss: 0.008002 train_acc: 0.587142
+[16/20][300/469] train_loss: 0.007926 train_acc: 0.588611
+[16/20][400/469] train_loss: 0.007858 train_acc: 0.594120
+Clean dataset testing:[16/20] val_loss: 0.005768 val_acc: 0.715900
+AT dataset testing:[16/20] val_loss: 0.008548 val_acc: 0.550000
+[17/20][0/469] train_loss: 0.007775 train_acc: 0.609375
+[17/20][100/469] train_loss: 0.007847 train_acc: 0.590888
+[17/20][200/469] train_loss: 0.007872 train_acc: 0.591185
+[17/20][300/469] train_loss: 0.007865 train_acc: 0.590583
+[17/20][400/469] train_loss: 0.007883 train_acc: 0.590029
+Clean dataset testing:[17/20] val_loss: 0.005892 val_acc: 0.703000
+AT dataset testing:[17/20] val_loss: 0.009523 val_acc: 0.496000
+[18/20][0/469] train_loss: 0.009080 train_acc: 0.562500
+[18/20][100/469] train_loss: 0.007876 train_acc: 0.591352
+[18/20][200/469] train_loss: 0.007888 train_acc: 0.591340
+[18/20][300/469] train_loss: 0.007883 train_acc: 0.589857
+[18/20][400/469] train_loss: 0.007839 train_acc: 0.591276
+Clean dataset testing:[18/20] val_loss: 0.005894 val_acc: 0.732000
+AT dataset testing:[18/20] val_loss: 0.008389 val_acc: 0.564600
+[19/20][0/469] train_loss: 0.008672 train_acc: 0.554688
+[19/20][100/469] train_loss: 0.007700 train_acc: 0.602645
+[19/20][200/469] train_loss: 0.007661 train_acc: 0.604983
+[19/20][300/469] train_loss: 0.007700 train_acc: 0.600550
+[19/20][400/469] train_loss: 0.007716 train_acc: 0.599712
+Clean dataset testing:[19/20] val_loss: 0.005751 val_acc: 0.729200
+AT dataset testing:[19/20] val_loss: 0.007432 val_acc: 0.616200
+nbits:8
+quantilized:True
+training data AT:True
+conv_and_fc_quan(
+  (features): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=800, out_features=500, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=500, out_features=10, bias=True)
+  )
+)
+[0/20][0/469] train_loss: 0.018809 train_acc: 0.000000
+[0/20][100/469] train_loss: 0.017647 train_acc: 0.138150
+[0/20][200/469] train_loss: 0.016960 train_acc: 0.179571
+[0/20][300/469] train_loss: 0.016478 train_acc: 0.204994
+[0/20][400/469] train_loss: 0.016123 train_acc: 0.221224
+Clean dataset testing:[0/20] val_loss: 0.010942 val_acc: 0.505400
+AT dataset testing:[0/20] val_loss: 0.014911 val_acc: 0.289200
+[1/20][0/469] train_loss: 0.014582 train_acc: 0.312500
+[1/20][100/469] train_loss: 0.014569 train_acc: 0.297339
+[1/20][200/469] train_loss: 0.014367 train_acc: 0.306864
+[1/20][300/469] train_loss: 0.014220 train_acc: 0.314109
+[1/20][400/469] train_loss: 0.014066 train_acc: 0.321910
+Clean dataset testing:[1/20] val_loss: 0.009582 val_acc: 0.548800
+AT dataset testing:[1/20] val_loss: 0.013353 val_acc: 0.362300
+[2/20][0/469] train_loss: 0.012278 train_acc: 0.414062
+[2/20][100/469] train_loss: 0.013062 train_acc: 0.359762
+[2/20][200/469] train_loss: 0.012856 train_acc: 0.370297
+[2/20][300/469] train_loss: 0.012680 train_acc: 0.377881
+[2/20][400/469] train_loss: 0.012491 train_acc: 0.382228
+Clean dataset testing:[2/20] val_loss: 0.008466 val_acc: 0.583200
+AT dataset testing:[2/20] val_loss: 0.011792 val_acc: 0.410800
+[3/20][0/469] train_loss: 0.011554 train_acc: 0.406250
+[3/20][100/469] train_loss: 0.011530 train_acc: 0.414062
+[3/20][200/469] train_loss: 0.011339 train_acc: 0.420009
+[3/20][300/469] train_loss: 0.011213 train_acc: 0.424990
+[3/20][400/469] train_loss: 0.011110 train_acc: 0.426979
+Clean dataset testing:[3/20] val_loss: 0.007804 val_acc: 0.631500
+AT dataset testing:[3/20] val_loss: 0.010818 val_acc: 0.442500
+[4/20][0/469] train_loss: 0.011279 train_acc: 0.414062
+[4/20][100/469] train_loss: 0.010621 train_acc: 0.445699
+[4/20][200/469] train_loss: 0.010507 train_acc: 0.451998
+[4/20][300/469] train_loss: 0.010405 train_acc: 0.453982
+[4/20][400/469] train_loss: 0.010319 train_acc: 0.457294
+Clean dataset testing:[4/20] val_loss: 0.007384 val_acc: 0.608600
+AT dataset testing:[4/20] val_loss: 0.009802 val_acc: 0.495400
+[5/20][0/469] train_loss: 0.009432 train_acc: 0.507812
+[5/20][100/469] train_loss: 0.009755 train_acc: 0.487392
+[5/20][200/469] train_loss: 0.009704 train_acc: 0.486435
+[5/20][300/469] train_loss: 0.009663 train_acc: 0.485932
+[5/20][400/469] train_loss: 0.009633 train_acc: 0.486382
+Clean dataset testing:[5/20] val_loss: 0.006964 val_acc: 0.702700
+AT dataset testing:[5/20] val_loss: 0.009490 val_acc: 0.501600
+[6/20][0/469] train_loss: 0.008522 train_acc: 0.554688
+[6/20][100/469] train_loss: 0.009276 train_acc: 0.506265
+[6/20][200/469] train_loss: 0.009248 train_acc: 0.508434
+[6/20][300/469] train_loss: 0.009231 train_acc: 0.509058
+[6/20][400/469] train_loss: 0.009185 train_acc: 0.511047
+Clean dataset testing:[6/20] val_loss: 0.006817 val_acc: 0.649000
+AT dataset testing:[6/20] val_loss: 0.009545 val_acc: 0.498000
+[7/20][0/469] train_loss: 0.009940 train_acc: 0.445312
+[7/20][100/469] train_loss: 0.008981 train_acc: 0.519261
+[7/20][200/469] train_loss: 0.008942 train_acc: 0.525420
+[7/20][300/469] train_loss: 0.008888 train_acc: 0.529225
+[7/20][400/469] train_loss: 0.008876 train_acc: 0.530393
+Clean dataset testing:[7/20] val_loss: 0.006695 val_acc: 0.661300
+AT dataset testing:[7/20] val_loss: 0.008105 val_acc: 0.561500
+[8/20][0/469] train_loss: 0.007766 train_acc: 0.554688
+[8/20][100/469] train_loss: 0.008693 train_acc: 0.534499
+[8/20][200/469] train_loss: 0.008654 train_acc: 0.538324
+[8/20][300/469] train_loss: 0.008601 train_acc: 0.542385
+[8/20][400/469] train_loss: 0.008562 train_acc: 0.546115
+Clean dataset testing:[8/20] val_loss: 0.006367 val_acc: 0.699500
+AT dataset testing:[8/20] val_loss: 0.009158 val_acc: 0.510400
+[9/20][0/469] train_loss: 0.009128 train_acc: 0.546875
+[9/20][100/469] train_loss: 0.008348 train_acc: 0.563196
+[9/20][200/469] train_loss: 0.008327 train_acc: 0.561800
+[9/20][300/469] train_loss: 0.008305 train_acc: 0.561643
+[9/20][400/469] train_loss: 0.008265 train_acc: 0.564078
+Clean dataset testing:[9/20] val_loss: 0.006230 val_acc: 0.703000
+AT dataset testing:[9/20] val_loss: 0.009281 val_acc: 0.508300
+[10/20][0/469] train_loss: 0.009189 train_acc: 0.523438
+[10/20][100/469] train_loss: 0.008042 train_acc: 0.578821
+[10/20][200/469] train_loss: 0.008078 train_acc: 0.576920
+[10/20][300/469] train_loss: 0.008074 train_acc: 0.575140
+[10/20][400/469] train_loss: 0.008045 train_acc: 0.576469
+Clean dataset testing:[10/20] val_loss: 0.006106 val_acc: 0.716300
+AT dataset testing:[10/20] val_loss: 0.008035 val_acc: 0.563800
+[11/20][0/469] train_loss: 0.007094 train_acc: 0.679688
+[11/20][100/469] train_loss: 0.008055 train_acc: 0.573561
+[11/20][200/469] train_loss: 0.007964 train_acc: 0.580613
+[11/20][300/469] train_loss: 0.007914 train_acc: 0.583290
+[11/20][400/469] train_loss: 0.007878 train_acc: 0.585489
+Clean dataset testing:[11/20] val_loss: 0.005998 val_acc: 0.721900
+AT dataset testing:[11/20] val_loss: 0.007936 val_acc: 0.593300
+[12/20][0/469] train_loss: 0.008291 train_acc: 0.593750
+[12/20][100/469] train_loss: 0.007777 train_acc: 0.594214
+[12/20][200/469] train_loss: 0.007758 train_acc: 0.597326
+[12/20][300/469] train_loss: 0.007721 train_acc: 0.599356
+[12/20][400/469] train_loss: 0.007726 train_acc: 0.599341
+Clean dataset testing:[12/20] val_loss: 0.005879 val_acc: 0.721800
+AT dataset testing:[12/20] val_loss: 0.007717 val_acc: 0.592600
+[13/20][0/469] train_loss: 0.008221 train_acc: 0.570312
+[13/20][100/469] train_loss: 0.007541 train_acc: 0.600480
+[13/20][200/469] train_loss: 0.007593 train_acc: 0.597948
+[13/20][300/469] train_loss: 0.007589 train_acc: 0.599590
+[13/20][400/469] train_loss: 0.007639 train_acc: 0.598406
+Clean dataset testing:[13/20] val_loss: 0.005844 val_acc: 0.717100
+AT dataset testing:[13/20] val_loss: 0.007715 val_acc: 0.593800
+[14/20][0/469] train_loss: 0.007661 train_acc: 0.539062
+[14/20][100/469] train_loss: 0.007545 train_acc: 0.603496
+[14/20][200/469] train_loss: 0.007569 train_acc: 0.600630
+[14/20][300/469] train_loss: 0.007543 train_acc: 0.603950
+[14/20][400/469] train_loss: 0.007543 train_acc: 0.603491
+Clean dataset testing:[14/20] val_loss: 0.005811 val_acc: 0.729600
+AT dataset testing:[14/20] val_loss: 0.007930 val_acc: 0.574100
+[15/20][0/469] train_loss: 0.007857 train_acc: 0.570312
+[15/20][100/469] train_loss: 0.007522 train_acc: 0.610381
+[15/20][200/469] train_loss: 0.007487 train_acc: 0.611901
+[15/20][300/469] train_loss: 0.007483 train_acc: 0.609764
+[15/20][400/469] train_loss: 0.007492 train_acc: 0.609882
+Clean dataset testing:[15/20] val_loss: 0.005825 val_acc: 0.715700
+AT dataset testing:[15/20] val_loss: 0.007832 val_acc: 0.589100
+[16/20][0/469] train_loss: 0.007250 train_acc: 0.609375
+[16/20][100/469] train_loss: 0.007300 train_acc: 0.615099
+[16/20][200/469] train_loss: 0.007345 train_acc: 0.615594
+[16/20][300/469] train_loss: 0.007388 train_acc: 0.613917
+[16/20][400/469] train_loss: 0.007355 train_acc: 0.614440
+Clean dataset testing:[16/20] val_loss: 0.005642 val_acc: 0.730900
+AT dataset testing:[16/20] val_loss: 0.007038 val_acc: 0.627100
+[17/20][0/469] train_loss: 0.006436 train_acc: 0.632812
+[17/20][100/469] train_loss: 0.007326 train_acc: 0.615022
+[17/20][200/469] train_loss: 0.007302 train_acc: 0.616799
+[17/20][300/469] train_loss: 0.007279 train_acc: 0.619731
+[17/20][400/469] train_loss: 0.007286 train_acc: 0.618941
+Clean dataset testing:[17/20] val_loss: 0.005629 val_acc: 0.730200
+AT dataset testing:[17/20] val_loss: 0.008790 val_acc: 0.546600
+[18/20][0/469] train_loss: 0.008443 train_acc: 0.515625
+[18/20][100/469] train_loss: 0.007372 train_acc: 0.612933
+[18/20][200/469] train_loss: 0.007284 train_acc: 0.618703
+[18/20][300/469] train_loss: 0.007261 train_acc: 0.618693
+[18/20][400/469] train_loss: 0.007249 train_acc: 0.620285
+Clean dataset testing:[18/20] val_loss: 0.005484 val_acc: 0.741800
+AT dataset testing:[18/20] val_loss: 0.008616 val_acc: 0.545200
+[19/20][0/469] train_loss: 0.007502 train_acc: 0.632812
+[19/20][100/469] train_loss: 0.007384 train_acc: 0.617574
+[19/20][200/469] train_loss: 0.007357 train_acc: 0.615477
+[19/20][300/469] train_loss: 0.007347 train_acc: 0.617810
+[19/20][400/469] train_loss: 0.007286 train_acc: 0.621142
+Clean dataset testing:[19/20] val_loss: 0.005507 val_acc: 0.738100
+AT dataset testing:[19/20] val_loss: 0.008753 val_acc: 0.546700
